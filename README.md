@@ -19,15 +19,11 @@ ECHO_V1 is an offline video subtitle generator that extracts embedded speech fro
 
 THIS FILE INSTRUCTS HOW TO SET UP THE SOFTWARE.
 
-Step 1: Copy the entire ECHO_V1 folder to Drive C.  
-Example: C:\ECHO_V1\
+Step 1: Download and install Python 3.9 or above. 
 
-Step 2: Run the INSTALL.bat file with Administrator rights.  
-(Right-click on INSTALL.bat and select "Run as administrator")
+Step 2: Download Miniforge from https://conda-forge.org/download/
 
-Step 3: After installation, click the Echo icon on your Desktop to start the application.  
-Note: The software may take 2-3 minutes to launch. Please be patient.
-
+Step 3: Run with administrator for the file EchoInstaller.exe
 ---
 
 ## Usage
