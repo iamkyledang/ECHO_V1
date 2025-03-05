@@ -1,0 +1,14 @@
+spacy
+pyqt5
+pyside6
+ffmpeg
+openai
+moviepy
+torch
+torchvision
+torchaudio
+openai-whisper
+pyannote.audio
+pydub
+googletrans
+language_tool_python
