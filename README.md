@@ -19,7 +19,7 @@ ECHO_V1 is an offline video subtitle generator that extracts embedded speech fro
 
 Follow these steps to set up the software:
 
-1. Download and install Python 3.9 or above from [here] (https://www.python.org/downloads/).
+1. Download and install Python 3.9 or above from [here](https://www.python.org/downloads/).
 2. Download Miniforge from [here](https://conda-forge.org/download/).
 3. Run the `EchoInstaller.exe` file as an administrator.
 
