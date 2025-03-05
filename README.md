@@ -1,8 +1,7 @@
 # ECHO_V1 Subtitle Generator
 
 ## Introduction
-
-[Click here](https://example.com) for a brief overview of the software.
+[Watch here](https://www.youtube.com/watch?v=2_qOoMRNuGI) for an introduction to the software.
 
 ## Project Overview
 
