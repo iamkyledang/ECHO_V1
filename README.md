@@ -1,6 +1,6 @@
 # ECHO_V1 Subtitle Generator
 
-### Short Description
+## Short Description
 
 ECHO_V1 is an offline video subtitle generator that extracts embedded speech from videos and outputs subtitles in SRT file format. Designed for simplicity and accuracy, it provides high-quality subtitle generation using advanced speech processing technologies.
 
@@ -17,45 +17,44 @@ ECHO_V1 is an offline video subtitle generator that extracts embedded speech fro
 
 ## Installation
 
-THIS FILE INSTRUCTS HOW TO SET UP THE SOFTWARE.
+Follow these steps to set up the software:
 
-Step 1: Download and install Python 3.9 or above. 
+1. Download and install Python 3.9 or above from [here] (https://www.python.org/downloads/).
+2. Download Miniforge from [here](https://conda-forge.org/download/).
+3. Run the `EchoInstaller.exe` file as an administrator.
 
-Step 2: Download Miniforge from https://conda-forge.org/download/
-
-Step 3: Run with administrator for the file EchoInstaller.exe
-
+---
 
 ## Usage
 
-Double-click the Echo icon on your Desktop.  
-Follow the on-screen instructions to select your video file and generate subtitles.
+1. Double-click the Echo icon on your Desktop.
+2. Follow the on-screen instructions to select your video file and generate subtitles.
 
 ---
 
 ## Technology Used
 
-Montreal Forced Aligner – Speech-to-text alignment  
-OpenAI Whisper – Speech recognition  
-spaCy – Natural language processing  
-Python – Core programming language  
-Pyannote – Speaker diarization  
-PyQt5 – Graphical user interface (GUI)  
-Google Translator – Language translation support  
+- **Montreal Forced Aligner** – Speech-to-text alignment
+- **OpenAI Whisper** – Speech recognition
+- **spaCy** – Natural language processing
+- **Python** – Core programming language
+- **Pyannote** – Speaker diarization
+- **PyQt5** – Graphical user interface (GUI)
+- **Google Translator** – Language translation support
 
 ---
 
 ## License
 
-MIT License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.txt) file for details.
 
 ---
 
 ## Author
 
-Name: Kyle Dang  
-Contact: dangmauanhquan@gmail.com  
-Date Created: 03/03/2025  
+- **Name:** Kyle Dang
+- **Contact:** dangmauanhquan@gmail.com
+- **Date Created:** 03/03/2025
 
 ---
 
@@ -68,4 +67,3 @@ If you would like to suggest improvements or contribute to the project, please o
 ## Acknowledgments
 
 Special thanks to the developers and communities of the open-source tools used in this project.
-
