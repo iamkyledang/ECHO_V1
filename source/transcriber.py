@@ -2,9 +2,6 @@ import whisper
 import os 
 from pydub import AudioSegment
 from pyannote.audio import Pipeline
-# from concurrent.futures import ThreadPoolExecutor
-# from scipy.io import wavfile
-import multiprocessing
 import torch
 import spacy
 import re
@@ -18,10 +15,10 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 pipeline = Pipeline.from_pretrained("pyannote/speaker-diarization-3.1",
     use_auth_token='...').to(device)
-#Token is removed here. In case needed for usage, you can use installer .exe file
+
 
 # Load the Whisper model
-model = whisper.load_model("medium.en").to(device)
+model = whisper.load_model("medium").to(device)
 
 
 def transcribe_audio(file_path):
@@ -29,32 +26,41 @@ def transcribe_audio(file_path):
     result = model.transcribe(file_path)
     return result['text']
 
-# Modified 'extract_audio_segment' function
-def extract_audio_segment(file_path, start_time, end_time, batch_dir, new_file_flag):
+
+def extract_audio_segment(file_path, start_time, end_time,run_folder_dir, new_file_flag):
+    # Name of the folder where segmented audio will be stored
+    segmented_dir = os.path.join(run_folder_dir, "audio_segmented")
+    # Create the directory if it doesn't exist
+    if not os.path.exists(segmented_dir):
+        os.makedirs(segmented_dir)
+    
     # Load the original audio file
     audio = AudioSegment.from_file(file_path)
-
+    
     # Convert start and end times from seconds to milliseconds
     start_ms = start_time * 1000
     end_ms = end_time * 1000
-
+    
     # Extract the audio segment
     audio_segment = audio[start_ms:end_ms]
-
-    # Initialize static variable for file numbering
-    if not hasattr(extract_audio_segment, "next_file_number") or new_file_flag:
+    
+    # Initialize the static variable if it doesn't exist
+    if not hasattr(extract_audio_segment, "next_file_number") or new_file_flag==True:
         extract_audio_segment.next_file_number = 1
+        new_file_flag=False
     else:
+        # Increment the file number for each call
         extract_audio_segment.next_file_number += 1
 
-    # Generate a unique filename for the audio segment
+    # Generate a unique filename for the segment
     segment_filename = f"audio_{extract_audio_segment.next_file_number}.wav"
-    segment_path = os.path.join(batch_dir, segment_filename)
-
-    # Export the audio segment
+    segment_path = os.path.join(segmented_dir, segment_filename)
+    
+    # Export the audio segment to the specified path
     audio_segment.export(segment_path, format="wav")
-
+    
     return segment_path
+
 
 # Assuming `transcribed_segments` is the list you obtained from `detect_speech_segments`
 # and `file_path` is the path to the original audio file
@@ -62,31 +68,34 @@ def extract_audio_segment(file_path, start_time, end_time, batch_dir, new_file_f
 # export_transcriptions_to_txt(transcribed_segments, file_path)
 
 # Load spaCy model
-nlp = spacy.load("en_core_web_lg")
+nlp = spacy.load("en_core_web_sm")
 
 # Print the path to the spaCy model
 #model_path = spacy.util.get_package_path("en_core_web_sm")
 #print(f"spaCy model path: {model_path}")
-
-def segment_text_with_spacy(text, max_length=42):
+def segment_text_with_spacy(text, max_words=8):
     # Process the text with spaCy
     doc = nlp(text)
     # Initialize variables to store the current line and the list of segmented lines
     current_line = ""
+    current_word_count = 0
     segmented_lines = []
+    
     for token in doc:
-        # Check if adding the next token exceeds the max length
-        if len(current_line + token.text) + 1 > max_length:
+        # Check if adding the next token exceeds the max word count
+        if current_word_count + 1 > max_words:
             # If so, add the current line to the list and start a new line
             segmented_lines.append(current_line)
             current_line = token.text
+            current_word_count = 1
         else:
             # Otherwise, add the token to the current line
             current_line += " " + token.text if current_line else token.text
+            current_word_count += 1
+    
     # Add the last line to the list if it's not empty
     if current_line:
         segmented_lines.append(current_line)
-    #return segmented_lines
 
     # Merge lines containing only punctuation marks with the previous line
     i = 1
@@ -96,19 +105,8 @@ def segment_text_with_spacy(text, max_length=42):
             del segmented_lines[i]
         else:
             i += 1
-
-    # Remove extra spaces before punctuation marks
-    corrected_lines = []
-    for line in segmented_lines:
-        corrected_line = line.replace(" 's", "'s")
-        corrected_line = corrected_line.replace(" ,", ",")
-        corrected_line = corrected_line.replace(" .", ".")
-        corrected_line = corrected_line.replace(" ?", "?")
-        corrected_line = corrected_line.replace(" !", "!")
-        corrected_lines.append(corrected_line)
-
-    return corrected_lines     
-
+    
+    return segmented_lines      
 
 
 def format_time_srt(time_in_seconds):
@@ -246,38 +244,20 @@ def postprocess_srt(srt_file_path):
         lines = file.readlines()
 
     corrected_lines = []
-    temp_line = ""
     for line in lines:
         # Check if the line is a subtitle entry (not a timestamp or index)
         if re.match(r'^\d+$', line.strip()) or re.match(r'^\d{2}:\d{2}:\d{2},\d{3} --> \d{2}:\d{2}:\d{2},\d{3}$', line.strip()):
             corrected_lines.append(line)
         else:
-            # Check if the line is fully uppercased
-            if line.isupper():
-                # Lowercase all words except the first letter of the entry
-                line = line.lower().capitalize()
-
-            # Use language tool to check and correct the line
-            #matches = tool.check(line)
-
-            #corrected_line = language_tool_python.utils.correct(line, matches)       
-
-            # Copy the content of line to temp_line
-            temp_line = line
-
             # Use language tool to check and correct the line
             matches = tool.check(line)
             corrected_line = language_tool_python.utils.correct(line, matches)
-
-            # Double check with the corrected_line
-            if temp_line and temp_line[0].islower() and corrected_line[0].isupper():
-                corrected_line = corrected_line[0].lower() + corrected_line[1:]
-
-            corrected_lines.append(corrected_line)    
+            corrected_lines.append(corrected_line)
 
     # Write the corrected lines back to the SRT file
     with open(srt_file_path, 'w', encoding='utf-8') as file:
         file.writelines(corrected_lines)
+
 
 def convert_textgrid_to_srt(textgrid_file_path, srt_file_path):
     global enter #Declare enter as global
@@ -335,153 +315,123 @@ def convert_textgrid_to_srt(textgrid_file_path, srt_file_path):
     
 
 
-# Modified 'fragment_and_align_transcript' function
-def fragment_and_align_transcript(transcription, start_time, batch_dir, new_file_flag):
-    # Initialize static variable for file numbering
-    if not hasattr(fragment_and_align_transcript, "next_file_number") or new_file_flag:
+def fragment_and_align_transcript(transcription, file_path,start_time,run_folder_dir,new_file_flag):    
+    # Check if file_path is actually a file path and get the directory part
+    if os.path.isfile(file_path):
+        file_path = os.path.dirname(file_path)
+
+    # Construct the directory path for segmented files based on file_path
+    segmented_dir = os.path.join(run_folder_dir, "text_segmented")
+    os.makedirs(segmented_dir, exist_ok=True)
+
+    # Directory setup for audio_segmented
+    audio_segmented_dir = os.path.join(run_folder_dir, "audio_segmented")
+    os.makedirs(audio_segmented_dir, exist_ok=True)
+
+    # Initialize the static variable if it doesn't exist
+    if not hasattr(fragment_and_align_transcript, "next_file_number") or new_file_flag==True:
         fragment_and_align_transcript.next_file_number = 1
+        new_file_flag=False
     else:
+        # Increment the file number for each call
         fragment_and_align_transcript.next_file_number += 1
 
-    # Segment the transcription into sentences
-    doc = nlp(transcription)
-    sentences = [sent.text.strip() for sent in doc.sents]
+    # Segment the transcription into groups of words
+    # Directly segment the entire transcription using the updated segment_text_with_spacy function
+    segmented_sentences = segment_text_with_spacy(transcription, 8)
 
-
-    # Write sentences to a new file in the batch directory
-    segment_filename = f"audio_{fragment_and_align_transcript.next_file_number}.txt"
-    segment_file_path = os.path.join(batch_dir, segment_filename)
+    # Write all segments to a new file, each on a new line
+    segment_file_path = os.path.join(segmented_dir, f"segment_{fragment_and_align_transcript.next_file_number}.txt")
     with open(segment_file_path, 'w', encoding='utf-8') as file:
-        for sentence in sentences:
-            # Segment each sentence if it's longer than 42 characters using spaCy
-            segmented_sentences = segment_text_with_spacy(sentence, 42)
-            for segment in segmented_sentences:
-                file.write(segment + '\n')
+        for segment in segmented_sentences:
+            file.write(segment + '\n')  # Write each segment on a new line
 
-    # # Write start_time to mfa_time_log.txt in the run folder
-    time_log_path = os.path.join(run_folder_dir, "mfa_time_log.txt")
-    with open(time_log_path, "a") as log_file:
-        log_file.write(f"{start_time}\n")
-    
+                
+    # Assuming audio_file_path is defined here, pointing to the correct .wav file in audio_segmented
+    audio_file_path = os.path.join(audio_segmented_dir, f"audio_{fragment_and_align_transcript.next_file_number}.wav")
+    #new_audio_path = os.path.join(audio_segmented_dir, f"audio_{fragment_and_align_transcript.next_file_number}_temp.wav")
 
-# Define run_folder_dir as the "run" folder in the current directory
-run_folder_dir = os.path.join(os.getcwd(), "run")
+    """
+    # Convert the audio file to mono and 16kHz, overwriting the original file
+    ffmpeg_command = [
+    'ffmpeg',
+    '-i', audio_file_path,  # Input file
+    '-ac', '1',  # Set audio channels to 1 (mono)
+    '-ar', '16000',  # Set audio sampling rate to 16000 Hz
+    '-y',  # Overwrite output file without asking
+    new_audio_path  # Output file (same as input to overwrite)
+    ]
+    subprocess.run(ffmpeg_command, check=True)
 
-# Define batch_text_dir as the "batch_text" folder inside the run folder
-batch_text_dir = os.path.join(run_folder_dir, "batch_text")
-os.makedirs(batch_text_dir, exist_ok=True)
-            
-#Define audio_path as the path to the audio file
-audio_path = os.path.join(run_folder_dir, "temp_converted_audio.wav")
+    # Delete the original audio file
+    os.remove(audio_file_path)
 
-# Function to process each batch
-def process_batch(batch_segments, batch_number):
-    batch_dir = os.path.join(batch_text_dir, f"batch_{batch_number}")
-    new_file_flag = True  # Reset file numbering for each batch
-
-    for idx, (turn, _, _) in enumerate(batch_segments):
-        start_time = turn.start
-        end_time = turn.end
-        segment_time = end_time - start_time
-
-        if segment_time < 1:
-            continue
-        
-        print("Processing segment:", idx + 1)
-        # Extract audio segment
-        audio_segment_path = extract_audio_segment(audio_path, start_time, end_time, batch_dir, new_file_flag)
-
-        # Transcribe audio segment
-        content = transcribe_audio(audio_segment_path)
-
-        if content:
-            print("Fragmented and aligned transcript...")
-            fragment_and_align_transcript(content, start_time, batch_dir, new_file_flag)
-            new_file_flag = False
-
-        # Remove temporary audio segment
-        # os.remove(audio_segment_path)
-
-    print(f"Batch {batch_number} processing completed.")
-
-def detect_speech_segments(file_path,run_folder_dir):
-    # Convert the audio file to 16000 Hz and mono
-    audio = AudioSegment.from_file(file_path)
-    audio = audio.set_frame_rate(16000).set_channels(1)
-    
-    # Save the converted audio to a temporary file
-    temp_file_path = os.path.join(run_folder_dir, "temp_converted_audio.wav")
-    audio.export(temp_file_path, format="wav")
-
-    # Use Demucs to separate vocals from background music
-    #subprocess.run(["demucs", "-o", run_folder_dir, temp_file_path], check=True)
-
-    #temp_file_path = os.path.join(run_folder_dir, "htdemucs", "temp_converted_audio", "vocals.wav")
-    print('Starting diarization')
-    print(temp_file_path)
-
-    # Process the converted audio file with the pipeline to get diarization results
-    diarization = pipeline(temp_file_path)
-    print('Diarization completed')    
-    
-    # Collect all segments from diarization
-    segments = [(turn, _, _) for turn, _, _ in diarization.itertracks(yield_label=True)]
-
-    # Number of threads/batches
-    num_processes = 20
-
-    # Calculate number of segments per batch
-    num_segments = len(segments)
-    segments_per_batch = num_segments // num_processes
-    remainder = num_segments % num_processes
-
-    # Create batch folders
-    batch_text_dir = os.path.join(run_folder_dir, "batch_text")
-    os.makedirs(batch_text_dir, exist_ok=True)
-
-    batches = []
-    start_idx = 0
-    for i in range(num_processes):
-        # Calculate batch size
-        if i < remainder:
-            batch_size = segments_per_batch + 1
-        else:
-            batch_size = segments_per_batch
-
-        batch_segments = segments[start_idx:start_idx + batch_size]
-        batches.append(batch_segments)  # Include batch number
-        start_idx += batch_size
-
-        # Create batch folder
-        batch_dir = os.path.join(batch_text_dir, f"batch_{i+1}")
-        os.makedirs(batch_dir, exist_ok=True)
-
-    # Process batches concurrently using multiprocessing
-    with multiprocessing.Pool(processes=num_processes) as pool:
-        pool.starmap(process_batch, [(batches[i], i + 1) for i in range(num_processes)])
-
-    # After all batches are processed, renumber files and copy to final_segmented folder
+    # Rename the temporary file to the original file name
+    os.rename(new_audio_path, audio_file_path)
+    """
+    # Directory setup for final_segmented
     final_segmented_dir = os.path.join(run_folder_dir, "final_segmented")
     os.makedirs(final_segmented_dir, exist_ok=True)
 
-    file_counter = 1
-    for i in range(num_processes):
-        batch_dir = os.path.join(batch_text_dir, f"batch_{i+1}")
-        text_files = sorted([f for f in os.listdir(batch_dir) if f.endswith('.txt')])
+    # Move the .txt and corresponding .wav files to the final_segmented directory
+    new_txt_path = os.path.join(final_segmented_dir, f"audio_{fragment_and_align_transcript.next_file_number}.txt")
+    new_audio_path = os.path.join(final_segmented_dir, f"audio_{fragment_and_align_transcript.next_file_number}.wav")
+    shutil.copy(segment_file_path, new_txt_path)
+    # Assuming audio_file_path is defined and points to the correct .wav file
+    shutil.copy(audio_file_path, new_audio_path)
 
-        for text_file in text_files:
-            # Copy and rename text file
-            src_text_path = os.path.join(batch_dir, text_file)
-            dst_text_path = os.path.join(final_segmented_dir, f"audio_{file_counter}.txt")
-            shutil.copy(src_text_path, dst_text_path)
+    # Write start_time to mfa_time_log.txt
+    time_log_path = os.path.join(run_folder_dir, "mfa_time_log.txt")
+    with open(time_log_path, "a") as log_file:
+        log_file.write(f"{start_time}\n")
 
-            # Copy and rename corresponding audio file
-            audio_file = text_file.replace('.txt', '.wav')
-            src_audio_path = os.path.join(batch_dir, audio_file)
-            dst_audio_path = os.path.join(final_segmented_dir, f"audio_{file_counter}.wav")
-            shutil.copy(src_audio_path, dst_audio_path)
+    print(f"Segmented and aligned transcript {fragment_and_align_transcript.next_file_number}.")
+    
 
-            file_counter += 1
+def detect_speech_segments(file_path,run_folder_dir):
+    print('Starting diarization')
+    print(file_path)
+    # Process the audio file with the pipeline to get diarization results
+    diarization = pipeline(file_path)
+    print('Diarization completed')
+  
+
+    # Count the number of segments detected by pyannote
+    segment_count = sum(1 for _ in diarization.itertracks(yield_label=True))
+    print(f"Total number of segments detected by pyannote: {segment_count}")
+
+    new_file_flag=True
+    # Iterate over each speech turn in the diarization result
+    for turn, _, _ in diarization.itertracks(yield_label=True):
+        # Extract the start and end times of the current speech segment
+        start_time = turn.start
+        end_time = turn.end
+        segment_time=end_time-start_time
+        # Convert the segment into a format suitable for the Whisper model
+        # For example, extract the segment from the original audio file
+        # This step depends on how you plan to extract and transcribe the segments
+        # Assuming a function `extract_audio_segment` that takes the file path,
+        # start time, end time, and returns a path to the extracted segment
+
+        if segment_time<1:
+            continue
+        # Extract the audio segment and save it as length_test.wav
+        audio_segment=AudioSegment.from_file(file_path)
+        audio_segment=audio_segment[start_time*1000:end_time*1000]
+        audio_segment_path = os.path.join(run_folder_dir, "length_test.wav")
+        audio_segment.export(audio_segment_path, format="wav")
+
+        content=transcribe_audio(audio_segment_path)
+
+        if content:
+            segment_path = extract_audio_segment(file_path, start_time, end_time, run_folder_dir,new_file_flag)
+            transcription = transcribe_audio(segment_path)
+            fragment_and_align_transcript(transcription, file_path,start_time,run_folder_dir,new_file_flag)
+            new_file_flag=False
+
+        #Delete the length test.wav file
+        os.remove(audio_segment_path)
+               
 
     print("Created all segmentation!")
     # Get the directory of the current script
@@ -511,27 +461,16 @@ def detect_speech_segments(file_path,run_folder_dir):
         '--retry_beam', '220',  # Retry beam size
     ]
 
-    #startupinfo = subprocess.STARTUPINFO()
-    #startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
-    #startupinfo.wShowWindow = subprocess.SW_HIDE
-
     subprocess.run(mfa_command, check=True)
-
     
     # Convert the .textgrid files to .srt files and save them in the sub_segmented folder
     sub_segmented_dir = os.path.join(run_folder_dir, "sub_segmented")
     os.makedirs(sub_segmented_dir, exist_ok=True)
 
-
     # Read the initial times from mfa_time_log.txt
     time_log_path = os.path.join(run_folder_dir, "mfa_time_log.txt")
     with open(time_log_path, "r") as log_file:
         initial_times = log_file.readlines()
-
-    # Convert times to floats and sort them in ascending order
-    initial_times = [float(time.strip()) for time in initial_times]
-    initial_times.sort()
-    
 
     # Traverse through the files in final_segmented directory
     srt_number=1
@@ -561,15 +500,11 @@ def detect_speech_segments(file_path,run_folder_dir):
     
 
 def generate_srt(audio_file_path, output_srt_path):
-    # Get the directory where the script is currently running
-    current_working_dir = os.path.dirname(os.path.abspath(__file__))
-    run_folder_dir = os.path.join(current_working_dir, "run")
-    
-    #run_folder_dir='D:\\run'
+    if os.path.exists("run"):
+        shutil.rmtree("run")
 
-    if os.path.exists(run_folder_dir):
-        shutil.rmtree(run_folder_dir)
-
+    current_working_dir = os.getcwd()
+    run_folder_dir=os.path.join(current_working_dir, "run")
     os.makedirs(run_folder_dir, exist_ok=True)
 
     print("Speaker diarization in progress...")
@@ -617,7 +552,7 @@ def generate_srt(audio_file_path, output_srt_path):
     check_overlapping_entries(output_srt_path)
 
     print("SRT file generated successfully!")
-    #shutil.rmtree("run")
+    shutil.rmtree("run")
 
 # Example usage
 if __name__ == "__main__":
