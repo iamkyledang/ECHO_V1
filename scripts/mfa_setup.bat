@@ -16,7 +16,7 @@ REM Define the content to write to the global_config.yaml file
     echo auto_server: true
     echo blas_num_threads: 1
     echo bytes_limit: 400000000.0
-    echo clean: false
+    echo clean: true
     echo cleanup_textgrids: true
     echo database_limited_mode: false
     echo debug: false
