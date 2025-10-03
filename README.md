@@ -1,8 +1,5 @@
 # ECHO_V1 Subtitle Generator
 
-## Introduction
-[Watch here](https://www.youtube.com/watch?v=2_qOoMRNuGI) for an introduction to the software.
-
 ## Project Overview
 
 ECHO_V1 is an offline video subtitle generator that extracts embedded speech from videos and outputs subtitles in SRT file format. Designed for simplicity and accuracy, it provides high-quality subtitle generation using advanced speech processing technologies.
