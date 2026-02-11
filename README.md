@@ -2,10 +2,7 @@
 
 ECHO_V1 is an offline subtitle generator that combines Voice Activity Detection (VAD), speaker diarization, and speech-to-text to create SRT subtitle files from video content. It is designed to run locally for privacy and to produce time-aligned, high-quality subtitles.
 
-[Demo video](https://drive.google.com/file/d/1AYn8jPrrvCwohab1q418Y8J2un8wrq2U/view?usp=sharing)
-
----
-
+[Link to demo video](https://drive.google.com/file/d/1AYn8jPrrvCwohab1q418Y8J2un8wrq2U/view?usp=sharing)
 
 ---
 
