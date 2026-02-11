@@ -1,0 +1,688 @@
+1
+00:00:01,960 --> 00:00:04,020
+Imagine a future where your toaster
+
+2
+00:00:04,020 --> 00:00:06,460
+anticipates what kind of toast you want.
+
+3
+00:00:07,100 --> 00:00:09,400
+During the day, it scans the internet for
+
+4
+00:00:09,400 --> 00:00:11,000
+new and exciting types of toast.
+
+5
+00:00:11,640 --> 00:00:13,880
+Maybe it asks you about your day and wants
+
+6
+00:00:13,880 --> 00:00:15,840
+to chat about new achievements in toast
+
+7
+00:00:15,840 --> 00:00:16,520
+technology.
+
+8
+00:00:17,380 --> 00:00:19,460
+At what level would it become a person?
+
+9
+00:00:20,140 --> 00:00:22,120
+At which point will you ask yourself if
+
+10
+00:00:22,120 --> 00:00:23,380
+your toaster has feelings?
+
+11
+00:00:24,100 --> 00:00:24,700
+If it did,
+
+12
+00:00:25,100 --> 00:00:26,860
+would unplugging it be murder?
+
+13
+00:00:27,260 --> 00:00:28,560
+And would you still own it?
+
+14
+00:00:29,220 --> 00:00:31,360
+Will we someday be forced to give our
+
+15
+00:00:31,360 --> 00:00:32,500
+machines rights?
+
+16
+00:00:42,940 --> 00:00:45,020
+AI is already all around you.
+
+17
+00:00:45,460 --> 00:00:47,540
+It makes sure discounters are stocked with
+
+18
+00:00:47,540 --> 00:00:48,080
+enough snacks,
+
+19
+00:00:48,520 --> 00:00:50,120
+it serves you up just the right internet
+
+20
+00:00:50,120 --> 00:00:52,440
+ad, and you may have even read a new story
+
+21
+00:00:52,440 --> 00:00:54,200
+written entirely by a machine.
+
+22
+00:00:54,980 --> 00:00:57,560
+Right now, we look at chatbots like Siri
+
+23
+00:00:57,560 --> 00:00:59,600
+and laugh at their primitive simulated
+
+24
+00:00:59,600 --> 00:01:00,160
+emotions,
+
+25
+00:01:00,800 --> 00:01:03,020
+but it's likely that we will have to deal
+
+26
+00:01:03,020 --> 00:01:04,980
+with beings that make it hard to draw the
+
+27
+00:01:04,980 --> 00:01:07,560
+line between real and simulated humanity.
+
+28
+00:01:08,720 --> 00:01:10,960
+Are there any machines in existence that
+
+29
+00:01:10,960 --> 00:01:11,720
+deserve rights?
+
+30
+00:01:12,480 --> 00:01:14,040
+Most likely, not yet.
+
+31
+00:01:14,640 --> 00:01:17,280
+But if they come, we are not prepared for
+
+32
+00:01:17,280 --> 00:01:17,460
+it.
+
+33
+00:01:18,280 --> 00:01:20,520
+Much of the philosophy of rights is ill
+
+34
+00:01:20,520 --> 00:01:21,900
+-equipped to deal with the case of
+
+35
+00:01:21,900 --> 00:01:24,660
+artificial intelligence. Most claims for
+
+36
+00:01:24,660 --> 00:01:26,820
+rights, whether human or animal, are
+
+37
+00:01:26,820 --> 00:01:28,380
+centered around the question of
+
+38
+00:01:28,380 --> 00:01:28,900
+consciousness.
+
+39
+00:01:29,680 --> 00:01:30,320
+Unfortunately,
+
+40
+00:01:30,740 --> 00:01:32,440
+nobody knows what consciousness is.
+
+41
+00:01:33,100 --> 00:01:34,340
+Some think that it's immaterial,
+
+42
+00:01:34,840 --> 00:01:36,900
+others say it's a state of matter, like
+
+43
+00:01:36,900 --> 00:01:37,840
+gas or liquid.
+
+44
+00:01:39,080 --> 00:01:40,880
+Regardless of the precise definition,
+
+45
+00:01:41,300 --> 00:01:43,020
+we have an intuitive knowledge of
+
+46
+00:01:43,020 --> 00:01:45,220
+consciousness because we experience it.
+
+47
+00:01:45,800 --> 00:01:47,560
+We're aware of ourselves and our
+
+48
+00:01:47,560 --> 00:01:50,060
+surroundings and know what unconsciousness
+
+49
+00:01:50,060 --> 00:01:50,640
+feels like.
+
+50
+00:01:51,900 --> 00:01:53,900
+Some neuroscientists believe that any
+
+51
+00:01:53,900 --> 00:01:56,240
+sufficiently advanced system can generate
+
+52
+00:01:56,240 --> 00:01:56,760
+consciousness.
+
+53
+00:01:57,700 --> 00:01:59,800
+So if your toaster's hardware was powerful
+
+54
+00:01:59,800 --> 00:02:01,740
+enough, it may become self-aware.
+
+55
+00:02:02,880 --> 00:02:03,420
+If it does,
+
+56
+00:02:03,880 --> 00:02:04,860
+would it deserve rights?
+
+57
+00:02:05,840 --> 00:02:06,960
+Well, not so fast.
+
+58
+00:02:07,660 --> 00:02:10,240
+Would what we define as rights make sense
+
+59
+00:02:10,240 --> 00:02:10,640
+to it?
+
+60
+00:02:11,820 --> 00:02:13,860
+Consciousness entitles begins to have
+
+61
+00:02:13,860 --> 00:02:15,640
+rights because it gives a being the
+
+62
+00:02:15,640 --> 00:02:18,420
+ability to suffer. It means the ability to
+
+63
+00:02:18,420 --> 00:02:21,100
+not only feel pain, but to be aware of it.
+
+64
+00:02:22,100 --> 00:02:23,320
+Robots don't suffer,
+
+65
+00:02:23,820 --> 00:02:26,080
+and they probably won't unless we program
+
+66
+00:02:26,080 --> 00:02:26,580
+them too.
+
+67
+00:02:27,560 --> 00:02:28,700
+Without pain or pleasure,
+
+68
+00:02:29,140 --> 00:02:29,940
+there's no preference,
+
+69
+00:02:30,340 --> 00:02:31,540
+and rights are meaningless.
+
+70
+00:02:32,860 --> 00:02:35,720
+Our human rights are deeply tied to our
+
+71
+00:02:35,720 --> 00:02:36,380
+own programming.
+
+72
+00:02:37,220 --> 00:02:39,460
+For example, we dislike pain because our
+
+73
+00:02:39,460 --> 00:02:42,220
+brains evolved to keep us alive, to stop
+
+74
+00:02:42,220 --> 00:02:44,620
+us from touching a hot fire or to make us
+
+75
+00:02:44,620 --> 00:02:45,680
+run away from predators.
+
+76
+00:02:46,300 --> 00:02:48,980
+So we came up with rights that protect us
+
+77
+00:02:48,980 --> 00:02:50,640
+from infringements that cause us pain.
+
+78
+00:02:51,440 --> 00:02:54,240
+Even more abstract rights like freedom are
+
+79
+00:02:54,240 --> 00:02:56,600
+rooted in the way our brains are wired to
+
+80
+00:02:56,600 --> 00:02:58,800
+detect what is fair and unfair.
+
+81
+00:02:59,700 --> 00:03:02,180
+Would a toaster that is unable to move
+
+82
+00:03:02,180 --> 00:03:04,040
+mind being locked in a cage?
+
+83
+00:03:04,660 --> 00:03:07,160
+Would it mind being dismantled if it had
+
+84
+00:03:07,160 --> 00:03:09,920
+no fear of death? Would it mind being
+
+85
+00:03:09,920 --> 00:03:12,140
+insulted if it had no need for self
+
+86
+00:03:12,140 --> 00:03:12,480
+-esteem?
+
+87
+00:03:13,700 --> 00:03:15,880
+But what if we programmed a robot to feel
+
+88
+00:03:15,880 --> 00:03:16,700
+pain and emotions?
+
+89
+00:03:17,580 --> 00:03:19,340
+To prefer justice to injustice,
+
+90
+00:03:19,820 --> 00:03:21,940
+pleasure over pain, and be aware of it?
+
+91
+00:03:22,440 --> 00:03:24,220
+Would that make them sufficiently human?
+
+92
+00:03:25,020 --> 00:03:27,180
+Many technologists believe that an
+
+93
+00:03:27,180 --> 00:03:29,440
+explosion in technology will occur when
+
+94
+00:03:29,440 --> 00:03:31,720
+artificial intelligence can learn and
+
+95
+00:03:31,720 --> 00:03:33,920
+create their own artificial intelligences
+
+96
+00:03:33,920 --> 00:03:35,560
+even smarter than themselves.
+
+97
+00:03:36,240 --> 00:03:39,020
+At this point, the question of how robots
+
+98
+00:03:39,020 --> 00:03:41,040
+are programmed will be largely out of our
+
+99
+00:03:41,040 --> 00:03:41,480
+control.
+
+100
+00:03:42,600 --> 00:03:44,640
+What if artificial intelligence found
+
+101
+00:03:44,640 --> 00:03:46,640
+it necessary to program the ability to
+
+102
+00:03:46,640 --> 00:03:49,020
+feel pain just as evolutionary biology
+
+103
+00:03:49,020 --> 00:03:50,820
+found it necessary in most living
+
+104
+00:03:50,820 --> 00:03:51,240
+creatures?
+
+105
+00:03:52,000 --> 00:03:53,940
+Do robots deserve those rights?
+
+106
+00:03:55,060 --> 00:03:57,100
+But maybe we should be less worried about
+
+107
+00:03:57,100 --> 00:03:58,820
+the risk that super-intelligent robots
+
+108
+00:03:58,820 --> 00:04:00,900
+pose to us and more worried about the
+
+109
+00:04:00,900 --> 00:04:02,060
+danger we pose to them.
+
+110
+00:04:02,680 --> 00:04:05,360
+Our whole human identity is based on the
+
+111
+00:04:05,360 --> 00:04:07,960
+idea of human exceptionalism that we are
+
+112
+00:04:07,960 --> 00:04:10,400
+special, unique snowflakes entitled to
+
+113
+00:04:10,400 --> 00:04:11,720
+dominate the natural world.
+
+114
+00:04:12,600 --> 00:04:14,520
+Humans have a history of denying that
+
+115
+00:04:14,520 --> 00:04:16,700
+other beings are capable of suffering as
+
+116
+00:04:16,700 --> 00:04:17,140
+they do.
+
+117
+00:04:17,820 --> 00:04:19,620
+In the midst of the scientific revolution,
+
+118
+00:04:20,080 --> 00:04:21,840
+many Descartes argued that animals were
+
+119
+00:04:21,840 --> 00:04:24,160
+mere automata, robots if you will.
+
+120
+00:04:25,000 --> 00:04:27,380
+As such, injuring a rabbit was about as
+
+121
+00:04:27,380 --> 00:04:29,320
+morally repugnant as punching a stuffed
+
+122
+00:04:29,320 --> 00:04:32,060
+animal. And many of the greatest crimes
+
+123
+00:04:32,060 --> 00:04:34,480
+against humanity were justified by their
+
+124
+00:04:34,480 --> 00:04:36,180
+perpetrators on the grounds that the
+
+125
+00:04:36,180 --> 00:04:38,400
+victims were more animal than civilized
+
+126
+00:04:38,400 --> 00:04:38,660
+human.
+
+127
+00:04:39,700 --> 00:04:42,140
+Even more problematic is that we have an
+
+128
+00:04:42,140 --> 00:04:44,720
+economic interest in denying robot rights.
+
+129
+00:04:45,340 --> 00:04:47,940
+If we can coerce a sentient AI possibly
+
+130
+00:04:47,940 --> 00:04:50,160
+through programmed torture into doing as
+
+131
+00:04:50,160 --> 00:04:50,600
+we please,
+
+132
+00:04:51,100 --> 00:04:52,900
+the economic potential is unlimited.
+
+133
+00:04:53,960 --> 00:04:55,500
+We've done it before, after all.
+
+134
+00:04:56,060 --> 00:04:58,200
+Violence has been used to force our fellow
+
+135
+00:04:58,200 --> 00:05:00,740
+humans into working and we've never had
+
+136
+00:05:00,740 --> 00:05:02,220
+trouble coming up with ideological
+
+137
+00:05:02,220 --> 00:05:03,320
+justifications.
+
+138
+00:05:04,620 --> 00:05:07,340
+Slave owners argued that slavery benefited
+
+139
+00:05:07,340 --> 00:05:08,000
+the slaves.
+
+140
+00:05:08,580 --> 00:05:10,320
+It put a roof over their head and taught
+
+141
+00:05:10,320 --> 00:05:10,880
+them Christianity.
+
+142
+00:05:12,140 --> 00:05:14,400
+Men who were against women voting argued
+
+143
+00:05:14,400 --> 00:05:16,260
+that it was in women's own interest to
+
+144
+00:05:16,260 --> 00:05:17,840
+leave the hard decisions to men.
+
+145
+00:05:19,200 --> 00:05:21,380
+Farmers argued that looking after animals
+
+146
+00:05:21,380 --> 00:05:23,580
+and feeding them justifies their early
+
+147
+00:05:23,580 --> 00:05:25,180
+death for our dietary preferences.
+
+148
+00:05:27,300 --> 00:05:29,260
+If robots become sentient,
+
+149
+00:05:29,720 --> 00:05:31,460
+there will be no shortage of arguments for
+
+150
+00:05:31,460 --> 00:05:32,840
+those who say that they should remain
+
+151
+00:05:32,840 --> 00:05:35,180
+without rights, especially from those who
+
+152
+00:05:35,180 --> 00:05:36,300
+stand to profit from it.
+
+153
+00:05:37,800 --> 00:05:39,920
+Artificial intelligence raises serious
+
+154
+00:05:39,920 --> 00:05:41,880
+questions about philosophical boundaries.
+
+155
+00:05:42,500 --> 00:05:44,780
+While we may ask if sentient robots are
+
+156
+00:05:44,780 --> 00:05:47,000
+conscious or deserving of rights, it
+
+157
+00:05:47,000 --> 00:05:49,200
+forces us to pose basic questions like,
+
+158
+00:05:49,620 --> 00:05:50,460
+what makes us human?
+
+159
+00:05:51,220 --> 00:05:52,860
+What makes us deserving of rights?
+
+160
+00:05:54,640 --> 00:05:56,840
+Regardless of what we think, the question
+
+161
+00:05:56,840 --> 00:05:58,460
+might need to be resolved in the near
+
+162
+00:05:58,460 --> 00:05:58,780
+future.
+
+163
+00:05:59,640 --> 00:06:01,640
+What are we going to do if robots start
+
+164
+00:06:01,640 --> 00:06:03,060
+demanding their own rights?
+
+165
+00:06:06,960 --> 00:06:09,240
+What can robots demanding rights teach us
+
+166
+00:06:09,240 --> 00:06:11,960
+about ourselves? Our friends at Wisecrack
+
+167
+00:06:11,960 --> 00:06:13,920
+made a video exploring this very question
+
+168
+00:06:13,920 --> 00:06:15,920
+using the philosophy of West world.
+
+169
+00:06:17,280 --> 00:06:19,700
+Wisecrack dissects pop culture in a unique
+
+170
+00:06:19,700 --> 00:06:20,900
+and philosophical way.
+
+171
+00:06:21,360 --> 00:06:23,040
+Click here to check out their video and
+
+172
+00:06:23,040 --> 00:06:24,080
+subscribe to their channel.
+

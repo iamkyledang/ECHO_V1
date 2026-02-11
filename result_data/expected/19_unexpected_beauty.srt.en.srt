@@ -1,0 +1,6380 @@
+1
+00:00:00,160 --> 00:00:04,799
+welcome everyone it's my uh pleasure to
+
+2
+00:00:02,720 --> 00:00:07,080
+uh welcome all of you to uh Professor
+
+3
+00:00:04,799 --> 00:00:09,240
+David Patterson's talk uh David
+
+4
+00:00:07,080 --> 00:00:11,160
+Patterson probably needs no introduction
+
+5
+00:00:09,240 --> 00:00:13,120
+uh he's been a professor of computer
+
+6
+00:00:11,160 --> 00:00:16,520
+science at uh University of California
+
+7
+00:00:13,120 --> 00:00:18,480
+Berkeley for 40 years now and uh he's
+
+8
+00:00:16,520 --> 00:00:20,960
+made a lot of pioneering contributions
+
+9
+00:00:18,480 --> 00:00:22,439
+in computer systems a lot of which are
+
+10
+00:00:20,960 --> 00:00:24,920
+Technologies we use at Google and
+
+11
+00:00:22,439 --> 00:00:27,119
+elsewhere so risk uh reduce instruction
+
+12
+00:00:24,920 --> 00:00:29,560
+at computers uh raid network of
+
+13
+00:00:27,119 --> 00:00:32,160
+workstations and a lot more uh he has a
+
+14
+00:00:29,560 --> 00:00:34,840
+pretty long bio here I didn't realize he
+
+15
+00:00:32,160 --> 00:00:37,200
+has won 35 Awards and all of them are
+
+16
+00:00:34,840 --> 00:00:38,559
+pretty prestigious uh National Academy
+
+17
+00:00:37,200 --> 00:00:40,360
+of engineering National Academy of
+
+18
+00:00:38,559 --> 00:00:43,879
+Sciences Silicon Valley Engineering all
+
+19
+00:00:40,360 --> 00:00:45,719
+of Fame I E1 nman medal and I'm sure I'm
+
+20
+00:00:43,879 --> 00:00:47,199
+offending some significant award by not
+
+21
+00:00:45,719 --> 00:00:49,800
+saying that but uh he's had a very
+
+22
+00:00:47,199 --> 00:00:52,640
+distinguished career and this talk today
+
+23
+00:00:49,800 --> 00:00:53,960
+uh in his own words uh collects advice
+
+24
+00:00:52,640 --> 00:00:55,960
+that I wish I had been given when I
+
+25
+00:00:53,960 --> 00:00:57,600
+started my career and given how
+
+26
+00:00:55,960 --> 00:00:59,399
+distinguished that's been uh I think
+
+27
+00:00:57,600 --> 00:01:02,079
+it's a talk we are all going to uh
+
+28
+00:00:59,399 --> 00:01:06,200
+benefit from so welcome well uh this is
+
+29
+00:01:02,079 --> 00:01:08,439
+a what happened is I uh decided uh uh
+
+30
+00:01:06,200 --> 00:01:09,640
+somebody wrote me these slides about how
+
+31
+00:01:08,439 --> 00:01:11,320
+to have a bad career been out there for
+
+32
+00:01:09,640 --> 00:01:13,320
+a long time and they asked me if there
+
+33
+00:01:11,320 --> 00:01:15,280
+was a video of it and I couldn't find
+
+34
+00:01:13,320 --> 00:01:17,000
+one uh I actually figured out that I
+
+35
+00:01:15,280 --> 00:01:18,840
+gave this talk first 20 years ago but
+
+36
+00:01:17,000 --> 00:01:21,400
+I've given it over the years so I
+
+37
+00:01:18,840 --> 00:01:23,400
+decided to record it at Berkeley and it
+
+38
+00:01:21,400 --> 00:01:25,759
+ended up and I announced that my plans
+
+39
+00:01:23,400 --> 00:01:28,400
+to retire that went two days before this
+
+40
+00:01:25,759 --> 00:01:30,360
+so uh it it got a lot of visibility so
+
+41
+00:01:28,400 --> 00:01:33,200
+and it's fun to come here as as far as I
+
+42
+00:01:30,360 --> 00:01:35,280
+can tell all of my oh yeah sorry as far
+
+43
+00:01:33,200 --> 00:01:37,600
+as I can tell
+
+44
+00:01:35,280 --> 00:01:39,479
+on all of my former students are going
+
+45
+00:01:37,600 --> 00:01:41,360
+to end up here
+
+46
+00:01:39,479 --> 00:01:42,960
+sometime also have to ask them if
+
+47
+00:01:41,360 --> 00:01:44,799
+they're leaving where they are I know
+
+48
+00:01:42,960 --> 00:01:47,240
+where they're ending up and so it's it's
+
+49
+00:01:44,799 --> 00:01:48,840
+it feels like it's a home week here as I
+
+50
+00:01:47,240 --> 00:01:52,799
+said this is the advice I wish I would
+
+51
+00:01:48,840 --> 00:01:56,560
+have had uh in my uh career uh this got
+
+52
+00:01:52,799 --> 00:01:58,560
+started uh I got about 30 years ago uh
+
+53
+00:01:56,560 --> 00:02:00,759
+decided want to give advice on talk so I
+
+54
+00:01:58,560 --> 00:02:02,320
+wrote how to give a bad talk talk and
+
+55
+00:02:00,759 --> 00:02:04,880
+that was a lot of fun and about 10 years
+
+56
+00:02:02,320 --> 00:02:07,159
+later how to have a bad career and and
+
+57
+00:02:04,880 --> 00:02:09,560
+uh about a couple years ago I did how to
+
+58
+00:02:07,159 --> 00:02:10,879
+have a bad Research Center so this is my
+
+59
+00:02:09,560 --> 00:02:13,920
+bad
+
+60
+00:02:10,879 --> 00:02:16,800
+series uh now I'm just going to put the
+
+61
+00:02:13,920 --> 00:02:18,280
+uh if you're interested uh these slides
+
+62
+00:02:16,800 --> 00:02:21,239
+are certainly available as well as the
+
+63
+00:02:18,280 --> 00:02:22,560
+talk and there's a lot of papers and
+
+64
+00:02:21,239 --> 00:02:24,480
+things that you can site if you want to
+
+65
+00:02:22,560 --> 00:02:26,959
+read more about it and I'd like to thank
+
+66
+00:02:24,480 --> 00:02:28,640
+a bunch of people for making suggestions
+
+67
+00:02:26,959 --> 00:02:31,519
+that I've incorporated or their careers
+
+68
+00:02:28,640 --> 00:02:35,360
+inspired them one of those of those two
+
+69
+00:02:31,519 --> 00:02:36,920
+uh so uh the parts there's two parts to
+
+70
+00:02:35,360 --> 00:02:38,680
+the talk the kind of tongue and cheek
+
+71
+00:02:36,920 --> 00:02:40,120
+how to have a bad career and then how to
+
+72
+00:02:38,680 --> 00:02:42,680
+avoid a bad career and then I'll open up
+
+73
+00:02:40,120 --> 00:02:44,640
+for questions and answers and then I'll
+
+74
+00:02:42,680 --> 00:02:46,440
+wrap things up whenever we have to wrap
+
+75
+00:02:44,640 --> 00:02:49,360
+things up and take the last five or 10
+
+76
+00:02:46,440 --> 00:02:53,000
+minutes talking about my story how I got
+
+77
+00:02:49,360 --> 00:02:55,239
+here and what works for me so uh so you
+
+78
+00:02:53,000 --> 00:02:57,120
+want to be a leader of the field
+
+79
+00:02:55,239 --> 00:02:59,280
+especially if you're an Academia so how
+
+80
+00:02:57,120 --> 00:03:01,519
+could you do that well invent a new
+
+81
+00:02:59,280 --> 00:03:03,159
+field is a really good way to do that
+
+82
+00:03:01,519 --> 00:03:04,680
+and you want to be the only person in
+
+83
+00:03:03,159 --> 00:03:06,959
+that field so how can you invent a field
+
+84
+00:03:04,680 --> 00:03:10,000
+and be the only person
+
+85
+00:03:06,959 --> 00:03:11,440
+uh well one way is you know different
+
+86
+00:03:10,000 --> 00:03:12,920
+from other fields you want to be the
+
+87
+00:03:11,440 --> 00:03:15,120
+Lone Ranger and a way you can be the
+
+88
+00:03:12,920 --> 00:03:18,720
+Lone Ranger the only one is there is
+
+89
+00:03:15,120 --> 00:03:20,959
+your personality can help uh can help if
+
+90
+00:03:18,720 --> 00:03:23,040
+you adopt the Primadonna
+
+91
+00:03:20,959 --> 00:03:24,640
+personality and some people don't know
+
+92
+00:03:23,040 --> 00:03:26,519
+who what a primadonna is but if you
+
+93
+00:03:24,640 --> 00:03:28,159
+adopt that personality nobody will want
+
+94
+00:03:26,519 --> 00:03:29,439
+to work with you and you can drive
+
+95
+00:03:28,159 --> 00:03:30,840
+people away and then you'll be the
+
+96
+00:03:29,439 --> 00:03:33,159
+world's leading expert cuz you're the
+
+97
+00:03:30,840 --> 00:03:35,080
+only one in that field in terms of the
+
+98
+00:03:33,159 --> 00:03:37,959
+research Horizons for your new field you
+
+99
+00:03:35,080 --> 00:03:40,640
+want to be have a lot of flexibility on
+
+100
+00:03:37,959 --> 00:03:44,239
+success uh you know you don't want to
+
+101
+00:03:40,640 --> 00:03:46,680
+get too fine and uh and if you say it's
+
+102
+00:03:44,239 --> 00:03:48,159
+20 years out then you know you got 19
+
+103
+00:03:46,680 --> 00:03:50,640
+safe years right and nobody's going to
+
+104
+00:03:48,159 --> 00:03:52,640
+accuse you of doing engineering work if
+
+105
+00:03:50,640 --> 00:03:55,439
+it's 20 20 years
+
+106
+00:03:52,640 --> 00:03:56,920
+out and uh you know stick to that topic
+
+107
+00:03:55,439 --> 00:03:59,120
+for your whole career now if I'd only
+
+108
+00:03:56,920 --> 00:04:01,560
+followed that advice my dissertation was
+
+109
+00:03:59,120 --> 00:04:03,200
+on micro programming if I'd stuck to
+
+110
+00:04:01,560 --> 00:04:04,879
+this I would absolutely be the world's
+
+111
+00:04:03,200 --> 00:04:06,280
+expert in microprogramming partly
+
+112
+00:04:04,879 --> 00:04:09,400
+because no one's built a computer with
+
+113
+00:04:06,280 --> 00:04:11,519
+micro code in 25 years and you kind of
+
+114
+00:04:09,400 --> 00:04:13,519
+think of it like it's like fashion you
+
+115
+00:04:11,519 --> 00:04:15,200
+like skinny jeans are popular now or
+
+116
+00:04:13,519 --> 00:04:16,519
+they were popular 25 years ago if you
+
+117
+00:04:15,200 --> 00:04:19,280
+just kept them you could reuse your own
+
+118
+00:04:16,519 --> 00:04:21,400
+Gene so research is like that wait
+
+119
+00:04:19,280 --> 00:04:25,720
+they'll come back to
+
+120
+00:04:21,400 --> 00:04:28,000
+you okay uh let complexity be your guide
+
+121
+00:04:25,720 --> 00:04:29,720
+confuse thy enemies the best thing you
+
+122
+00:04:28,000 --> 00:04:31,080
+can say it's so complicated I can't
+
+123
+00:04:29,720 --> 00:04:32,759
+can't understand what you're talking
+
+124
+00:04:31,080 --> 00:04:33,720
+about and that's that that you done a
+
+125
+00:04:32,759 --> 00:04:36,360
+good
+
+126
+00:04:33,720 --> 00:04:37,720
+job one reason is it's easier to claim
+
+127
+00:04:36,360 --> 00:04:39,280
+credit for things if somebody else has
+
+128
+00:04:37,720 --> 00:04:41,160
+done some work you can say well that was
+
+129
+00:04:39,280 --> 00:04:42,320
+in my paper and since they don't
+
+130
+00:04:41,160 --> 00:04:44,039
+understand it how can they contradict
+
+131
+00:04:42,320 --> 00:04:47,320
+you
+
+132
+00:04:44,039 --> 00:04:49,000
+right the other thing that's surprising
+
+133
+00:04:47,320 --> 00:04:50,880
+it's really a lot easier to be
+
+134
+00:04:49,000 --> 00:04:53,240
+complicated you read the first end
+
+135
+00:04:50,880 --> 00:04:54,840
+papers and then it's you figure out the
+
+136
+00:04:53,240 --> 00:04:56,440
+next one and people publish it it's
+
+137
+00:04:54,840 --> 00:04:58,039
+really much harder to be simpler than to
+
+138
+00:04:56,440 --> 00:05:00,720
+be complicated so that's the easy way to
+
+139
+00:04:58,039 --> 00:05:02,440
+do it and this sentence captures it
+
+140
+00:05:00,720 --> 00:05:03,919
+right if it's UNS simple how could you
+
+141
+00:05:02,440 --> 00:05:05,320
+dis sish colleagues departments around
+
+142
+00:05:03,919 --> 00:05:06,720
+the world be positively appreciative and
+
+143
+00:05:05,320 --> 00:05:10,360
+so on so on that there you go that's a
+
+144
+00:05:06,720 --> 00:05:12,400
+way to speak and to talk never be proven
+
+145
+00:05:10,360 --> 00:05:14,080
+wrong the first thing you want to do is
+
+146
+00:05:12,400 --> 00:05:15,720
+don't Implement anything it's hard to
+
+147
+00:05:14,080 --> 00:05:18,240
+prove you wrong if you don't implement
+
+148
+00:05:15,720 --> 00:05:19,960
+it now if some out of control colleague
+
+149
+00:05:18,240 --> 00:05:22,400
+builds something then whatever you do
+
+150
+00:05:19,960 --> 00:05:24,560
+don't run any quantitative experiments
+
+151
+00:05:22,400 --> 00:05:26,440
+if you if they're not quantitative then
+
+152
+00:05:24,560 --> 00:05:29,759
+you can't be proven
+
+153
+00:05:26,440 --> 00:05:31,199
+wrong uh you've got the intuition you
+
+154
+00:05:29,759 --> 00:05:32,600
+can just kind of extrapolate with the
+
+155
+00:05:31,199 --> 00:05:33,400
+results there are put that in without
+
+156
+00:05:32,600 --> 00:05:35,600
+any
+
+157
+00:05:33,400 --> 00:05:37,160
+experiments and you know your job isn't
+
+158
+00:05:35,600 --> 00:05:39,479
+to help the critics you know that's
+
+159
+00:05:37,160 --> 00:05:42,800
+their job to figure out uh don't help
+
+160
+00:05:39,479 --> 00:05:44,479
+them out now uh another reason is that
+
+161
+00:05:42,800 --> 00:05:46,280
+clearly the success of the career is to
+
+162
+00:05:44,479 --> 00:05:49,120
+publish as much as you can and it takes
+
+163
+00:05:46,280 --> 00:05:50,600
+time to build and to uh measure so if
+
+164
+00:05:49,120 --> 00:05:52,479
+you don't do that you can get more
+
+165
+00:05:50,600 --> 00:05:54,919
+results and have a more successful
+
+166
+00:05:52,479 --> 00:05:56,080
+career if somebody does it the last
+
+167
+00:05:54,919 --> 00:05:57,400
+thing you want to do is run any
+
+168
+00:05:56,080 --> 00:06:00,600
+benchmarks because then they could
+
+169
+00:05:57,400 --> 00:06:03,800
+compare your results to other things the
+
+170
+00:06:00,600 --> 00:06:07,280
+uh advice of being
+
+171
+00:06:03,800 --> 00:06:10,319
+uh that uh you've got those those safe
+
+172
+00:06:07,280 --> 00:06:12,560
+years and the benchmarks can
+
+173
+00:06:10,319 --> 00:06:15,240
+just the the way you get out of that is
+
+174
+00:06:12,560 --> 00:06:17,800
+to say well these this computer is for
+
+175
+00:06:15,240 --> 00:06:19,759
+future uh programs not for current
+
+176
+00:06:17,800 --> 00:06:22,360
+programs and then uh these benchmarks
+
+177
+00:06:19,759 --> 00:06:23,599
+are too Antiquated to run on my computer
+
+178
+00:06:22,360 --> 00:06:26,160
+now the other thing that we do in
+
+179
+00:06:23,599 --> 00:06:27,400
+computer science is we uh reject all the
+
+180
+00:06:26,160 --> 00:06:28,639
+past you know we're a new field we're
+
+181
+00:06:27,400 --> 00:06:30,120
+both science and engineering so we're
+
+182
+00:06:28,639 --> 00:06:31,560
+not hidebound
+
+183
+00:06:30,120 --> 00:06:33,680
+by oldfashioned things like the
+
+184
+00:06:31,560 --> 00:06:36,080
+scientific method we have the computer
+
+185
+00:06:33,680 --> 00:06:40,240
+scientific method instead of a
+
+186
+00:06:36,080 --> 00:06:43,319
+hypothesis we have a
+
+187
+00:06:40,240 --> 00:06:47,479
+hunch a sequence of experiments we know
+
+188
+00:06:43,319 --> 00:06:49,960
+that sequential is slow so what we do we
+
+189
+00:06:47,479 --> 00:06:51,680
+change one one experiment all the
+
+190
+00:06:49,960 --> 00:06:53,400
+parameters at once that's much faster
+
+191
+00:06:51,680 --> 00:06:55,520
+than the sequential approach Paralis is
+
+192
+00:06:53,400 --> 00:06:57,240
+a good idea and rather than prove or
+
+193
+00:06:55,520 --> 00:06:59,560
+disprove
+
+194
+00:06:57,240 --> 00:07:01,639
+hypothesis we discard if it doesn't
+
+195
+00:06:59,560 --> 00:07:03,319
+support the hunch you know we've got
+
+196
+00:07:01,639 --> 00:07:04,560
+there's lots of data it's a big data
+
+197
+00:07:03,319 --> 00:07:06,560
+throw away the data there's still plenty
+
+198
+00:07:04,560 --> 00:07:09,360
+of data
+
+199
+00:07:06,560 --> 00:07:10,680
+left um and document for others
+
+200
+00:07:09,360 --> 00:07:12,240
+reproduce we've already done it we'll
+
+201
+00:07:10,680 --> 00:07:13,879
+have more results of the field if we
+
+202
+00:07:12,240 --> 00:07:15,400
+don't waste our time trying to reproduce
+
+203
+00:07:13,879 --> 00:07:18,360
+each other's results that's the computer
+
+204
+00:07:15,400 --> 00:07:19,919
+scientific method don't be distracted by
+
+205
+00:07:18,360 --> 00:07:22,520
+others avoid
+
+206
+00:07:19,919 --> 00:07:24,800
+feedback uh you know a big part of that
+
+207
+00:07:22,520 --> 00:07:25,960
+is conversation and if you don't say
+
+208
+00:07:24,800 --> 00:07:28,039
+anything people might think you're not
+
+209
+00:07:25,960 --> 00:07:31,160
+very smart so the Corel are of that is
+
+210
+00:07:28,039 --> 00:07:32,639
+loud is smart okay so be loud in
+
+211
+00:07:31,160 --> 00:07:34,759
+conversations even when you don't know
+
+212
+00:07:32,639 --> 00:07:37,520
+what you're talking about people will
+
+213
+00:07:34,759 --> 00:07:40,440
+think you know what you're talking
+
+214
+00:07:37,520 --> 00:07:42,319
+about um if you're the words leading
+
+215
+00:07:40,440 --> 00:07:44,680
+expert you don't really need to read
+
+216
+00:07:42,319 --> 00:07:47,199
+other things because you're the expert
+
+217
+00:07:44,680 --> 00:07:49,800
+right uh and you don't want to you don't
+
+218
+00:07:47,199 --> 00:07:52,000
+have to be interact with others because
+
+219
+00:07:49,800 --> 00:07:54,560
+they're not as good as you are in terms
+
+220
+00:07:52,000 --> 00:07:58,240
+of doing reviews for paper if it's
+
+221
+00:07:54,560 --> 00:08:00,159
+simple and obvious it insult the prior
+
+222
+00:07:58,240 --> 00:08:01,400
+authors if you accept something simple
+
+223
+00:08:00,159 --> 00:08:05,759
+and obvious they probably thought of it
+
+224
+00:08:01,400 --> 00:08:07,280
+so you should reject it uh if their
+
+225
+00:08:05,759 --> 00:08:09,400
+quantitative results and I've gotten
+
+226
+00:08:07,280 --> 00:08:11,520
+this review before well I already knew
+
+227
+00:08:09,400 --> 00:08:13,120
+that so there's no surprise to reject it
+
+228
+00:08:11,520 --> 00:08:15,080
+and just you know everything else you
+
+229
+00:08:13,120 --> 00:08:16,919
+might as well just
+
+230
+00:08:15,080 --> 00:08:18,720
+reject uh you know they're kind of
+
+231
+00:08:16,919 --> 00:08:20,759
+competitors to you in some way and if
+
+232
+00:08:18,720 --> 00:08:22,840
+they P paper doesn't get published then
+
+233
+00:08:20,759 --> 00:08:25,240
+you win so that's a good
+
+234
+00:08:22,840 --> 00:08:27,000
+guideline now publishing journals is
+
+235
+00:08:25,240 --> 00:08:28,199
+technology transfer you're the leading
+
+236
+00:08:27,000 --> 00:08:29,159
+person in the world you're the expert
+
+237
+00:08:28,199 --> 00:08:31,840
+all you have to do is write in the
+
+238
+00:08:29,159 --> 00:08:34,120
+journal it's not your job to make it
+
+239
+00:08:31,840 --> 00:08:36,360
+understandable to others to the ordinary
+
+240
+00:08:34,120 --> 00:08:38,399
+Engineers going to conferences just
+
+241
+00:08:36,360 --> 00:08:40,599
+wastes some of your valuable time that
+
+242
+00:08:38,399 --> 00:08:43,120
+you could be coming up with new ideas
+
+243
+00:08:40,599 --> 00:08:44,560
+and you know having to interact with uh
+
+244
+00:08:43,120 --> 00:08:46,800
+industry and things like that that's a
+
+245
+00:08:44,560 --> 00:08:47,519
+Time waster you write the journals
+
+246
+00:08:46,800 --> 00:08:50,720
+you're
+
+247
+00:08:47,519 --> 00:08:52,160
+done now clearly the winner is the one
+
+248
+00:08:50,720 --> 00:08:54,279
+with the most papers at the end of the
+
+249
+00:08:52,160 --> 00:08:56,000
+career so I've come up with this Pyramid
+
+250
+00:08:54,279 --> 00:08:58,920
+of Success for publication and it
+
+251
+00:08:56,000 --> 00:09:01,200
+follows the rule four and and the
+
+252
+00:08:58,920 --> 00:09:02,640
+guideline is the lpu leas poal unit the
+
+253
+00:09:01,200 --> 00:09:04,640
+lpu is good for you so you start off
+
+254
+00:09:02,640 --> 00:09:07,040
+with one idea then with rule of four you
+
+255
+00:09:04,640 --> 00:09:08,839
+get four Journal papers out of that uh
+
+256
+00:09:07,040 --> 00:09:12,120
+with a miracle of world processing then
+
+257
+00:09:08,839 --> 00:09:13,920
+you can get 16 extended abstracts and 64
+
+258
+00:09:12,120 --> 00:09:17,079
+technical reports from one single idea
+
+259
+00:09:13,920 --> 00:09:19,320
+that's 84 Publications I guess that and
+
+260
+00:09:17,079 --> 00:09:21,440
+then in terms of getting credit for it
+
+261
+00:09:19,320 --> 00:09:23,720
+uh my advice is to change your name to
+
+262
+00:09:21,440 --> 00:09:26,480
+the Swedish spelling of
+
+263
+00:09:23,720 --> 00:09:28,079
+Anderson and then and then and then
+
+264
+00:09:26,480 --> 00:09:29,800
+there's awkward time oh how are we going
+
+265
+00:09:28,079 --> 00:09:32,680
+to put the office on the table will say
+
+266
+00:09:29,800 --> 00:09:37,000
+well I've always done it alphabetically
+
+267
+00:09:32,680 --> 00:09:39,120
+you all my papers that all right writing
+
+268
+00:09:37,000 --> 00:09:41,920
+cams for a bad
+
+269
+00:09:39,120 --> 00:09:44,079
+career uh Thou shalt not Define terms
+
+270
+00:09:41,920 --> 00:09:45,720
+that's what dictionaries are before and
+
+271
+00:09:44,079 --> 00:09:47,279
+explaining things that'll just insult
+
+272
+00:09:45,720 --> 00:09:48,959
+the reader so you want to be a little
+
+273
+00:09:47,279 --> 00:09:53,560
+bit more mysterious than
+
+274
+00:09:48,959 --> 00:09:56,360
+that uh Thou shalt use replace I will
+
+275
+00:09:53,560 --> 00:09:58,200
+build with I have been built you know
+
+276
+00:09:56,360 --> 00:09:59,880
+probably by the time your paper gets
+
+277
+00:09:58,200 --> 00:10:01,800
+published in a journal somebody have
+
+278
+00:09:59,880 --> 00:10:03,040
+implemented it so it's okay to kind of
+
+279
+00:10:01,800 --> 00:10:06,079
+do
+
+280
+00:10:03,040 --> 00:10:08,640
+that V sh not mention drawbacks to your
+
+281
+00:10:06,079 --> 00:10:10,360
+report report that's not your job that's
+
+282
+00:10:08,640 --> 00:10:12,079
+the job of the critics to figure out
+
+283
+00:10:10,360 --> 00:10:14,800
+drawbacks you know if you hide that
+
+284
+00:10:12,079 --> 00:10:17,519
+they'll never notice it uh Thou shalt
+
+285
+00:10:14,800 --> 00:10:19,040
+not reference any papers again except
+
+286
+00:10:17,519 --> 00:10:21,680
+for maybe your own or at your
+
+287
+00:10:19,040 --> 00:10:23,040
+institution and if if the papers were
+
+288
+00:10:21,680 --> 00:10:25,079
+any good they'd be people at your
+
+289
+00:10:23,040 --> 00:10:26,440
+institution so don't you don't do that
+
+290
+00:10:25,079 --> 00:10:27,640
+and then you should publish before
+
+291
+00:10:26,440 --> 00:10:31,320
+implementing because that's when your
+
+292
+00:10:27,640 --> 00:10:31,320
+system is the fastest you know
+
+293
+00:10:31,640 --> 00:10:37,639
+okay talk Commandments for a bad career
+
+294
+00:10:33,880 --> 00:10:40,519
+this is my bad career talk uh th Shelt
+
+295
+00:10:37,639 --> 00:10:42,600
+not be neat you know why take the time
+
+296
+00:10:40,519 --> 00:10:45,279
+to spend it on your slides to you know
+
+297
+00:10:42,600 --> 00:10:46,600
+fix spelling errors grammatical errors
+
+298
+00:10:45,279 --> 00:10:48,320
+you've got to you could spend that time
+
+299
+00:10:46,600 --> 00:10:50,600
+on
+
+300
+00:10:48,320 --> 00:10:52,600
+Research Thou shalt not wite space you
+
+301
+00:10:50,600 --> 00:10:54,440
+know you use up a lot of slides that's a
+
+302
+00:10:52,600 --> 00:10:56,360
+lot of kilobytes being wasted there you
+
+303
+00:10:54,440 --> 00:10:58,079
+can save like 100 kilobytes a year which
+
+304
+00:10:56,360 --> 00:11:01,120
+saves some
+
+305
+00:10:58,079 --> 00:11:03,600
+money uh Thou shalt not covet brevity do
+
+306
+00:11:01,120 --> 00:11:05,600
+you really want to sustain The
+
+307
+00:11:03,600 --> 00:11:07,639
+Stereotype that Engineers can't write
+
+308
+00:11:05,600 --> 00:11:10,040
+right you want to show full
+
+309
+00:11:07,639 --> 00:11:11,399
+paragraphs uh beautiful beautiful
+
+310
+00:11:10,040 --> 00:11:13,720
+English and read it
+
+311
+00:11:11,399 --> 00:11:15,399
+aloud uh Thou shalt cover the naked
+
+312
+00:11:13,720 --> 00:11:16,760
+slides I'll show you what I mean by that
+
+313
+00:11:15,399 --> 00:11:19,399
+later but you don't want to expose the
+
+314
+00:11:16,760 --> 00:11:22,320
+whole slide to everybody and and shock
+
+315
+00:11:19,399 --> 00:11:24,399
+them uh Thou shalt not print large the
+
+316
+00:11:22,320 --> 00:11:27,920
+important people sit in the front
+
+317
+00:11:24,399 --> 00:11:32,920
+right so who cares about guys in the
+
+318
+00:11:27,920 --> 00:11:35,279
+back uh shalt not use color use of color
+
+319
+00:11:32,920 --> 00:11:36,760
+indicates uh you know uncareful research
+
+320
+00:11:35,279 --> 00:11:38,959
+you're emphasizing some words over
+
+321
+00:11:36,760 --> 00:11:41,320
+others and it's just too showy to use
+
+322
+00:11:38,959 --> 00:11:43,320
+color Thou shalt not illustrate
+
+323
+00:11:41,320 --> 00:11:45,399
+confucious says uh a picture is worth
+
+324
+00:11:43,320 --> 00:11:46,880
+10,000 words who cares about the wisdom
+
+325
+00:11:45,399 --> 00:11:50,360
+of the ages
+
+326
+00:11:46,880 --> 00:11:52,279
+right and uh Thou shalt not make eye
+
+327
+00:11:50,360 --> 00:11:54,040
+contact you want to be humble kind of
+
+328
+00:11:52,279 --> 00:11:57,600
+pretend to be humble keep your eyes down
+
+329
+00:11:54,040 --> 00:12:00,360
+and you know try not to let anybody see
+
+330
+00:11:57,600 --> 00:12:02,040
+you uh Thou shalt not skip slides long
+
+331
+00:12:00,360 --> 00:12:03,560
+talk I guarantee in this room somebody
+
+332
+00:12:02,040 --> 00:12:05,040
+has done looked up at their looked at
+
+333
+00:12:03,560 --> 00:12:06,720
+their watch see how many slides they
+
+334
+00:12:05,040 --> 00:12:09,079
+have then their solution is I'll just
+
+335
+00:12:06,720 --> 00:12:10,440
+talk faster right that's what people do
+
+336
+00:12:09,079 --> 00:12:11,959
+you prepare the slides they want to see
+
+337
+00:12:10,440 --> 00:12:13,440
+them all and if you have to just cut off
+
+338
+00:12:11,959 --> 00:12:15,720
+the conclusions the last couple of
+
+339
+00:12:13,440 --> 00:12:17,440
+slides if you run out of time and then
+
+340
+00:12:15,720 --> 00:12:19,639
+this is the Golden Rule this one can
+
+341
+00:12:17,440 --> 00:12:21,600
+save you if even if you violate the
+
+342
+00:12:19,639 --> 00:12:24,839
+others Thou shalt not practice how can
+
+343
+00:12:21,600 --> 00:12:27,360
+you be spontaneous if you practice right
+
+344
+00:12:24,839 --> 00:12:29,440
+you'll it'll feel it'll feel practiced
+
+345
+00:12:27,360 --> 00:12:31,560
+if you practice so don't do that that's
+
+346
+00:12:29,440 --> 00:12:34,279
+the last thing you should
+
+347
+00:12:31,560 --> 00:12:35,959
+do uh so here's an example of doing it
+
+348
+00:12:34,279 --> 00:12:39,320
+it's actually says PowerPoint but it's
+
+349
+00:12:35,959 --> 00:12:44,519
+it's using Google Slides so uh trying
+
+350
+00:12:39,320 --> 00:12:46,279
+these commandments so uh print small now
+
+351
+00:12:44,519 --> 00:12:48,079
+these features somebody some engineer
+
+352
+00:12:46,279 --> 00:12:50,760
+Google put these features in so you have
+
+353
+00:12:48,079 --> 00:12:53,760
+to use them to be a good Google employee
+
+354
+00:12:50,760 --> 00:12:56,519
+um so you want to hide your naked slides
+
+355
+00:12:53,760 --> 00:12:57,560
+there that's a some variety but again no
+
+356
+00:12:56,519 --> 00:13:00,240
+use of
+
+357
+00:12:57,560 --> 00:13:04,160
+color there you go that's another
+
+358
+00:13:00,240 --> 00:13:05,760
+dramatic entrance and then uh this last
+
+359
+00:13:04,160 --> 00:13:08,000
+the next one is just my favorite I'm
+
+360
+00:13:05,760 --> 00:13:10,959
+glad somebody put the time in to put
+
+361
+00:13:08,000 --> 00:13:10,959
+this in because it's very
+
+362
+00:13:11,519 --> 00:13:17,959
+useful there you go but
+
+363
+00:13:15,079 --> 00:13:20,440
+a okay so that was the bad career advice
+
+364
+00:13:17,959 --> 00:13:23,360
+let's talk about Alternatives career uh
+
+365
+00:13:20,440 --> 00:13:25,160
+this is taken from my career which span
+
+366
+00:13:23,360 --> 00:13:27,199
+40 years so it's kind of an academic I
+
+367
+00:13:25,160 --> 00:13:29,720
+hope it'll apply to here it's in systems
+
+368
+00:13:27,199 --> 00:13:32,880
+not in theory uh and I'll go through
+
+369
+00:13:29,720 --> 00:13:37,320
+these pieces uh one by one so advice to
+
+370
+00:13:32,880 --> 00:13:38,760
+writing uh bad papers uh and I again I
+
+371
+00:13:37,320 --> 00:13:40,320
+put some writing tips there the writing
+
+372
+00:13:38,760 --> 00:13:41,720
+tips actually have some grammatical
+
+373
+00:13:40,320 --> 00:13:43,959
+errors in them following my bad
+
+374
+00:13:41,720 --> 00:13:46,680
+tradition but uh you can go look take a
+
+375
+00:13:43,959 --> 00:13:49,360
+look so do the opposite of the bad paper
+
+376
+00:13:46,680 --> 00:13:51,240
+Commandments uh do Define your terms
+
+377
+00:13:49,360 --> 00:13:53,079
+distinguish will do from have done if
+
+378
+00:13:51,240 --> 00:13:55,079
+you're writing for critical review
+
+379
+00:13:53,079 --> 00:13:57,399
+reviewers are very skeptical people
+
+380
+00:13:55,079 --> 00:13:58,920
+they're going to assume the worst they
+
+381
+00:13:57,399 --> 00:14:00,519
+are much more impressed if you point out
+
+382
+00:13:58,920 --> 00:14:02,120
+the drawbacks rather than they have to
+
+383
+00:14:00,519 --> 00:14:05,800
+discover
+
+384
+00:14:02,120 --> 00:14:07,680
+them uh and you know you have to measure
+
+385
+00:14:05,800 --> 00:14:08,639
+performance and reference the work to be
+
+386
+00:14:07,680 --> 00:14:11,519
+a
+
+387
+00:14:08,639 --> 00:14:13,680
+scholar and the good news is you guys
+
+388
+00:14:11,519 --> 00:14:16,399
+build a wonderful service to make that
+
+389
+00:14:13,680 --> 00:14:18,320
+much easier to do these days in scholar
+
+390
+00:14:16,399 --> 00:14:20,560
+uh the great the best piece of advice I
+
+391
+00:14:18,320 --> 00:14:22,639
+ever got was to read Strunk and white uh
+
+392
+00:14:20,560 --> 00:14:24,759
+Strunk believed in brevity so much he
+
+393
+00:14:22,639 --> 00:14:27,600
+cherish Brey so much he couldn't write a
+
+394
+00:14:24,759 --> 00:14:30,800
+long book the book itself is maybe 80
+
+395
+00:14:27,600 --> 00:14:33,680
+Pages or so and it's chalk full of good
+
+396
+00:14:30,800 --> 00:14:35,759
+advice then uh you know we do this the
+
+397
+00:14:33,680 --> 00:14:37,720
+advices basically go kind of top down
+
+398
+00:14:35,759 --> 00:14:40,480
+you just write write a onepage outline
+
+399
+00:14:37,720 --> 00:14:42,120
+with a tentative uh title with budgets
+
+400
+00:14:40,480 --> 00:14:44,199
+how much you need to write a lot of
+
+401
+00:14:42,120 --> 00:14:47,920
+writing that saves a lot of writing if
+
+402
+00:14:44,199 --> 00:14:50,399
+you don't have to do it then a paragraph
+
+403
+00:14:47,920 --> 00:14:53,399
+map which is a topic sentence as it goes
+
+404
+00:14:50,399 --> 00:14:55,920
+the way through and it includes uh
+
+405
+00:14:53,399 --> 00:14:58,680
+figures and captions even today in 2016
+
+406
+00:14:55,920 --> 00:15:00,480
+it takes forever on a computer to draw a
+
+407
+00:14:58,680 --> 00:15:01,320
+figure and since you might throw that
+
+408
+00:15:00,480 --> 00:15:03,040
+you're probably going to throw that
+
+409
+00:15:01,320 --> 00:15:04,560
+figure right to change it the best
+
+410
+00:15:03,040 --> 00:15:05,959
+technology to do that today is go to a
+
+411
+00:15:04,560 --> 00:15:07,639
+whiteboard you even have colored pens
+
+412
+00:15:05,959 --> 00:15:09,199
+take a little self phone picture and
+
+413
+00:15:07,639 --> 00:15:11,560
+stick that in your document that'll take
+
+414
+00:15:09,199 --> 00:15:13,279
+you you know one tenth the time as
+
+415
+00:15:11,560 --> 00:15:15,920
+trying to do something on a computer
+
+416
+00:15:13,279 --> 00:15:19,160
+because you know you might throw it away
+
+417
+00:15:15,920 --> 00:15:22,040
+and then re write the
+
+418
+00:15:19,160 --> 00:15:24,199
+draft um I like the Scientific American
+
+419
+00:15:22,040 --> 00:15:25,720
+style which has really long captions not
+
+420
+00:15:24,199 --> 00:15:27,199
+everybody does that but you can move
+
+421
+00:15:25,720 --> 00:15:29,040
+text in there and associate with the
+
+422
+00:15:27,199 --> 00:15:31,079
+figure I think that works well I really
+
+423
+00:15:29,040 --> 00:15:32,800
+like tables a lot there's a lot of Drey
+
+424
+00:15:31,079 --> 00:15:34,199
+facts I love putting them into tables
+
+425
+00:15:32,800 --> 00:15:36,399
+that works well for
+
+426
+00:15:34,199 --> 00:15:38,240
+me uh then in terms of when you're
+
+427
+00:15:36,399 --> 00:15:40,800
+starting to polish the text read aloud
+
+428
+00:15:38,240 --> 00:15:43,519
+your ear is better than your eyes when I
+
+429
+00:15:40,800 --> 00:15:45,880
+start reading a document and I I forget
+
+430
+00:15:43,519 --> 00:15:47,560
+and I stop saying it out loud I I lose
+
+431
+00:15:45,880 --> 00:15:49,319
+track but if you hear the words you can
+
+432
+00:15:47,560 --> 00:15:52,759
+hear terrible sentences and grammatical
+
+433
+00:15:49,319 --> 00:15:55,240
+errors if you hear it there's technology
+
+434
+00:15:52,759 --> 00:15:56,680
+and fact I was I just learned about this
+
+435
+00:15:55,240 --> 00:15:58,600
+thing it was from an English Professor
+
+436
+00:15:56,680 --> 00:15:59,880
+who talk a massive open upline course at
+
+437
+00:15:58,600 --> 00:16:01,160
+Berkeley said why aren't you using a
+
+438
+00:15:59,880 --> 00:16:03,199
+grammar checker and she said this is the
+
+439
+00:16:01,160 --> 00:16:05,360
+world's best one Pearson writer and it
+
+440
+00:16:03,199 --> 00:16:08,199
+cost you a whole $20 a year and it will
+
+441
+00:16:05,360 --> 00:16:10,240
+prevent terrible grammatical errors and
+
+442
+00:16:08,199 --> 00:16:11,680
+even help style in fact I think I was
+
+443
+00:16:10,240 --> 00:16:13,920
+thinking I should you guys should buy
+
+444
+00:16:11,680 --> 00:16:15,399
+this it's it's one of the things you're
+
+445
+00:16:13,920 --> 00:16:17,959
+missing from Google Documents is a
+
+446
+00:16:15,399 --> 00:16:20,920
+really and this is the world's best one
+
+447
+00:16:17,959 --> 00:16:23,759
+uh I I'm it's a it's I'm impressed that
+
+448
+00:16:20,920 --> 00:16:25,040
+they can pull this off and then you get
+
+449
+00:16:23,759 --> 00:16:26,399
+feedbacks and Friends of course to get
+
+450
+00:16:25,040 --> 00:16:28,360
+feedbacks and friends if you're writing
+
+451
+00:16:26,399 --> 00:16:31,880
+to a deadline you actually have to get
+
+452
+00:16:28,360 --> 00:16:34,480
+it done early which seems to be science
+
+453
+00:16:31,880 --> 00:16:36,199
+fiction for graduate students at least
+
+454
+00:16:34,480 --> 00:16:38,000
+but get it done early then he gives you
+
+455
+00:16:36,199 --> 00:16:40,759
+time to give your friends feedback you
+
+456
+00:16:38,000 --> 00:16:42,360
+can iterate and if you don't do that if
+
+457
+00:16:40,759 --> 00:16:43,800
+you're writing something for review then
+
+458
+00:16:42,360 --> 00:16:45,759
+who's your reviewer it's the program
+
+459
+00:16:43,800 --> 00:16:47,440
+committee and what I've seen sitting on
+
+460
+00:16:45,759 --> 00:16:49,000
+program committees is a lot of the times
+
+461
+00:16:47,440 --> 00:16:50,880
+the paper gets rejected not because you
+
+462
+00:16:49,000 --> 00:16:52,399
+didn't do something it's because the
+
+463
+00:16:50,880 --> 00:16:54,560
+program committee didn't understand what
+
+464
+00:16:52,399 --> 00:16:56,800
+you did and why if you interact with
+
+465
+00:16:54,560 --> 00:16:58,920
+Outsiders you've got this chance of
+
+466
+00:16:56,800 --> 00:17:01,480
+clearing that up that if you don't as
+
+467
+00:16:58,920 --> 00:17:04,240
+suppos if you just look at it yourself
+
+468
+00:17:01,480 --> 00:17:06,000
+okay how to write not write bad papers
+
+469
+00:17:04,240 --> 00:17:08,199
+bad talks basically do the opposite of
+
+470
+00:17:06,000 --> 00:17:11,839
+the bad Commandments there's two parts
+
+471
+00:17:08,199 --> 00:17:13,559
+preparation and practice uh most people
+
+472
+00:17:11,839 --> 00:17:15,319
+take about two minutes a slide for some
+
+473
+00:17:13,559 --> 00:17:17,959
+reason I take one minute a slide I don't
+
+474
+00:17:15,319 --> 00:17:19,839
+know why um you should plan on that a
+
+475
+00:17:17,959 --> 00:17:21,640
+minute or a minute and a half so you
+
+476
+00:17:19,839 --> 00:17:22,919
+have plenty of time and leave time for
+
+477
+00:17:21,640 --> 00:17:26,079
+questions since that's some of the most
+
+478
+00:17:22,919 --> 00:17:28,280
+important parts don't despite Google
+
+479
+00:17:26,079 --> 00:17:30,080
+Engineers putting in spinning text you
+
+480
+00:17:28,280 --> 00:17:32,600
+know don't do
+
+481
+00:17:30,080 --> 00:17:34,120
+that uh and then you know it's not a
+
+482
+00:17:32,600 --> 00:17:35,919
+speech it's the first time you do it
+
+483
+00:17:34,120 --> 00:17:37,799
+it's a talk so you don't have to
+
+484
+00:17:35,919 --> 00:17:42,120
+memorize it but have notes
+
+485
+00:17:37,799 --> 00:17:44,480
+ready practice uh is the key uh you want
+
+486
+00:17:42,120 --> 00:17:46,400
+to do dry runs with friends to get
+
+487
+00:17:44,480 --> 00:17:47,960
+feedback if you're giving a professional
+
+488
+00:17:46,400 --> 00:17:49,919
+talk you know the way you make
+
+489
+00:17:47,960 --> 00:17:51,600
+impression is not only to give a talk
+
+490
+00:17:49,919 --> 00:17:53,200
+but how you answer the questions I think
+
+491
+00:17:51,600 --> 00:17:54,600
+for those of us in the field a while
+
+492
+00:17:53,200 --> 00:17:56,520
+when you see somebody give a dynamic
+
+493
+00:17:54,600 --> 00:17:59,400
+talk and they really nail the questions
+
+494
+00:17:56,520 --> 00:18:01,320
+you pay attention to that
+
+495
+00:17:59,400 --> 00:18:02,720
+uh and then so your practice ought to
+
+496
+00:18:01,320 --> 00:18:05,960
+have really tough questions so you can
+
+497
+00:18:02,720 --> 00:18:08,440
+practice the tough questions and then uh
+
+498
+00:18:05,960 --> 00:18:10,960
+with modern cell phones uh you can
+
+499
+00:18:08,440 --> 00:18:12,520
+record yourself you not only your audio
+
+500
+00:18:10,960 --> 00:18:13,640
+you can watch yourself it's you know I
+
+501
+00:18:12,520 --> 00:18:16,880
+got to tell you it's going to be a
+
+502
+00:18:13,640 --> 00:18:18,559
+humbling experience you'll hear the
+
+503
+00:18:16,880 --> 00:18:20,360
+crutches that you have in your verbal
+
+504
+00:18:18,559 --> 00:18:23,000
+speech I start a lot of sentences with
+
+505
+00:18:20,360 --> 00:18:24,919
+so I say h you'll be shocked how bad it
+
+506
+00:18:23,000 --> 00:18:26,960
+is but everybody does it and this is the
+
+507
+00:18:24,919 --> 00:18:29,400
+way you get better and I practice
+
+508
+00:18:26,960 --> 00:18:31,200
+everything I I think of it I practice my
+
+509
+00:18:29,400 --> 00:18:32,799
+talks just to show the students you're
+
+510
+00:18:31,200 --> 00:18:34,720
+supposed to practice your talks but I
+
+511
+00:18:32,799 --> 00:18:36,039
+practice my Award acceptance speeches
+
+512
+00:18:34,720 --> 00:18:38,360
+and they tear them
+
+513
+00:18:36,039 --> 00:18:40,600
+apart I would think an accepted speech
+
+514
+00:18:38,360 --> 00:18:42,600
+was pretty good but no no they get make
+
+515
+00:18:40,600 --> 00:18:45,559
+them better so
+
+516
+00:18:42,600 --> 00:18:47,679
+practice okay now uh the other thing
+
+517
+00:18:45,559 --> 00:18:50,360
+that I was going to do in this talk is
+
+518
+00:18:47,679 --> 00:18:52,200
+uh is quote Richard Hamming Richard
+
+519
+00:18:50,360 --> 00:18:55,600
+Hamming actually came to Berkeley when I
+
+520
+00:18:52,200 --> 00:18:57,240
+was young and Professor a laral
+
+521
+00:18:55,600 --> 00:18:59,440
+professor and he gave this talk you and
+
+522
+00:18:57,240 --> 00:19:02,120
+your research which is more or less how
+
+523
+00:18:59,440 --> 00:19:05,120
+to do great research like me and so uh
+
+524
+00:19:02,120 --> 00:19:08,280
+Richard Hamming of Hamming code you know
+
+525
+00:19:05,120 --> 00:19:11,960
+Hamming distance the Reon memories don't
+
+526
+00:19:08,280 --> 00:19:14,280
+make mistakes uh spent his career mostly
+
+527
+00:19:11,960 --> 00:19:15,760
+at Bell labs and it's pretty clear from
+
+528
+00:19:14,280 --> 00:19:18,159
+watching these videos he's a very
+
+529
+00:19:15,760 --> 00:19:19,240
+opinionated guy he he doesn't he's not
+
+530
+00:19:18,159 --> 00:19:21,480
+say well maybe you should do this he
+
+531
+00:19:19,240 --> 00:19:23,559
+says do this but he watched careers over
+
+532
+00:19:21,480 --> 00:19:26,480
+Bell Labs he saw people fail he saw
+
+533
+00:19:23,559 --> 00:19:28,960
+people succeed and I'll quote quote him
+
+534
+00:19:26,480 --> 00:19:30,520
+show one minute seconds every time so
+
+535
+00:19:28,960 --> 00:19:32,000
+this is him talking about the importance
+
+536
+00:19:30,520 --> 00:19:33,360
+of communication and you'll get his
+
+537
+00:19:32,000 --> 00:19:36,080
+personality from this
+
+538
+00:19:33,360 --> 00:19:38,600
+one which brings me to the topic of
+
+539
+00:19:36,080 --> 00:19:41,960
+communication you need to learn to
+
+540
+00:19:38,600 --> 00:19:45,320
+communicate orally in talks like this
+
+541
+00:19:41,960 --> 00:19:46,919
+written and written reports and Casual
+
+542
+00:19:45,320 --> 00:19:48,000
+conversations in the middle of a
+
+543
+00:19:46,919 --> 00:19:50,039
+conference you have to be able to get up
+
+544
+00:19:48,000 --> 00:19:53,360
+and say that's wrong for these reasons
+
+545
+00:19:50,039 --> 00:19:55,200
+bing bing bing bing and you win if you
+
+546
+00:19:53,360 --> 00:19:56,360
+sit around and say well I'll write a
+
+547
+00:19:55,200 --> 00:19:59,159
+report tomorrow after I've thought about
+
+548
+00:19:56,360 --> 00:20:01,559
+it some more the decision is made we go
+
+549
+00:19:59,159 --> 00:20:03,720
+ahead and it doesn't matter what you do
+
+550
+00:20:01,559 --> 00:20:05,600
+then the ability to communicate at three
+
+551
+00:20:03,720 --> 00:20:08,400
+levels now how do you learn it you can
+
+552
+00:20:05,600 --> 00:20:09,640
+read books if you want to but forget it
+
+553
+00:20:08,400 --> 00:20:11,880
+the way you learn as far as I'm
+
+554
+00:20:09,640 --> 00:20:14,120
+concerned is every time you go to a talk
+
+555
+00:20:11,880 --> 00:20:16,440
+you listen not only to the talk but to
+
+556
+00:20:14,120 --> 00:20:19,360
+the style it's done what talks are
+
+557
+00:20:16,440 --> 00:20:21,880
+effective why were they effective what
+
+558
+00:20:19,360 --> 00:20:24,480
+aspects of the speaker could you
+
+559
+00:20:21,880 --> 00:20:25,640
+adapt okay that's for Hamming and then
+
+560
+00:20:24,480 --> 00:20:28,120
+which brings me to the topic of
+
+561
+00:20:25,640 --> 00:20:30,360
+communication oops you need to learn to
+
+562
+00:20:28,120 --> 00:20:33,440
+communicate
+
+563
+00:20:30,360 --> 00:20:36,880
+or it talks like stop
+
+564
+00:20:33,440 --> 00:20:38,600
+stop uh and then he uh and there's
+
+565
+00:20:36,880 --> 00:20:40,480
+another he gave this talk lots of times
+
+566
+00:20:38,600 --> 00:20:41,640
+this is the one it's on your YouTube
+
+567
+00:20:40,480 --> 00:20:43,840
+right that's how I found it but there
+
+568
+00:20:41,640 --> 00:20:45,400
+was a text one before and he said in my
+
+569
+00:20:43,840 --> 00:20:47,360
+early days I think you should spend as
+
+570
+00:20:45,400 --> 00:20:49,640
+much time in polishing and presenting as
+
+571
+00:20:47,360 --> 00:20:51,280
+you did in the original research now at
+
+572
+00:20:49,640 --> 00:20:53,760
+least 50% of it has to go in the
+
+573
+00:20:51,280 --> 00:20:56,039
+presentation now if you know hamming's
+
+574
+00:20:53,760 --> 00:20:58,080
+idea of the me of how do you encode
+
+575
+00:20:56,039 --> 00:20:59,360
+memory it's beautifully presented that
+
+576
+00:20:58,080 --> 00:21:01,240
+almost everybody can understand so that
+
+577
+00:20:59,360 --> 00:21:03,200
+was an example of him he thought not
+
+578
+00:21:01,240 --> 00:21:05,000
+just came up with the math but he laid
+
+579
+00:21:03,200 --> 00:21:07,120
+it out and had a very simple encoding
+
+580
+00:21:05,000 --> 00:21:08,440
+thing it's almost like a parlor trick is
+
+581
+00:21:07,120 --> 00:21:09,840
+you can put a bit pattern in there and
+
+582
+00:21:08,440 --> 00:21:11,559
+tell you which one is wrong from the way
+
+583
+00:21:09,840 --> 00:21:13,600
+he does it he made it very easy to
+
+584
+00:21:11,559 --> 00:21:16,279
+understand and as a result every single
+
+585
+00:21:13,600 --> 00:21:17,880
+computer in the world uses his idea but
+
+586
+00:21:16,279 --> 00:21:21,200
+that was an example of him following his
+
+587
+00:21:17,880 --> 00:21:24,880
+old advice this come
+
+588
+00:21:21,200 --> 00:21:28,039
+on right I think I can get and stopped
+
+589
+00:21:24,880 --> 00:21:30,440
+okay uh okay leading a project now I'm
+
+590
+00:21:28,039 --> 00:21:32,880
+going to go through through the uh uh I
+
+591
+00:21:30,440 --> 00:21:35,440
+think I said
+
+592
+00:21:32,880 --> 00:21:38,559
+this
+
+593
+00:21:35,440 --> 00:21:41,039
+um so academics have bad benchmarks
+
+594
+00:21:38,559 --> 00:21:43,120
+papers or maybe even citations rather
+
+595
+00:21:41,039 --> 00:21:45,080
+than impact is what you're trying to do
+
+596
+00:21:43,120 --> 00:21:46,600
+I didn't realize when I started there's
+
+597
+00:21:45,080 --> 00:21:48,159
+I have six phases for leading your
+
+598
+00:21:46,600 --> 00:21:50,559
+project and we'll go through the
+
+599
+00:21:48,159 --> 00:21:53,080
+selecting a problem picking a solution
+
+600
+00:21:50,559 --> 00:21:55,679
+running a project finishing a project
+
+601
+00:21:53,080 --> 00:21:58,320
+evaluating it transferring technology so
+
+602
+00:21:55,679 --> 00:22:00,400
+let me go through each of those let's go
+
+603
+00:21:58,320 --> 00:22:02,720
+back Richard Hamming again he's going to
+
+604
+00:22:00,400 --> 00:22:04,440
+talk about the a problem and so I said
+
+605
+00:22:02,720 --> 00:22:06,840
+do mind if I join you so I sit down and
+
+606
+00:22:04,440 --> 00:22:09,520
+we start talk about chemistry and said
+
+607
+00:22:06,840 --> 00:22:11,320
+set the set the stage here so so here's
+
+608
+00:22:09,520 --> 00:22:12,880
+this pretty opinionated guy who studies
+
+609
+00:22:11,320 --> 00:22:15,760
+how people can be great he's it's kind
+
+610
+00:22:12,880 --> 00:22:18,039
+of a hobby of his so he at Bell lab's
+
+611
+00:22:15,760 --> 00:22:19,279
+you know one of the greatest research
+
+612
+00:22:18,039 --> 00:22:21,080
+institutions in the history of this
+
+613
+00:22:19,279 --> 00:22:23,159
+country he's been having lunch with
+
+614
+00:22:21,080 --> 00:22:24,720
+physicists but they all they started
+
+615
+00:22:23,159 --> 00:22:26,360
+winning Nobel prizes inventing the
+
+616
+00:22:24,720 --> 00:22:28,559
+transistor and things like that and got
+
+617
+00:22:26,360 --> 00:22:29,960
+promoted so he had to find a new group
+
+618
+00:22:28,559 --> 00:22:31,880
+so he decided to hang out with the
+
+619
+00:22:29,960 --> 00:22:35,480
+chemist so he just kind of butts his way
+
+620
+00:22:31,880 --> 00:22:38,240
+in as this Outsider uh to talk with the
+
+621
+00:22:35,480 --> 00:22:43,039
+chemists other things for a long while
+
+622
+00:22:38,240 --> 00:22:45,679
+and finally one day I walk in and say if
+
+623
+00:22:43,039 --> 00:22:48,200
+what you're working on is not important
+
+624
+00:22:45,679 --> 00:22:52,080
+and it's not likely to lead to important
+
+625
+00:22:48,200 --> 00:22:52,080
+things why are you working on
+
+626
+00:22:53,919 --> 00:22:58,760
+it after that I ate with the engineers
+
+627
+00:22:59,880 --> 00:23:05,120
+that was spring in the fall Going Down
+
+628
+00:23:01,679 --> 00:23:07,279
+The Long Corridor Bell Labs my friend
+
+629
+00:23:05,120 --> 00:23:08,760
+chem stopped me and said you know
+
+630
+00:23:07,279 --> 00:23:11,400
+Hamming that remark of yours got
+
+631
+00:23:08,760 --> 00:23:12,840
+underneath my skin I've spent the summer
+
+632
+00:23:11,400 --> 00:23:15,159
+thinking about the important problems in
+
+633
+00:23:12,840 --> 00:23:18,039
+my field I have not changed my research
+
+634
+00:23:15,159 --> 00:23:21,279
+but I think it was well worth the time I
+
+635
+00:23:18,039 --> 00:23:23,480
+say thank you Dave and walk on about two
+
+636
+00:23:21,279 --> 00:23:25,919
+weeks later I know he made head of the
+
+637
+00:23:23,480 --> 00:23:27,480
+department about 10 or 12 years ago I
+
+638
+00:23:25,919 --> 00:23:29,640
+notic he is member of the National
+
+639
+00:23:27,480 --> 00:23:32,960
+Academy of engineering
+
+640
+00:23:29,640 --> 00:23:35,480
+I have never heard of anything about any
+
+641
+00:23:32,960 --> 00:23:39,000
+other person that chemistry table not
+
+642
+00:23:35,480 --> 00:23:41,640
+one the one man who could hear if what
+
+643
+00:23:39,000 --> 00:23:43,360
+you're doing is not important not likely
+
+644
+00:23:41,640 --> 00:23:47,440
+important why are you doing it the one
+
+645
+00:23:43,360 --> 00:23:49,720
+man who could did become important he
+
+646
+00:23:47,440 --> 00:23:51,840
+did succeed the rest of them who
+
+647
+00:23:49,720 --> 00:23:54,480
+couldn't hear
+
+648
+00:23:51,840 --> 00:23:56,960
+didn't it's that
+
+649
+00:23:54,480 --> 00:23:58,840
+simple if you don't work on important
+
+650
+00:23:56,960 --> 00:24:00,520
+problems you are not going to do
+
+651
+00:23:58,840 --> 00:24:02,880
+important things except by the dumbest
+
+652
+00:24:00,520 --> 00:24:05,320
+of dumb
+
+653
+00:24:02,880 --> 00:24:06,799
+luck and you realize when he's giving
+
+654
+00:24:05,320 --> 00:24:08,440
+these talks the chemist that he was
+
+655
+00:24:06,799 --> 00:24:11,120
+sitting with were still around I could
+
+656
+00:24:08,440 --> 00:24:11,120
+hear him give these
+
+657
+00:24:12,279 --> 00:24:16,000
+talks that's Charming
+
+658
+00:24:16,159 --> 00:24:20,880
+guy okay so picking selecting a problem
+
+659
+00:24:19,240 --> 00:24:22,120
+when I started Berkeley I just jumped in
+
+660
+00:24:20,880 --> 00:24:24,360
+and I'll tell you about it in the next
+
+661
+00:24:22,120 --> 00:24:26,399
+one invent a new field and stick to it
+
+662
+00:24:24,360 --> 00:24:28,520
+no try to do real stuff make sure other
+
+663
+00:24:26,399 --> 00:24:30,440
+people think it's important not not just
+
+664
+00:24:28,520 --> 00:24:33,039
+you uh it's particularly easy to do that
+
+665
+00:24:30,440 --> 00:24:35,600
+in Academia you're aiming for this
+
+666
+00:24:33,039 --> 00:24:36,880
+positive impact big impact on computer
+
+667
+00:24:35,600 --> 00:24:40,360
+science and
+
+668
+00:24:36,880 --> 00:24:42,480
+engineering uh and stick to it to your
+
+669
+00:24:40,360 --> 00:24:43,840
+whole career I I think in this fast
+
+670
+00:24:42,480 --> 00:24:46,840
+that's not what I did in this fast
+
+671
+00:24:43,840 --> 00:24:48,279
+moving field why not instead do a bunch
+
+672
+00:24:46,840 --> 00:24:50,520
+of short projects because a lot of
+
+673
+00:24:48,279 --> 00:24:53,039
+research projects aren't going to
+
+674
+00:24:50,520 --> 00:24:55,480
+work uh it always the these things
+
+675
+00:24:53,039 --> 00:24:56,760
+always take longer than you expect uh
+
+676
+00:24:55,480 --> 00:24:58,399
+and you know how are you going to know
+
+677
+00:24:56,760 --> 00:24:59,480
+if you work on something for 20 years
+
+678
+00:24:58,399 --> 00:25:01,000
+that this is going to be an important
+
+679
+00:24:59,480 --> 00:25:03,919
+problem for 20
+
+680
+00:25:01,000 --> 00:25:06,480
+years and what we found by doing lots of
+
+681
+00:25:03,919 --> 00:25:07,919
+five-year projects is that learning was
+
+682
+00:25:06,480 --> 00:25:09,600
+more of the number of projects than it
+
+683
+00:25:07,919 --> 00:25:10,919
+was the number of years as you tackle
+
+684
+00:25:09,600 --> 00:25:11,840
+something it was the new thing you
+
+685
+00:25:10,919 --> 00:25:15,080
+learned
+
+686
+00:25:11,840 --> 00:25:16,720
+from uh and then a lot of times as I'll
+
+687
+00:25:15,080 --> 00:25:19,840
+say research doesn't work out and you'd
+
+688
+00:25:16,720 --> 00:25:22,640
+like to fail you know fail sooner rather
+
+689
+00:25:19,840 --> 00:25:22,640
+than fail
+
+690
+00:25:22,679 --> 00:25:26,679
+later uh what's worked well for us is
+
+691
+00:25:25,360 --> 00:25:28,880
+multidisiplinary multi-investigator
+
+692
+00:25:26,679 --> 00:25:31,080
+projects trying to have somebody from
+
+693
+00:25:28,880 --> 00:25:33,840
+multiple fields on a single
+
+694
+00:25:31,080 --> 00:25:35,000
+team uh and then to try and figure out
+
+695
+00:25:33,840 --> 00:25:36,679
+the strength and weaknesses of your
+
+696
+00:25:35,000 --> 00:25:38,279
+local environment at universities are
+
+697
+00:25:36,679 --> 00:25:40,320
+different there strengths that obviously
+
+698
+00:25:38,279 --> 00:25:41,880
+Google has that and there's weaknesses
+
+699
+00:25:40,320 --> 00:25:43,080
+too so try and figure out something that
+
+700
+00:25:41,880 --> 00:25:45,120
+matches your
+
+701
+00:25:43,080 --> 00:25:46,480
+environment and make sure it's exciting
+
+702
+00:25:45,120 --> 00:25:47,760
+that you want to work on it for several
+
+703
+00:25:46,480 --> 00:25:50,120
+years and what I've found is a
+
+704
+00:25:47,760 --> 00:25:51,399
+compelling prototype that can if we can
+
+705
+00:25:50,120 --> 00:25:53,399
+build this thing it's really going to be
+
+706
+00:25:51,399 --> 00:25:55,279
+amazing is is
+
+707
+00:25:53,399 --> 00:25:58,000
+inspirational okay so that's selecting
+
+708
+00:25:55,279 --> 00:26:00,880
+the problem my first project when I got
+
+709
+00:25:58,000 --> 00:26:02,760
+to Berkeley 40 years ago I spent about a
+
+710
+00:26:00,880 --> 00:26:05,440
+week thinking about it in joining some
+
+711
+00:26:02,760 --> 00:26:07,480
+other faculty and it was ridiculously
+
+712
+00:26:05,440 --> 00:26:09,320
+ridiculously ambitious three Hardware
+
+713
+00:26:07,480 --> 00:26:11,720
+faculty we're design our own instruction
+
+714
+00:26:09,320 --> 00:26:13,960
+set build our own chips build our own
+
+715
+00:26:11,720 --> 00:26:15,840
+interconnection network switches board
+
+716
+00:26:13,960 --> 00:26:17,279
+systems operating systems we didn't have
+
+717
+00:26:15,840 --> 00:26:19,440
+any experience in any of it we didn't
+
+718
+00:26:17,279 --> 00:26:21,679
+have any research funding we didn't have
+
+719
+00:26:19,440 --> 00:26:23,399
+any Computing or CAD tools so what
+
+720
+00:26:21,679 --> 00:26:25,799
+happened from all that you know a couple
+
+721
+00:26:23,399 --> 00:26:28,679
+of papers right not bad for academics
+
+722
+00:26:25,799 --> 00:26:30,760
+fortunately I took a a sabatical during
+
+723
+00:26:28,679 --> 00:26:32,559
+that time and went away and gave me
+
+724
+00:26:30,760 --> 00:26:34,080
+chance to think about things differently
+
+725
+00:26:32,559 --> 00:26:37,440
+and I came back and did the rist stuff
+
+726
+00:26:34,080 --> 00:26:40,320
+otherwise I wouldn't have uh tenure
+
+727
+00:26:37,440 --> 00:26:43,320
+today uh picking a solution let
+
+728
+00:26:40,320 --> 00:26:44,960
+complexity be your guide no keep things
+
+729
+00:26:43,320 --> 00:26:48,120
+simple unless you've got a really good
+
+730
+00:26:44,960 --> 00:26:49,520
+reason not to uh I came up with this
+
+731
+00:26:48,120 --> 00:26:51,279
+phrase early in my career is
+
+732
+00:26:49,520 --> 00:26:52,840
+intelligence beans on any project you
+
+733
+00:26:51,279 --> 00:26:54,799
+have a sack of intelligence beans that
+
+734
+00:26:52,840 --> 00:26:57,799
+you get to spend so decide where you
+
+735
+00:26:54,799 --> 00:26:59,360
+want to spend your intelligence beans uh
+
+736
+00:26:57,799 --> 00:27:00,799
+and then where it doesn't matter you
+
+737
+00:26:59,360 --> 00:27:02,640
+know you can use the common Solutions
+
+738
+00:27:00,799 --> 00:27:04,600
+and the best result you can possibly get
+
+739
+00:27:02,640 --> 00:27:06,399
+is afterwards for them to say anyone
+
+740
+00:27:04,600 --> 00:27:08,399
+could have thought of that right that
+
+741
+00:27:06,399 --> 00:27:09,559
+doesn't seem so complicated anybody
+
+742
+00:27:08,399 --> 00:27:12,080
+could have thought that that's that
+
+743
+00:27:09,559 --> 00:27:14,840
+you've achieved things well complexity
+
+744
+00:27:12,080 --> 00:27:16,840
+costs everything you know longer design
+
+745
+00:27:14,840 --> 00:27:18,640
+construction testing and debugging and
+
+746
+00:27:16,840 --> 00:27:20,360
+these delays lessen the impact of what
+
+747
+00:27:18,640 --> 00:27:22,320
+you do so try and keep it simple it's
+
+748
+00:27:20,360 --> 00:27:25,520
+hard to keep things simple but that's
+
+749
+00:27:22,320 --> 00:27:27,120
+the goal the computer scientific nope
+
+750
+00:27:25,520 --> 00:27:29,520
+you want to run experiments to discover
+
+751
+00:27:27,120 --> 00:27:32,039
+real problems is my John oout says you
+
+752
+00:27:29,520 --> 00:27:34,120
+use your intuition to ask questions not
+
+753
+00:27:32,039 --> 00:27:35,799
+to answer them we're really smart people
+
+754
+00:27:34,120 --> 00:27:38,320
+we can make up what we think the answer
+
+755
+00:27:35,799 --> 00:27:39,480
+is but that doesn't mean they're right
+
+756
+00:27:38,320 --> 00:27:41,360
+what we need is to figure out the
+
+757
+00:27:39,480 --> 00:27:44,039
+experiments to figure out the real
+
+758
+00:27:41,360 --> 00:27:45,600
+answers so you know at Berkeley they
+
+759
+00:27:44,039 --> 00:27:48,039
+asked me well how do you how do you pick
+
+760
+00:27:45,600 --> 00:27:50,080
+a problem and solution uh what we've
+
+761
+00:27:48,039 --> 00:27:51,519
+done over the these years these fiveyear
+
+762
+00:27:50,080 --> 00:27:54,360
+projects
+
+763
+00:27:51,519 --> 00:27:56,120
+is uh we start before the end of one
+
+764
+00:27:54,360 --> 00:27:58,760
+project we start meeting for at least a
+
+765
+00:27:56,120 --> 00:28:00,240
+year to start talking about the next one
+
+766
+00:27:58,760 --> 00:28:02,320
+we spend that much time thinking about
+
+767
+00:28:00,240 --> 00:28:03,760
+it typically what we've done is saying
+
+768
+00:28:02,320 --> 00:28:05,519
+what are some interesting technology
+
+769
+00:28:03,760 --> 00:28:07,480
+trends that are happening over the next
+
+770
+00:28:05,519 --> 00:28:10,159
+5 or 10 years that will shape the future
+
+771
+00:28:07,480 --> 00:28:12,480
+of computing 8 to 10 years out to see if
+
+772
+00:28:10,159 --> 00:28:16,200
+the mix of these Trends have some new
+
+773
+00:28:12,480 --> 00:28:17,919
+opportunity for risk it was probably uh
+
+774
+00:28:16,200 --> 00:28:20,320
+computer scientists were were being able
+
+775
+00:28:17,919 --> 00:28:22,360
+to do uh integrated circuit design there
+
+776
+00:28:20,320 --> 00:28:24,679
+was Morris law that was taking off so a
+
+777
+00:28:22,360 --> 00:28:26,200
+32-bit microprocessor was plausible
+
+778
+00:28:24,679 --> 00:28:30,159
+what's the right way to design such a
+
+779
+00:28:26,200 --> 00:28:31,679
+microprocessor for raid uh personal
+
+780
+00:28:30,159 --> 00:28:33,039
+personal computers were getting popular
+
+781
+00:28:31,679 --> 00:28:35,559
+they started building hard diss for them
+
+782
+00:28:33,039 --> 00:28:38,799
+these socalled small hard diss they were
+
+783
+00:28:35,559 --> 00:28:41,159
+in expensive uh performance for for
+
+784
+00:28:38,799 --> 00:28:43,480
+input output was slow processors were
+
+785
+00:28:41,159 --> 00:28:44,880
+getting faster risk this performance was
+
+786
+00:28:43,480 --> 00:28:47,320
+slow maybe we could do something with a
+
+787
+00:28:44,880 --> 00:28:49,240
+lot of them uh for the network or
+
+788
+00:28:47,320 --> 00:28:50,679
+workstation projects not only were
+
+789
+00:28:49,240 --> 00:28:53,080
+workstations getting really fast but
+
+790
+00:28:50,679 --> 00:28:55,080
+there were beginning to be uh local area
+
+791
+00:28:53,080 --> 00:28:56,720
+network switches can we just build a big
+
+792
+00:28:55,080 --> 00:28:59,799
+computer out of a bunch of these
+
+793
+00:28:56,720 --> 00:29:03,039
+components and then how that
+
+794
+00:28:59,799 --> 00:29:04,440
+work uh you know another thing that
+
+795
+00:29:03,039 --> 00:29:05,559
+we've noticed over the years is when
+
+796
+00:29:04,440 --> 00:29:07,760
+you're all by yourself and you're going
+
+797
+00:29:05,559 --> 00:29:09,720
+to work in a new field it's very scary
+
+798
+00:29:07,760 --> 00:29:12,240
+but if there's a group of you with
+
+799
+00:29:09,720 --> 00:29:13,519
+different areas and you kind of go after
+
+800
+00:29:12,240 --> 00:29:15,159
+this thing there's kind of safety in
+
+801
+00:29:13,519 --> 00:29:17,000
+numbers you aren't all risking your
+
+802
+00:29:15,159 --> 00:29:18,799
+careers working on machine learning but
+
+803
+00:29:17,000 --> 00:29:21,480
+the three of you working together seems
+
+804
+00:29:18,799 --> 00:29:26,080
+not quite as scary to be able to do
+
+805
+00:29:21,480 --> 00:29:27,840
+that and uh you know the big thing is to
+
+806
+00:29:26,080 --> 00:29:29,679
+when You' got these ideas is to find
+
+807
+00:29:27,840 --> 00:29:32,240
+people people whose opinion you trust
+
+808
+00:29:29,679 --> 00:29:33,399
+and try and uh get their feedback to
+
+809
+00:29:32,240 --> 00:29:35,120
+help you shape your vision you don't
+
+810
+00:29:33,399 --> 00:29:36,919
+have to do exactly what they say but you
+
+811
+00:29:35,120 --> 00:29:40,200
+ought to hear what they're say and then
+
+812
+00:29:36,919 --> 00:29:41,919
+pick a good name the Apparently in some
+
+813
+00:29:40,200 --> 00:29:45,120
+parallel universe I'm in the marketing
+
+814
+00:29:41,919 --> 00:29:46,960
+department but uh it's not that hard you
+
+815
+00:29:45,120 --> 00:29:49,240
+know I have these friends who show off
+
+816
+00:29:46,960 --> 00:29:51,640
+their their Latin education who pick
+
+817
+00:29:49,240 --> 00:29:53,279
+some name nobody can possibly spell and
+
+818
+00:29:51,640 --> 00:29:55,360
+they even have a word for it now you
+
+819
+00:29:53,279 --> 00:29:56,720
+pick the name and then you back fill in
+
+820
+00:29:55,360 --> 00:29:58,880
+the acronym and so they're called
+
+821
+00:29:56,720 --> 00:30:00,360
+backronyms right nobody's ever going to
+
+822
+00:29:58,880 --> 00:30:02,039
+remember that the the pro one of the
+
+823
+00:30:00,360 --> 00:30:05,000
+projects my younger colleagues picked is
+
+824
+00:30:02,039 --> 00:30:07,200
+a Spire it's actually 11 or 12 words
+
+825
+00:30:05,000 --> 00:30:09,039
+nobody but him can remember it so if
+
+826
+00:30:07,200 --> 00:30:10,679
+that's true you're you're going to use
+
+827
+00:30:09,039 --> 00:30:11,960
+the acronym model it's got to be three
+
+828
+00:30:10,679 --> 00:30:14,640
+or four letters if anybody's going to
+
+829
+00:30:11,960 --> 00:30:16,320
+remember it uh you want to the way we do
+
+830
+00:30:14,640 --> 00:30:18,559
+it is put a bunch of words on the on the
+
+831
+00:30:16,320 --> 00:30:20,320
+wall that describes the project vowels
+
+832
+00:30:18,559 --> 00:30:22,640
+are really valuable and you want to try
+
+833
+00:30:20,320 --> 00:30:25,080
+three or four letters three or four
+
+834
+00:30:22,640 --> 00:30:26,480
+letters that are an English word that
+
+835
+00:30:25,080 --> 00:30:30,519
+kind of have something to do with the
+
+836
+00:30:26,480 --> 00:30:30,519
+project so but I'm a available as a
+
+837
+00:30:30,960 --> 00:30:36,039
+consultant uh running a project do you
+
+838
+00:30:33,480 --> 00:30:38,159
+want to avoid feedback uh that's one of
+
+839
+00:30:36,039 --> 00:30:40,080
+themes no we do these periodic project
+
+840
+00:30:38,159 --> 00:30:43,360
+reviews with Outsiders we've been doing
+
+841
+00:30:40,080 --> 00:30:45,200
+them for 30 years twice a year three day
+
+842
+00:30:43,360 --> 00:30:47,919
+how many people here have been to uh
+
+843
+00:30:45,200 --> 00:30:51,480
+Berkeley style Retreat all right that's
+
+844
+00:30:47,919 --> 00:30:56,559
+like a dozen people here
+
+845
+00:30:51,480 --> 00:30:59,639
+uh and um we The Outsiders are valued
+
+846
+00:30:56,559 --> 00:31:02,480
+and you know it's huge benefits to doing
+
+847
+00:30:59,639 --> 00:31:03,919
+this uh at the end we get the feedback
+
+848
+00:31:02,480 --> 00:31:06,320
+from everybody and we don't argue with
+
+849
+00:31:03,919 --> 00:31:08,480
+that feedback we try and understand it
+
+850
+00:31:06,320 --> 00:31:10,840
+it also creates deadlines which are
+
+851
+00:31:08,480 --> 00:31:12,639
+tough in everywhere but particularly in
+
+852
+00:31:10,840 --> 00:31:15,320
+Academia builds team
+
+853
+00:31:12,639 --> 00:31:16,600
+spirit and for the people working on it
+
+854
+00:31:15,320 --> 00:31:18,720
+gives them a chance to communicate and
+
+855
+00:31:16,600 --> 00:31:21,399
+spread their ideas interact with with
+
+856
+00:31:18,720 --> 00:31:23,840
+others uh consider midcourse correction
+
+857
+00:31:21,399 --> 00:31:25,720
+our first project that I was doing was a
+
+858
+00:31:23,840 --> 00:31:26,919
+a multiprocessor the risk ideas were
+
+859
+00:31:25,720 --> 00:31:28,919
+just starting to catch on but they
+
+860
+00:31:26,919 --> 00:31:30,120
+hadn't been commercial yet but by Midway
+
+861
+00:31:28,919 --> 00:31:33,240
+through the project there were
+
+862
+00:31:30,120 --> 00:31:35,919
+commercial chips like myips and Spark we
+
+863
+00:31:33,240 --> 00:31:37,679
+should have redirected our project to be
+
+864
+00:31:35,919 --> 00:31:39,360
+use the commercial processors but I felt
+
+865
+00:31:37,679 --> 00:31:41,159
+like that was you know breaking our
+
+866
+00:31:39,360 --> 00:31:43,000
+promise and you know we should have
+
+867
+00:31:41,159 --> 00:31:45,480
+stuck the ones we did customly but we
+
+868
+00:31:43,000 --> 00:31:47,600
+would had a much bigger impact with a
+
+869
+00:31:45,480 --> 00:31:49,200
+multiprocessor risk project then if we'
+
+870
+00:31:47,600 --> 00:31:51,399
+use commercial instruction set so that's
+
+871
+00:31:49,200 --> 00:31:53,240
+part of our culture now it's a five-year
+
+872
+00:31:51,399 --> 00:31:54,720
+project two and a half years in maybe
+
+873
+00:31:53,240 --> 00:31:56,320
+the world has changed in some way and
+
+874
+00:31:54,720 --> 00:31:58,399
+you should take advantage of it an
+
+875
+00:31:56,320 --> 00:31:59,960
+example of that would have been the rad
+
+876
+00:31:58,399 --> 00:32:02,039
+lab which was a couple of projects ago
+
+877
+00:31:59,960 --> 00:32:04,880
+we were doing internet services and then
+
+878
+00:32:02,039 --> 00:32:06,360
+cloud computing got popular in it so we
+
+879
+00:32:04,880 --> 00:32:08,080
+you know embraced that and that became a
+
+880
+00:32:06,360 --> 00:32:10,480
+big theme of the red
+
+881
+00:32:08,080 --> 00:32:11,279
+lab uh pick the size the members of the
+
+882
+00:32:10,480 --> 00:32:13,000
+team
+
+883
+00:32:11,279 --> 00:32:14,679
+carefully uh you know tough
+
+884
+00:32:13,000 --> 00:32:16,399
+personalities are hard in everybody not
+
+885
+00:32:14,679 --> 00:32:18,360
+just tough personalities for faculty
+
+886
+00:32:16,399 --> 00:32:20,399
+even tough personalities for students
+
+887
+00:32:18,360 --> 00:32:22,679
+right you know it it can make it no fun
+
+888
+00:32:20,399 --> 00:32:24,399
+to come to work so trying and get good
+
+889
+00:32:22,679 --> 00:32:26,760
+people I think Berkeley consciously
+
+890
+00:32:24,399 --> 00:32:29,159
+tries not to hire Pradas which makes it
+
+891
+00:32:26,760 --> 00:32:31,159
+nicer and if you know if you have one
+
+892
+00:32:29,159 --> 00:32:33,480
+expert per area it's a little easier my
+
+893
+00:32:31,159 --> 00:32:34,880
+colleague Kathy yelick I've got opinions
+
+894
+00:32:33,480 --> 00:32:36,799
+about programming language and compilers
+
+895
+00:32:34,880 --> 00:32:38,639
+but when she speaks you know I listen
+
+896
+00:32:36,799 --> 00:32:40,919
+right I don't and that makes it easier
+
+897
+00:32:38,639 --> 00:32:42,760
+to do things don't be distracted by
+
+898
+00:32:40,919 --> 00:32:45,399
+others this is not going to be so
+
+899
+00:32:42,760 --> 00:32:48,399
+radical for you guys but about 10 years
+
+900
+00:32:45,399 --> 00:32:50,120
+ago we went to an open uh uh
+
+901
+00:32:48,399 --> 00:32:53,320
+collaborative thing where we got rid of
+
+902
+00:32:50,120 --> 00:32:54,639
+Faculty offices what was happening is
+
+903
+00:32:53,320 --> 00:32:56,240
+that the students were staying home
+
+904
+00:32:54,639 --> 00:32:58,279
+because the computers were just as fast
+
+905
+00:32:56,240 --> 00:32:59,720
+and the network just as fast as home as
+
+906
+00:32:58,279 --> 00:33:01,200
+they were at work and whether this is
+
+907
+00:32:59,720 --> 00:33:02,919
+good for a company or not I'll leave to
+
+908
+00:33:01,200 --> 00:33:04,320
+you but it's terrible for research
+
+909
+00:33:02,919 --> 00:33:06,600
+because it's not just put your head down
+
+910
+00:33:04,320 --> 00:33:07,519
+and plow ahead we got to talk to people
+
+911
+00:33:06,600 --> 00:33:08,760
+because you're not sure where you're
+
+912
+00:33:07,519 --> 00:33:11,480
+supposed to be
+
+913
+00:33:08,760 --> 00:33:14,760
+going uh so we put it into the open
+
+914
+00:33:11,480 --> 00:33:16,240
+space uh and what now that I've read
+
+915
+00:33:14,760 --> 00:33:18,760
+about it what you're shooting for is
+
+916
+00:33:16,240 --> 00:33:20,720
+communication and concentration so
+
+917
+00:33:18,760 --> 00:33:21,960
+people can come in work they have to be
+
+918
+00:33:20,720 --> 00:33:23,320
+able to concentrate enough to get the
+
+919
+00:33:21,960 --> 00:33:25,120
+work done but you want to have
+
+920
+00:33:23,320 --> 00:33:27,519
+spontaneous communication which leads to
+
+921
+00:33:25,120 --> 00:33:28,679
+Innovation so bump into each other and
+
+922
+00:33:27,519 --> 00:33:31,039
+have meeting
+
+923
+00:33:28,679 --> 00:33:32,559
+rooms uh we've got the meeting rooms
+
+924
+00:33:31,039 --> 00:33:35,120
+optimized for discussions and phone
+
+925
+00:33:32,559 --> 00:33:36,880
+calls we came Jeff Waltz brought us
+
+926
+00:33:35,120 --> 00:33:38,440
+probably 10 years ago and we saw what
+
+927
+00:33:36,880 --> 00:33:42,320
+you guys did with your conference rooms
+
+928
+00:33:38,440 --> 00:33:44,519
+and we imitated that uh at uh and like
+
+929
+00:33:42,320 --> 00:33:46,760
+you guys we have kitchens and free
+
+930
+00:33:44,519 --> 00:33:49,880
+drinks we can't we can't do food but uh
+
+931
+00:33:46,760 --> 00:33:51,840
+we can do drinks um and amazing thing it
+
+932
+00:33:49,880 --> 00:33:54,399
+accelerates research who would have
+
+933
+00:33:51,840 --> 00:33:57,159
+thought space could accelerate research
+
+934
+00:33:54,399 --> 00:33:59,440
+uh it it was uh startling uh what
+
+935
+00:33:57,159 --> 00:34:01,960
+happened we went from faculty offices
+
+936
+00:33:59,440 --> 00:34:03,480
+that had kind of whiteboards there that
+
+937
+00:34:01,960 --> 00:34:05,159
+were filled with faculty reminders when
+
+938
+00:34:03,480 --> 00:34:07,000
+you came in you got to work on like one
+
+939
+00:34:05,159 --> 00:34:10,040
+square foot to put your ID in there
+
+940
+00:34:07,000 --> 00:34:12,119
+instead we had giant whiteboards uh
+
+941
+00:34:10,040 --> 00:34:13,760
+there was no writing pres you couldn't
+
+942
+00:34:12,119 --> 00:34:16,280
+reserve it in the high-tech way we
+
+943
+00:34:13,760 --> 00:34:18,200
+copied it was with the cell phones uh it
+
+944
+00:34:16,280 --> 00:34:19,919
+came stimulating people came in more
+
+945
+00:34:18,200 --> 00:34:23,320
+there was more spontaneous
+
+946
+00:34:19,919 --> 00:34:25,919
+meetings uh and then we noticed the 0 to
+
+947
+00:34:23,320 --> 00:34:27,919
+60 time for new people went incredibly
+
+948
+00:34:25,919 --> 00:34:32,119
+faster in by having that kind kind of
+
+949
+00:34:27,919 --> 00:34:34,040
+environment so mate zaharia the uh in
+
+950
+00:34:32,119 --> 00:34:36,320
+his second semester there he gave a talk
+
+951
+00:34:34,040 --> 00:34:38,520
+at Carnegie melan and we'd never had
+
+952
+00:34:36,320 --> 00:34:40,200
+anybody do that before Nam mat zaharia
+
+953
+00:34:38,520 --> 00:34:42,399
+who's the founder of spark did a lot of
+
+954
+00:34:40,200 --> 00:34:44,040
+good things but it wasn't obvious then
+
+955
+00:34:42,399 --> 00:34:45,200
+that he was going to be that good as it
+
+956
+00:34:44,040 --> 00:34:46,599
+turned out and so maybe that had
+
+957
+00:34:45,200 --> 00:34:50,000
+something to do with
+
+958
+00:34:46,599 --> 00:34:52,599
+it uh and so Richard Hamming has
+
+959
+00:34:50,000 --> 00:34:54,399
+opinions on this based on his
+
+960
+00:34:52,599 --> 00:34:56,599
+experience which I'm sure you're not
+
+961
+00:34:54,399 --> 00:34:58,839
+surprised okay he's got two opinions the
+
+962
+00:34:56,599 --> 00:35:00,000
+first one is open versus closed doors
+
+963
+00:34:58,839 --> 00:35:02,119
+and the only way he can have this
+
+964
+00:35:00,000 --> 00:35:03,640
+opinion was to keep track of all of his
+
+965
+00:35:02,119 --> 00:35:05,200
+colleagues which ones kept the doors
+
+966
+00:35:03,640 --> 00:35:09,920
+closed which ones open which ones were
+
+967
+00:35:05,200 --> 00:35:12,200
+successful and he's here's his
+
+968
+00:35:09,920 --> 00:35:14,480
+ideas the example I've given you already
+
+969
+00:35:12,200 --> 00:35:16,720
+is working with a door closed or opener
+
+970
+00:35:14,480 --> 00:35:18,320
+if you work with your door closed you
+
+971
+00:35:16,720 --> 00:35:20,560
+won't be interrupted you get your work
+
+972
+00:35:18,320 --> 00:35:22,200
+done you work with your door open people
+
+973
+00:35:20,560 --> 00:35:23,000
+come byy and stop and chat and so on and
+
+974
+00:35:22,200 --> 00:35:26,160
+so
+
+975
+00:35:23,000 --> 00:35:28,040
+on but I've noticed very clearly at B
+
+976
+00:35:26,160 --> 00:35:31,240
+Laboratories those who were with the
+
+977
+00:35:28,040 --> 00:35:33,800
+door shut may be working just as hard 10
+
+978
+00:35:31,240 --> 00:35:35,880
+years later but they don't know what to
+
+979
+00:35:33,800 --> 00:35:39,000
+work on they are not connected with the
+
+980
+00:35:35,880 --> 00:35:40,880
+reality those who had the door open may
+
+981
+00:35:39,000 --> 00:35:43,839
+very well know what's
+
+982
+00:35:40,880 --> 00:35:46,079
+important now I cannot prove to you
+
+983
+00:35:43,839 --> 00:35:48,040
+whether the open door causes the open
+
+984
+00:35:46,079 --> 00:35:51,280
+mind or whe the open mind causes the
+
+985
+00:35:48,040 --> 00:35:53,280
+open door I Su suspect a both I can only
+
+986
+00:35:51,280 --> 00:35:54,400
+establish the correlation and it was
+
+987
+00:35:53,280 --> 00:35:57,880
+quite
+
+988
+00:35:54,400 --> 00:35:59,319
+spectacular almost always
+
+989
+00:35:57,880 --> 00:36:01,680
+the guy with the door closed were often
+
+990
+00:35:59,319 --> 00:36:04,359
+very well able very gifted but they seem
+
+991
+00:36:01,680 --> 00:36:07,000
+to work always on slightly the wrong
+
+992
+00:36:04,359 --> 00:36:09,160
+problem so you have to get wide feeling
+
+993
+00:36:07,000 --> 00:36:13,520
+for what is going
+
+994
+00:36:09,160 --> 00:36:15,960
+on okay and then he believed that so
+
+995
+00:36:13,520 --> 00:36:17,560
+much that this is how his his patterns
+
+996
+00:36:15,960 --> 00:36:19,000
+how he handled Friday afternoons about
+
+997
+00:36:17,560 --> 00:36:20,680
+the importance especially for
+
+998
+00:36:19,000 --> 00:36:22,680
+researchers you can start work really
+
+999
+00:36:20,680 --> 00:36:26,560
+hard but you could miss the really
+
+1000
+00:36:22,680 --> 00:36:28,640
+important thing if by not
+
+1001
+00:36:26,560 --> 00:36:31,440
+interacting at the urging of some other
+
+1002
+00:36:28,640 --> 00:36:33,880
+people partly and partly in my own I
+
+1003
+00:36:31,440 --> 00:36:38,560
+used to set aside Friday noon and Friday
+
+1004
+00:36:33,880 --> 00:36:40,240
+afternoon for great thoughts meaning yes
+
+1005
+00:36:38,560 --> 00:36:43,240
+I'll answer a telephone yes I'll sign a
+
+1006
+00:36:40,240 --> 00:36:45,440
+sheet of paper but mainly what is the
+
+1007
+00:36:43,240 --> 00:36:47,480
+effect of computing on
+
+1008
+00:36:45,440 --> 00:36:48,440
+science what the hell am I doing with
+
+1009
+00:36:47,480 --> 00:36:51,280
+this Computing
+
+1010
+00:36:48,440 --> 00:36:53,280
+machine how is it going to affect
+
+1011
+00:36:51,280 --> 00:36:55,960
+AT&T what should I be doing with
+
+1012
+00:36:53,280 --> 00:36:58,319
+Computing what is the nature of
+
+1013
+00:36:55,960 --> 00:37:00,920
+software my friends after a while I got
+
+1014
+00:36:58,319 --> 00:37:02,920
+to know Friday afternoon's great
+
+1015
+00:37:00,920 --> 00:37:06,240
+thoughts what's the nature of this that
+
+1016
+00:37:02,920 --> 00:37:08,720
+and the other thing I spent 10% of my
+
+1017
+00:37:06,240 --> 00:37:11,400
+time trying to answer the question what
+
+1018
+00:37:08,720 --> 00:37:13,839
+are the important problems in my field
+
+1019
+00:37:11,400 --> 00:37:15,839
+10% Friday afternoon straight
+
+1020
+00:37:13,839 --> 00:37:16,560
+through don't do it Monday morning
+
+1021
+00:37:15,839 --> 00:37:17,880
+because you'll be interrupted
+
+1022
+00:37:16,560 --> 00:37:19,400
+immediately if you do it Friday
+
+1023
+00:37:17,880 --> 00:37:20,720
+afternoon someone can linger around the
+
+1024
+00:37:19,400 --> 00:37:22,640
+Saturday and Sunday if you do it Monday
+
+1025
+00:37:20,720 --> 00:37:25,800
+morning there a hot conference at 10:00
+
+1026
+00:37:22,640 --> 00:37:27,640
+in Bingo everything's broken up I use it
+
+1027
+00:37:25,800 --> 00:37:30,880
+Friday afternoon for many many years I I
+
+1028
+00:37:27,640 --> 00:37:34,079
+recommend that you find a regular time
+
+1029
+00:37:30,880 --> 00:37:36,240
+to stop and think what are the important
+
+1030
+00:37:34,079 --> 00:37:37,640
+things what is going on what is the
+
+1031
+00:37:36,240 --> 00:37:39,960
+nature of what you are
+
+1032
+00:37:37,640 --> 00:37:42,440
+doing what is the characteristic of the
+
+1033
+00:37:39,960 --> 00:37:44,599
+job what are the fundamentals behind it
+
+1034
+00:37:42,440 --> 00:37:46,640
+so you have some idea of where you're
+
+1035
+00:37:44,599 --> 00:37:48,280
+headed so you can March in a uniform
+
+1036
+00:37:46,640 --> 00:37:51,720
+Direction and get far rather than being
+
+1037
+00:37:48,280 --> 00:37:51,720
+a drunken sail and getting
+
+1038
+00:37:52,000 --> 00:37:56,599
+nowhere you're free to not ignore his
+
+1039
+00:37:54,319 --> 00:37:58,400
+advice but then your career is that of a
+
+1040
+00:37:56,599 --> 00:37:59,920
+drunken sailor okay
+
+1041
+00:37:58,400 --> 00:38:03,400
+okay finishing your project I'll talk
+
+1042
+00:37:59,920 --> 00:38:04,800
+about this some uh if people count the
+
+1043
+00:38:03,400 --> 00:38:08,359
+number of projects you finish not the
+
+1044
+00:38:04,800 --> 00:38:10,359
+ones you start right uh and successful
+
+1045
+00:38:08,359 --> 00:38:13,240
+projects go through this unglamorous
+
+1046
+00:38:10,359 --> 00:38:14,560
+hard phase of of trying to finish it and
+
+1047
+00:38:13,240 --> 00:38:15,960
+it's because design is a lot more fun
+
+1048
+00:38:14,560 --> 00:38:17,520
+it's a lot more fun to design things to
+
+1049
+00:38:15,960 --> 00:38:20,119
+make stuff
+
+1050
+00:38:17,520 --> 00:38:22,160
+work but uh you know some positive
+
+1051
+00:38:20,119 --> 00:38:24,000
+things Fred Brooks one of my hero says
+
+1052
+00:38:22,160 --> 00:38:26,520
+there's no winners on a losing team no
+
+1053
+00:38:24,000 --> 00:38:28,800
+losers on a winning team if if you win
+
+1054
+00:38:26,520 --> 00:38:31,640
+anybody in no matter what they did they
+
+1055
+00:38:28,800 --> 00:38:34,560
+win improve productivity of team members
+
+1056
+00:38:31,640 --> 00:38:35,920
+how can you do that uh organize each day
+
+1057
+00:38:34,560 --> 00:38:38,839
+when are figuring out when you're most
+
+1058
+00:38:35,920 --> 00:38:40,000
+alert uh when you need a nap or exercise
+
+1059
+00:38:38,839 --> 00:38:42,520
+or
+
+1060
+00:38:40,000 --> 00:38:47,160
+sleep uh when how often should you be
+
+1061
+00:38:42,520 --> 00:38:50,079
+reading and writing uh programming and
+
+1062
+00:38:47,160 --> 00:38:51,839
+email and what I found it for successful
+
+1063
+00:38:50,079 --> 00:38:54,319
+colleagues they always used to do this
+
+1064
+00:38:51,839 --> 00:38:56,319
+you know daily weekly and even every six
+
+1065
+00:38:54,319 --> 00:38:59,160
+months to see how they're doing on their
+
+1066
+00:38:56,319 --> 00:39:00,960
+career uh these days there's this idea
+
+1067
+00:38:59,160 --> 00:39:02,960
+of agile scrum where you meet in the
+
+1068
+00:39:00,960 --> 00:39:04,319
+same place at the same time and do
+
+1069
+00:39:02,960 --> 00:39:05,200
+Sprints I think this is a pretty
+
+1070
+00:39:04,319 --> 00:39:07,520
+effective
+
+1071
+00:39:05,200 --> 00:39:09,680
+model and then reduce a project so if
+
+1072
+00:39:07,520 --> 00:39:11,720
+it's late again Fred Brooks said adding
+
+1073
+00:39:09,680 --> 00:39:14,119
+people to a late project makes it later
+
+1074
+00:39:11,720 --> 00:39:16,880
+in his classic book the mythical man
+
+1075
+00:39:14,119 --> 00:39:18,839
+month uh and finishing a project is how
+
+1076
+00:39:16,880 --> 00:39:20,520
+you acquire taste how do you get gr
+
+1077
+00:39:18,839 --> 00:39:22,480
+taste if you don't finish it you don't
+
+1078
+00:39:20,520 --> 00:39:25,200
+know really what wrong and it helps you
+
+1079
+00:39:22,480 --> 00:39:27,880
+pick good problems and find Simple
+
+1080
+00:39:25,200 --> 00:39:31,400
+Solutions okay and then my friend John
+
+1081
+00:39:27,880 --> 00:39:32,680
+Hennessy I guess uh president Stanford
+
+1082
+00:39:31,400 --> 00:39:34,440
+said this a long time ago you can
+
+1083
+00:39:32,680 --> 00:39:35,920
+quickly tell whether or not the authors
+
+1084
+00:39:34,440 --> 00:39:38,079
+have ever built something and made it
+
+1085
+00:39:35,920 --> 00:39:40,520
+work and if you never make it work you
+
+1086
+00:39:38,079 --> 00:39:43,520
+don't acquire that taste evaluating
+
+1087
+00:39:40,520 --> 00:39:44,960
+quantitatively never be proven wrong uh
+
+1088
+00:39:43,520 --> 00:39:46,520
+nope if you can't be proven wrong then
+
+1089
+00:39:44,960 --> 00:39:49,040
+you can't be proven
+
+1090
+00:39:46,520 --> 00:39:50,560
+right and you have to you know we need
+
+1091
+00:39:49,040 --> 00:39:51,839
+reproducible results you're trying to
+
+1092
+00:39:50,560 --> 00:39:52,920
+get people to use your ideas if they
+
+1093
+00:39:51,839 --> 00:39:55,720
+can't reproduce them they're not going
+
+1094
+00:39:52,920 --> 00:39:58,319
+to take your word for
+
+1095
+00:39:55,720 --> 00:40:00,640
+it so and you know for better for worse
+
+1096
+00:39:58,319 --> 00:40:02,760
+benchmarks shaper field and especially
+
+1097
+00:40:00,640 --> 00:40:04,839
+in the commercial world if we have good
+
+1098
+00:40:02,760 --> 00:40:06,640
+ones it accelerates progress bad ones
+
+1099
+00:40:04,839 --> 00:40:09,720
+then there's a choice between helping
+
+1100
+00:40:06,640 --> 00:40:12,119
+sales or helping customers and often
+
+1101
+00:40:09,720 --> 00:40:12,119
+sales
+
+1102
+00:40:13,319 --> 00:40:17,359
+wins and then transferring technology
+
+1103
+00:40:15,960 --> 00:40:19,800
+it's not just you write a paper and
+
+1104
+00:40:17,359 --> 00:40:22,400
+everybody starts using it uh you have to
+
+1105
+00:40:19,800 --> 00:40:24,599
+go out and stump it uh you know this
+
+1106
+00:40:22,400 --> 00:40:26,920
+last year there's a RIS five which is an
+
+1107
+00:40:24,599 --> 00:40:29,359
+effort to be able to have an open
+
+1108
+00:40:26,920 --> 00:40:31,079
+instruction set so that be an open
+
+1109
+00:40:29,359 --> 00:40:34,160
+alternative kind of like Linux is to
+
+1110
+00:40:31,079 --> 00:40:36,720
+Microsoft Windows so I gave talks at the
+
+1111
+00:40:34,160 --> 00:40:38,119
+you know at 10 universities this fall to
+
+1112
+00:40:36,720 --> 00:40:39,599
+try and get the word out then if they
+
+1113
+00:40:38,119 --> 00:40:41,359
+kind of like the ideas then they read
+
+1114
+00:40:39,599 --> 00:40:44,000
+the
+
+1115
+00:40:41,359 --> 00:40:45,640
+papers uh it of course you know if you
+
+1116
+00:40:44,000 --> 00:40:47,560
+don't pick a good problem people aren't
+
+1117
+00:40:45,640 --> 00:40:48,920
+going to be that interested and you can
+
+1118
+00:40:47,560 --> 00:40:50,480
+tell if it's a good problem if more
+
+1119
+00:40:48,920 --> 00:40:52,920
+people get interested over time rather
+
+1120
+00:40:50,480 --> 00:40:55,480
+than your start to do that I think I'm
+
+1121
+00:40:52,920 --> 00:40:57,359
+persuasive the way I change Minds is
+
+1122
+00:40:55,480 --> 00:40:59,359
+with believable numbers and so the you
+
+1123
+00:40:57,359 --> 00:41:00,880
+have to collect that quantitatively and
+
+1124
+00:40:59,359 --> 00:41:02,760
+believe it the other thing I learned
+
+1125
+00:41:00,880 --> 00:41:04,800
+late in my career is your personality
+
+1126
+00:41:02,760 --> 00:41:06,880
+affects technology transfer there's this
+
+1127
+00:41:04,800 --> 00:41:08,839
+person who I won't name who had a bunch
+
+1128
+00:41:06,880 --> 00:41:10,200
+of interesting ideas and people wouldn't
+
+1129
+00:41:08,839 --> 00:41:12,839
+use them and I talk to people in
+
+1130
+00:41:10,200 --> 00:41:14,920
+Industry about they hated that guy they
+
+1131
+00:41:12,839 --> 00:41:18,280
+hated that guy if there was any other
+
+1132
+00:41:14,920 --> 00:41:19,760
+way to do it at all they would use it
+
+1133
+00:41:18,280 --> 00:41:21,599
+because they would that would the last
+
+1134
+00:41:19,760 --> 00:41:23,440
+thing they would do so you could be a
+
+1135
+00:41:21,599 --> 00:41:24,800
+jerk if you have the only possible
+
+1136
+00:41:23,440 --> 00:41:26,440
+solution but it's kind of hard to do
+
+1137
+00:41:24,800 --> 00:41:28,000
+that in Computing maybe in biology you
+
+1138
+00:41:26,440 --> 00:41:30,800
+can do that
+
+1139
+00:41:28,000 --> 00:41:32,040
+uh and then product groups people don't
+
+1140
+00:41:30,800 --> 00:41:33,520
+want to change product groups there's
+
+1141
+00:41:32,040 --> 00:41:36,560
+risk associated with change so it's
+
+1142
+00:41:33,520 --> 00:41:38,760
+worked for us uh and and this goes back
+
+1143
+00:41:36,560 --> 00:41:41,119
+so Fred Brooks when he was a graduate
+
+1144
+00:41:38,760 --> 00:41:43,280
+student his advisor was Howard Ain and
+
+1145
+00:41:41,119 --> 00:41:44,680
+he Fred Brooks says I think these people
+
+1146
+00:41:43,280 --> 00:41:46,640
+are going to steal your idea these
+
+1147
+00:41:44,680 --> 00:41:49,520
+companies are looking at his idea at
+
+1148
+00:41:46,640 --> 00:41:52,440
+Harvard University a drum memory System
+
+1149
+00:41:49,520 --> 00:41:53,839
+Watch Out Howard and what Akin said in
+
+1150
+00:41:52,440 --> 00:41:55,280
+southern ACC the problem in this
+
+1151
+00:41:53,839 --> 00:41:56,800
+business isn't to keep people from
+
+1152
+00:41:55,280 --> 00:41:59,440
+stealing your ideas it's making them
+
+1153
+00:41:56,800 --> 00:42:02,400
+steal your ideas and that's that's still
+
+1154
+00:41:59,440 --> 00:42:05,480
+true today 65 years later so what's
+
+1155
+00:42:02,400 --> 00:42:07,760
+worked for us is to find one gold bold
+
+1156
+00:42:05,480 --> 00:42:10,200
+group often not the leaders but some
+
+1157
+00:42:07,760 --> 00:42:12,480
+bold group willing to take a shot on it
+
+1158
+00:42:10,200 --> 00:42:14,839
+and they are successful and then kind of
+
+1159
+00:42:12,480 --> 00:42:17,480
+the rest of the field is well and for us
+
+1160
+00:42:14,839 --> 00:42:19,720
+it was Sun Microsystems for risk and EMC
+
+1161
+00:42:17,480 --> 00:42:21,880
+for raid and Inky and then Google for
+
+1162
+00:42:19,720 --> 00:42:24,400
+networks of workstations but it's kind
+
+1163
+00:42:21,880 --> 00:42:27,000
+of like the rest of the field oh damn
+
+1164
+00:42:24,400 --> 00:42:28,119
+they tried it it works okay we'll change
+
+1165
+00:42:27,000 --> 00:42:30,079
+right
+
+1166
+00:42:28,119 --> 00:42:31,440
+people don't really as much as people
+
+1167
+00:42:30,079 --> 00:42:32,760
+enjoy ideas they don't want to take the
+
+1168
+00:42:31,440 --> 00:42:34,520
+risk and then the other way of
+
+1169
+00:42:32,760 --> 00:42:37,480
+transferring technology is to start a
+
+1170
+00:42:34,520 --> 00:42:39,680
+company in my 40 Years everybody I've
+
+1171
+00:42:37,480 --> 00:42:42,400
+talked to who's worked for a startup
+
+1172
+00:42:39,680 --> 00:42:43,920
+likes it doing it once they they they
+
+1173
+00:42:42,400 --> 00:42:45,599
+they absolutely now there's some people
+
+1174
+00:42:43,920 --> 00:42:47,960
+who love doing it more than once a lot
+
+1175
+00:42:45,599 --> 00:42:49,400
+of people once is enough but they
+
+1176
+00:42:47,960 --> 00:42:52,559
+everybody thinks it was useful they
+
+1177
+00:42:49,400 --> 00:42:54,960
+learn a lot uh and then if it works you
+
+1178
+00:42:52,559 --> 00:42:56,440
+know it works out you see not just your
+
+1179
+00:42:54,960 --> 00:42:58,839
+ideas but the product and of course you
+
+1180
+00:42:56,440 --> 00:43:01,680
+can po L make a lot of money if that
+
+1181
+00:42:58,839 --> 00:43:04,160
+works out and become famous the
+
+1182
+00:43:01,680 --> 00:43:06,000
+downsides are that you know you learn
+
+1183
+00:43:04,160 --> 00:43:09,319
+about things you might not want to learn
+
+1184
+00:43:06,000 --> 00:43:12,720
+about but uh and particularly lawsuits
+
+1185
+00:43:09,319 --> 00:43:14,280
+my friends who lawsuits that's less fun
+
+1186
+00:43:12,720 --> 00:43:16,800
+and you don't get to do research and
+
+1187
+00:43:14,280 --> 00:43:18,480
+development uh and then only 10% of the
+
+1188
+00:43:16,800 --> 00:43:20,160
+startups make it right but but
+
+1189
+00:43:18,480 --> 00:43:21,680
+nevertheless everybody thinks it was
+
+1190
+00:43:20,160 --> 00:43:23,720
+worth it that for once in their life
+
+1191
+00:43:21,680 --> 00:43:25,880
+maybe when you're younger so I didn't
+
+1192
+00:43:23,720 --> 00:43:27,440
+really realize that there were six roles
+
+1193
+00:43:25,880 --> 00:43:30,319
+to being a leader of a project and it
+
+1194
+00:43:27,440 --> 00:43:33,520
+changes over time uh but that's uh
+
+1195
+00:43:30,319 --> 00:43:35,359
+that's what I believe now now so
+
+1196
+00:43:33,520 --> 00:43:37,960
+wrapping things up and there's time for
+
+1197
+00:43:35,359 --> 00:43:40,119
+questions here is the goal is to have
+
+1198
+00:43:37,960 --> 00:43:42,200
+impact is to change the way people do
+
+1199
+00:43:40,119 --> 00:43:45,240
+Computing and Engineering a positive way
+
+1200
+00:43:42,200 --> 00:43:49,680
+now I we do these five-year projects now
+
+1201
+00:43:45,240 --> 00:43:52,119
+that my career is uh ending I've I will
+
+1202
+00:43:49,680 --> 00:43:54,520
+do 12 right they overlap so I I've been
+
+1203
+00:43:52,119 --> 00:43:56,079
+there 40 years not 60 years you can't
+
+1204
+00:43:54,520 --> 00:43:57,559
+tell if a Project's successful for at
+
+1205
+00:43:56,079 --> 00:43:59,720
+least 10 years and
+
+1206
+00:43:57,559 --> 00:44:01,839
+the good news is three of them looked
+
+1207
+00:43:59,720 --> 00:44:04,000
+like they were pretty successful they 10
+
+1208
+00:44:01,839 --> 00:44:06,200
+years old so that's like kind of 25%
+
+1209
+00:44:04,000 --> 00:44:08,160
+batting average which so I'm glad I did
+
+1210
+00:44:06,200 --> 00:44:10,839
+a lot of projects uh there's two that
+
+1211
+00:44:08,160 --> 00:44:12,720
+are finished but haven't uh you know it
+
+1212
+00:44:10,839 --> 00:44:15,720
+hasn't been 10 years the rad lab did
+
+1213
+00:44:12,720 --> 00:44:17,880
+spark and mesos those seem promising the
+
+1214
+00:44:15,720 --> 00:44:19,960
+par lab did communication avoiding
+
+1215
+00:44:17,880 --> 00:44:22,040
+algorithms Jim demo and this RIS five
+
+1216
+00:44:19,960 --> 00:44:23,559
+stuff but you know we it'll take five or
+
+1217
+00:44:22,040 --> 00:44:25,720
+seven years to know how significant it
+
+1218
+00:44:23,559 --> 00:44:28,319
+was so maybe I'll get up to you know
+
+1219
+00:44:25,720 --> 00:44:29,920
+five out of 12 which is like 40% but
+
+1220
+00:44:28,319 --> 00:44:31,480
+most of the projects don't work so I'm
+
+1221
+00:44:29,920 --> 00:44:34,040
+glad I did short
+
+1222
+00:44:31,480 --> 00:44:36,000
+projects uh so solve a problem other
+
+1223
+00:44:34,040 --> 00:44:38,800
+people care about you taste that you
+
+1224
+00:44:36,000 --> 00:44:42,480
+acquire by finishing projects and then
+
+1225
+00:44:38,800 --> 00:44:43,960
+uh whoops and and so okay and and I
+
+1226
+00:44:42,480 --> 00:44:45,800
+think the key theme of running over my
+
+1227
+00:44:43,960 --> 00:44:47,599
+career is is feedback is figuring out
+
+1228
+00:44:45,800 --> 00:44:50,040
+ways to get feedback okay with that I'm
+
+1229
+00:44:47,599 --> 00:44:50,040
+ready for
+
+1230
+00:44:55,680 --> 00:45:00,640
+questions I think there a microphone
+
+1231
+00:44:57,839 --> 00:45:02,559
+here oh there's one okay
+
+1232
+00:45:00,640 --> 00:45:04,720
+questions without the first question
+
+1233
+00:45:02,559 --> 00:45:06,839
+there won't be multiple question oh
+
+1234
+00:45:04,720 --> 00:45:06,839
+there
+
+1235
+00:45:08,760 --> 00:45:12,920
+is since you asked for hard questions
+
+1236
+00:45:11,280 --> 00:45:14,400
+which of your projects did you enjoy the
+
+1237
+00:45:12,920 --> 00:45:17,880
+most and which of them do you think had
+
+1238
+00:45:14,400 --> 00:45:21,440
+the most impact which did I enjoy the
+
+1239
+00:45:17,880 --> 00:45:23,559
+most ah I let me do the most impact I
+
+1240
+00:45:21,440 --> 00:45:26,280
+because I'm kind of wrapping things up I
+
+1241
+00:45:23,559 --> 00:45:27,559
+it's plausible raid had the biggest
+
+1242
+00:45:26,280 --> 00:45:31,520
+impact
+
+1243
+00:45:27,559 --> 00:45:33,400
+uh it's everybody uses it you know uh
+
+1244
+00:45:31,520 --> 00:45:35,720
+the pap the original raid paper won
+
+1245
+00:45:33,400 --> 00:45:39,720
+three test of time
+
+1246
+00:45:35,720 --> 00:45:42,040
+Awards uh I I you know if I had it looks
+
+1247
+00:45:39,720 --> 00:45:45,480
+to me as a as if I try to be a neutral
+
+1248
+00:45:42,040 --> 00:45:47,880
+Observer probably raid is the most uh
+
+1249
+00:45:45,480 --> 00:45:50,440
+significant so far which one did I enjoy
+
+1250
+00:45:47,880 --> 00:45:52,319
+the most I try and always make projects
+
+1251
+00:45:50,440 --> 00:45:54,359
+that I really love right I try to make
+
+1252
+00:45:52,319 --> 00:45:56,000
+projects that if I was a graduate
+
+1253
+00:45:54,359 --> 00:45:58,160
+student I just die to work on this
+
+1254
+00:45:56,000 --> 00:46:01,319
+project uh
+
+1255
+00:45:58,160 --> 00:46:04,680
+um you know that's
+
+1256
+00:46:01,319 --> 00:46:06,599
+hard uh maybe children yeah which of my
+
+1257
+00:46:04,680 --> 00:46:09,040
+children do I love the
+
+1258
+00:46:06,599 --> 00:46:10,280
+most I don't know the good thing about
+
+1259
+00:46:09,040 --> 00:46:12,040
+all the projects whether or not they
+
+1260
+00:46:10,280 --> 00:46:14,400
+they're home runs is they produce great
+
+1261
+00:46:12,040 --> 00:46:16,200
+students and uh and I didn't say that in
+
+1262
+00:46:14,400 --> 00:46:19,240
+the slide there's almost 300 students in
+
+1263
+00:46:16,200 --> 00:46:21,920
+those 12 projects that that have uh that
+
+1264
+00:46:19,240 --> 00:46:24,240
+which was uh I was had fun adding that
+
+1265
+00:46:21,920 --> 00:46:24,240
+number
+
+1266
+00:46:24,319 --> 00:46:29,920
+up Jeff
+
+1267
+00:46:28,000 --> 00:46:31,599
+so this isn't really a problem for for
+
+1268
+00:46:29,920 --> 00:46:33,559
+most of us here but would you give
+
+1269
+00:46:31,599 --> 00:46:35,400
+different advice to a pre-tenure
+
+1270
+00:46:33,559 --> 00:46:38,400
+academic versus a post- tenure academic
+
+1271
+00:46:35,400 --> 00:46:39,720
+or do you think you can do the kinds of
+
+1272
+00:46:38,400 --> 00:46:40,920
+thing you're talking about and not
+
+1273
+00:46:39,720 --> 00:46:42,960
+compromise your chances of getting
+
+1274
+00:46:40,920 --> 00:46:44,880
+tenure yeah so people ask me that
+
+1275
+00:46:42,960 --> 00:46:47,800
+something so when Hennessy and I did the
+
+1276
+00:46:44,880 --> 00:46:49,319
+rist stuff which at the time was hugely
+
+1277
+00:46:47,800 --> 00:46:50,400
+controversial if you think deep neural
+
+1278
+00:46:49,319 --> 00:46:53,920
+networks are
+
+1279
+00:46:50,400 --> 00:46:56,240
+controversial they have the people PE uh
+
+1280
+00:46:53,920 --> 00:46:58,800
+a faculty member of in other institution
+
+1281
+00:46:56,240 --> 00:47:01,280
+wrote a a hit piece on me personally
+
+1282
+00:46:58,800 --> 00:47:02,520
+Dave Patterson's a bad person about and
+
+1283
+00:47:01,280 --> 00:47:05,680
+we were talking about instruction set
+
+1284
+00:47:02,520 --> 00:47:07,160
+design you know so you then at but at
+
+1285
+00:47:05,680 --> 00:47:09,559
+the time you know Hennessy and I were
+
+1286
+00:47:07,160 --> 00:47:10,880
+saying well uh digital equipment one of
+
+1287
+00:47:09,559 --> 00:47:13,040
+the leading computer manufacturers in
+
+1288
+00:47:10,880 --> 00:47:16,280
+the world had a pretty stupid design you
+
+1289
+00:47:13,040 --> 00:47:19,400
+know so yeah so we uh you know we did we
+
+1290
+00:47:16,280 --> 00:47:21,680
+didn't worry about that also you have to
+
+1291
+00:47:19,400 --> 00:47:23,400
+believe in what you're doing I just
+
+1292
+00:47:21,680 --> 00:47:27,119
+can't give the advice to do something
+
+1293
+00:47:23,400 --> 00:47:29,040
+that uh you don't believe in uh and work
+
+1294
+00:47:27,119 --> 00:47:31,160
+on that because when in fact when I've
+
+1295
+00:47:29,040 --> 00:47:32,920
+visited universities and I've seen that
+
+1296
+00:47:31,160 --> 00:47:34,440
+it's assistant professor telling me well
+
+1297
+00:47:32,920 --> 00:47:35,520
+I don't really like what I'm working on
+
+1298
+00:47:34,440 --> 00:47:36,720
+but this is what I have to do to get
+
+1299
+00:47:35,520 --> 00:47:38,400
+tenure and then I go talk to the
+
+1300
+00:47:36,720 --> 00:47:39,640
+chairman and this guy's just doing
+
+1301
+00:47:38,400 --> 00:47:42,280
+incremental stuff he's never going to
+
+1302
+00:47:39,640 --> 00:47:44,359
+get tenure right there's that Gap there
+
+1303
+00:47:42,280 --> 00:47:46,680
+uh I you know is when you're larvel you
+
+1304
+00:47:44,359 --> 00:47:47,960
+need to make sure you publish you know
+
+1305
+00:47:46,680 --> 00:47:50,280
+you need to go around and give talks and
+
+1306
+00:47:47,960 --> 00:47:52,599
+stuff like that but I I think you gotta
+
+1307
+00:47:50,280 --> 00:47:55,280
+do projects you believe
+
+1308
+00:47:52,599 --> 00:47:58,839
+in otherwise Life's too short to work on
+
+1309
+00:47:55,280 --> 00:47:58,839
+other things Yeah question here
+
+1310
+00:48:00,640 --> 00:48:07,040
+um so you mentioned a couple times uh
+
+1311
+00:48:03,319 --> 00:48:09,400
+not to be a primadonna um so it's easy
+
+1312
+00:48:07,040 --> 00:48:11,280
+to identify other people being padas but
+
+1313
+00:48:09,400 --> 00:48:15,520
+how do you tell if you're being a
+
+1314
+00:48:11,280 --> 00:48:15,520
+primadonna uh are you
+
+1315
+00:48:15,880 --> 00:48:20,680
+married my my family is really good at
+
+1316
+00:48:19,040 --> 00:48:22,200
+pointing out my
+
+1317
+00:48:20,680 --> 00:48:25,480
+flaws
+
+1318
+00:48:22,200 --> 00:48:27,520
+uh well I think I think you uh I think
+
+1319
+00:48:25,480 --> 00:48:29,559
+feedback is the one I go out of way and
+
+1320
+00:48:27,520 --> 00:48:31,559
+way to get feedback if somebody hates my
+
+1321
+00:48:29,559 --> 00:48:33,240
+papers I send them new papers because
+
+1322
+00:48:31,559 --> 00:48:35,160
+they tell me tell me the honest thing to
+
+1323
+00:48:33,240 --> 00:48:37,319
+do I would like to think if I'm acting
+
+1324
+00:48:35,160 --> 00:48:39,880
+like a jerk that uh you know I'm pretty
+
+1325
+00:48:37,319 --> 00:48:42,119
+sure my friends or my family would would
+
+1326
+00:48:39,880 --> 00:48:45,079
+would tell me that I think you could ask
+
+1327
+00:48:42,119 --> 00:48:46,920
+right I think you you can ask right gez
+
+1328
+00:48:45,079 --> 00:48:48,960
+people are afraid to tell you something
+
+1329
+00:48:46,920 --> 00:48:51,480
+if not but I think if you asked did I
+
+1330
+00:48:48,960 --> 00:48:54,079
+handle that well or not uh you do
+
+1331
+00:48:51,480 --> 00:48:56,319
+it I think some people in Academia think
+
+1332
+00:48:54,079 --> 00:48:57,960
+that's the way you uh that's the way
+
+1333
+00:48:56,319 --> 00:48:59,400
+people know that you're famous you've
+
+1334
+00:48:57,960 --> 00:49:01,960
+had some success you start acting
+
+1335
+00:48:59,400 --> 00:49:05,440
+differently and it's just bad career
+
+1336
+00:49:01,960 --> 00:49:05,440
+advice okay other
+
+1337
+00:49:07,280 --> 00:49:10,960
+questions so full disclosure I I went to
+
+1338
+00:49:09,720 --> 00:49:13,200
+Brooklyn and experienced one of these
+
+1339
+00:49:10,960 --> 00:49:15,160
+projects um so I'm I'm mean was on the
+
+1340
+00:49:13,200 --> 00:49:17,359
+network workstation project I'm biased
+
+1341
+00:49:15,160 --> 00:49:18,799
+toward the model uh my question is given
+
+1342
+00:49:17,359 --> 00:49:21,040
+the success of the model why do you
+
+1343
+00:49:18,799 --> 00:49:22,640
+think more universities haven't adopted
+
+1344
+00:49:21,040 --> 00:49:24,240
+it I mean even though it seems like the
+
+1345
+00:49:22,640 --> 00:49:26,960
+stuff you're saying is really obvious
+
+1346
+00:49:24,240 --> 00:49:29,640
+it's also somewhat rare yeah I got that
+
+1347
+00:49:26,960 --> 00:49:31,920
+exact same question at Berkeley uh I
+
+1348
+00:49:29,640 --> 00:49:34,000
+think this time I'll be less humble you
+
+1349
+00:49:31,920 --> 00:49:36,160
+need you need to you have to have
+
+1350
+00:49:34,000 --> 00:49:38,359
+somebody who's willing to lead right for
+
+1351
+00:49:36,160 --> 00:49:39,640
+some reason even though wrestling uh as
+
+1352
+00:49:38,359 --> 00:49:41,960
+I'll tell you I wrestled in high school
+
+1353
+00:49:39,640 --> 00:49:45,200
+and college as an individual sport I had
+
+1354
+00:49:41,960 --> 00:49:47,079
+great wrestling coaches who realize we'd
+
+1355
+00:49:45,200 --> 00:49:49,040
+be more successful if we bonded as a
+
+1356
+00:49:47,079 --> 00:49:50,680
+team even though it was individual sport
+
+1357
+00:49:49,040 --> 00:49:53,240
+so I had that kind of role model going
+
+1358
+00:49:50,680 --> 00:49:54,720
+up and so I think some I'm good at you
+
+1359
+00:49:53,240 --> 00:49:55,880
+know kind of organizing teams so you
+
+1360
+00:49:54,720 --> 00:49:59,040
+have to have somebody who's willing to
+
+1361
+00:49:55,880 --> 00:50:02,079
+do that the institution itself Berkeley
+
+1362
+00:49:59,040 --> 00:50:03,760
+told me day one have impact they didn't
+
+1363
+00:50:02,079 --> 00:50:04,920
+have any problem with with multiple
+
+1364
+00:50:03,760 --> 00:50:07,200
+people working on it when you're an
+
+1365
+00:50:04,920 --> 00:50:09,240
+assistant professor you make up rules
+
+1366
+00:50:07,200 --> 00:50:11,200
+like I have to have only sold auor
+
+1367
+00:50:09,240 --> 00:50:12,319
+papers otherwise they credit but you you
+
+1368
+00:50:11,200 --> 00:50:14,480
+that's not that's not true so the
+
+1369
+00:50:12,319 --> 00:50:16,680
+insation let us happen I think it was
+
+1370
+00:50:14,480 --> 00:50:18,240
+helpful that you know I'm a good leader
+
+1371
+00:50:16,680 --> 00:50:20,200
+of people but there's lots of good
+
+1372
+00:50:18,240 --> 00:50:21,760
+leaders of people around I don't
+
+1373
+00:50:20,200 --> 00:50:23,680
+understand why they why that doesn't
+
+1374
+00:50:21,760 --> 00:50:25,680
+happen more it's yeah I said it seems
+
+1375
+00:50:23,680 --> 00:50:27,319
+common sense you know it's not like I've
+
+1376
+00:50:25,680 --> 00:50:30,280
+kept this a secret for 4 years I've been
+
+1377
+00:50:27,319 --> 00:50:32,160
+telling people at lost institution so I
+
+1378
+00:50:30,280 --> 00:50:35,040
+I'm not sure but we're a lunatic fringe
+
+1379
+00:50:32,160 --> 00:50:37,799
+right we we put a group together it's a
+
+1380
+00:50:35,040 --> 00:50:40,559
+different group with interdisciplinary
+
+1381
+00:50:37,799 --> 00:50:42,760
+mix and match we tackle a problem we're
+
+1382
+00:50:40,559 --> 00:50:44,480
+you know we've already visited you guys
+
+1383
+00:50:42,760 --> 00:50:45,920
+to on the next project to get some
+
+1384
+00:50:44,480 --> 00:50:48,960
+feedback on it I don't know why more
+
+1385
+00:50:45,920 --> 00:50:50,599
+people don't do it you have to ask them
+
+1386
+00:50:48,960 --> 00:50:52,440
+why don't more people you should ask
+
+1387
+00:50:50,599 --> 00:50:54,000
+them why don't you guys act like
+
+1388
+00:50:52,440 --> 00:50:56,799
+Berkeley I'm sure they'd love
+
+1389
+00:50:54,000 --> 00:50:59,839
+that there's probably a nearby probably
+
+1390
+00:50:56,799 --> 00:50:59,839
+a nearby University you
+
+1391
+00:51:01,160 --> 00:51:05,359
+could yeah I think we have about five
+
+1392
+00:51:03,280 --> 00:51:07,200
+more five or six more minutes okay I uh
+
+1393
+00:51:05,359 --> 00:51:11,400
+all right with that then I I I need to
+
+1394
+00:51:07,200 --> 00:51:14,839
+give my uh quickly give my life story
+
+1395
+00:51:11,400 --> 00:51:16,799
+okay so uh I'm an accidental CS student
+
+1396
+00:51:14,839 --> 00:51:19,280
+I was a math major and wrestler in high
+
+1397
+00:51:16,799 --> 00:51:21,160
+school and college uh the end of my
+
+1398
+00:51:19,280 --> 00:51:23,119
+junior year the math class was cancelled
+
+1399
+00:51:21,160 --> 00:51:25,240
+I I had to take a course there was no CS
+
+1400
+00:51:23,119 --> 00:51:28,000
+major so I just took an intro computer
+
+1401
+00:51:25,240 --> 00:51:29,960
+science and I was hook that was it my
+
+1402
+00:51:28,000 --> 00:51:30,799
+senior year I took every computer course
+
+1403
+00:51:29,960 --> 00:51:34,200
+I
+
+1404
+00:51:30,799 --> 00:51:36,240
+could uh I'm an accidental student at I
+
+1405
+00:51:34,200 --> 00:51:37,880
+went to uccla graduate student I just
+
+1406
+00:51:36,240 --> 00:51:40,920
+casually mentioned at the end of one of
+
+1407
+00:51:37,880 --> 00:51:42,160
+those courses to a new PhD that boy i'
+
+1408
+00:51:40,920 --> 00:51:43,520
+sure rather do this than work in a
+
+1409
+00:51:42,160 --> 00:51:45,400
+factory to pay my away the college and
+
+1410
+00:51:43,520 --> 00:51:49,040
+he on his own went and found me a job as
+
+1411
+00:51:45,400 --> 00:51:50,680
+undergraduate student um while I was an
+
+1412
+00:51:49,040 --> 00:51:52,079
+undergraduate student even though it was
+
+1413
+00:51:50,680 --> 00:51:53,760
+near the end of my senior year that
+
+1414
+00:51:52,079 --> 00:51:55,920
+wasn't too late to go to graduate school
+
+1415
+00:51:53,760 --> 00:51:57,599
+I asked my wife about Master's Degree
+
+1416
+00:51:55,920 --> 00:52:00,720
+she said sure it's only four or five
+
+1417
+00:51:57,599 --> 00:52:02,520
+quarters and then when I got into the
+
+1418
+00:52:00,720 --> 00:52:04,200
+office everybody else in my office was
+
+1419
+00:52:02,520 --> 00:52:08,400
+getting a PhD so I thought maybe I
+
+1420
+00:52:04,200 --> 00:52:10,559
+should get a PhD so I decided to do that
+
+1421
+00:52:08,400 --> 00:52:12,440
+uh we lived on a research assistant
+
+1422
+00:52:10,559 --> 00:52:14,880
+salaries my wife and two kids and I we
+
+1423
+00:52:12,440 --> 00:52:17,119
+were at you know poverty level at that
+
+1424
+00:52:14,880 --> 00:52:20,079
+time and then the project ended I lost
+
+1425
+00:52:17,119 --> 00:52:22,640
+my ra ship my adviser helped get me a
+
+1426
+00:52:20,079 --> 00:52:24,040
+job at a Aerospace company H aircraft
+
+1427
+00:52:22,640 --> 00:52:25,720
+and then it was touch and go whether I'd
+
+1428
+00:52:24,040 --> 00:52:29,559
+rather finished my PhD because I was
+
+1429
+00:52:25,720 --> 00:52:31,599
+working 10 I mean 20 30 40 hours but I
+
+1430
+00:52:29,559 --> 00:52:35,680
+did mean it I'm an accidental Berkeley
+
+1431
+00:52:31,599 --> 00:52:37,319
+Professor my wife uh grew up in the
+
+1432
+00:52:35,680 --> 00:52:38,880
+right next door to Berkeley and when I
+
+1433
+00:52:37,319 --> 00:52:40,559
+was graduating on the interview tour she
+
+1434
+00:52:38,880 --> 00:52:41,839
+says I can't help but think you're ended
+
+1435
+00:52:40,559 --> 00:52:44,520
+up with Berkeley and I said look
+
+1436
+00:52:41,839 --> 00:52:46,040
+Berkeley's up here 's down here I'm
+
+1437
+00:52:44,520 --> 00:52:49,119
+graduating this is never going to happen
+
+1438
+00:52:46,040 --> 00:52:51,680
+but she forced me as a graduate student
+
+1439
+00:52:49,119 --> 00:52:54,480
+to call the chairman of the department
+
+1440
+00:52:51,680 --> 00:52:56,280
+at Berkeley computer science to find out
+
+1441
+00:52:54,480 --> 00:52:57,160
+about my application so I called this
+
+1442
+00:52:56,280 --> 00:53:00,000
+guy
+
+1443
+00:52:57,160 --> 00:53:02,079
+he said well Dave you're in the top 10
+
+1444
+00:53:00,000 --> 00:53:04,319
+but not top five and at the time I'm
+
+1445
+00:53:02,079 --> 00:53:07,319
+thinking wow that wasn't so bad so turns
+
+1446
+00:53:04,319 --> 00:53:09,839
+out he said that to anybody who
+
+1447
+00:53:07,319 --> 00:53:11,920
+called but but then he took my
+
+1448
+00:53:09,839 --> 00:53:13,200
+application yeah that seems interesting
+
+1449
+00:53:11,920 --> 00:53:15,240
+handed it to somebody visiting Southern
+
+1450
+00:53:13,200 --> 00:53:16,480
+California we had a good conversation
+
+1451
+00:53:15,240 --> 00:53:21,040
+they invited me back to the interview
+
+1452
+00:53:16,480 --> 00:53:23,640
+and got a job offer I uh barely got
+
+1453
+00:53:21,040 --> 00:53:25,599
+tenure uh the first project I already
+
+1454
+00:53:23,640 --> 00:53:28,480
+told you about it was way too ambitious
+
+1455
+00:53:25,599 --> 00:53:30,280
+uh I did the SA and did the rist stuff
+
+1456
+00:53:28,480 --> 00:53:31,960
+tenure wasn't easy I was one of those
+
+1457
+00:53:30,280 --> 00:53:33,880
+guys that was using conferences where
+
+1458
+00:53:31,960 --> 00:53:35,880
+the whole campus used journals but us so
+
+1459
+00:53:33,880 --> 00:53:36,920
+I was the guinea pig uh that went
+
+1460
+00:53:35,880 --> 00:53:38,559
+through that and the risk stuff was
+
+1461
+00:53:36,920 --> 00:53:41,160
+pretty new but I but I got it after that
+
+1462
+00:53:38,559 --> 00:53:43,640
+things got better but I still get papers
+
+1463
+00:53:41,160 --> 00:53:45,760
+rejected by those jerks on the program
+
+1464
+00:53:43,640 --> 00:53:49,200
+committee and so what have I learned
+
+1465
+00:53:45,760 --> 00:53:51,040
+what works for me uh uh for me it was
+
+1466
+00:53:49,200 --> 00:53:52,480
+maximizing personal happiness versus
+
+1467
+00:53:51,040 --> 00:53:54,599
+personal wealth that's always been my
+
+1468
+00:53:52,480 --> 00:53:56,440
+guideline believe in this country you
+
+1469
+00:53:54,599 --> 00:53:58,400
+think wealth is happiness there's
+
+1470
+00:53:56,440 --> 00:53:59,920
+there's unhappy billionaires right in
+
+1471
+00:53:58,400 --> 00:54:03,440
+this world they're not they're not the
+
+1472
+00:53:59,920 --> 00:54:05,440
+same thing um family first especially in
+
+1473
+00:54:03,440 --> 00:54:06,760
+that kind of job you know people ask you
+
+1474
+00:54:05,440 --> 00:54:09,920
+do things your family can go down the
+
+1475
+00:54:06,760 --> 00:54:11,960
+list I made my family first so I did we
+
+1476
+00:54:09,920 --> 00:54:14,200
+had my son wife and I had two sons so I
+
+1477
+00:54:11,960 --> 00:54:15,880
+did Indian guides I I was the CB scout
+
+1478
+00:54:14,200 --> 00:54:17,920
+leader I was the soccer coach when there
+
+1479
+00:54:15,880 --> 00:54:19,880
+were field trips out there so when my
+
+1480
+00:54:17,920 --> 00:54:21,559
+rebellious teenage boy grew up ah you
+
+1481
+00:54:19,880 --> 00:54:23,079
+were never there and I said Indian
+
+1482
+00:54:21,559 --> 00:54:25,000
+guides CB
+
+1483
+00:54:23,079 --> 00:54:28,359
+Scouts so I went down the list and he
+
+1484
+00:54:25,000 --> 00:54:28,359
+said oh okay maybe
+
+1485
+00:54:28,880 --> 00:54:32,400
+uh passion courage and optimism you
+
+1486
+00:54:30,680 --> 00:54:34,559
+might be able to tell I'm a a passionate
+
+1487
+00:54:32,400 --> 00:54:37,240
+guy I have to believe the thing I'm
+
+1488
+00:54:34,559 --> 00:54:40,599
+doing is uh G to possibly change the
+
+1489
+00:54:37,240 --> 00:54:43,240
+world my optimism story goes back to uh
+
+1490
+00:54:40,599 --> 00:54:45,839
+high school I'm dating started dating
+
+1491
+00:54:43,240 --> 00:54:48,520
+this girl who was dating older guys who
+
+1492
+00:54:45,839 --> 00:54:49,880
+had Corvettes and stuff like that uh
+
+1493
+00:54:48,520 --> 00:54:53,480
+nevertheless after a couple dates I
+
+1494
+00:54:49,880 --> 00:54:55,760
+asked her if she would go steady with me
+
+1495
+00:54:53,480 --> 00:54:57,760
+as you say at the time she' just been
+
+1496
+00:54:55,760 --> 00:54:59,240
+dating older guys and didn't know what
+
+1497
+00:54:57,760 --> 00:55:01,480
+to say she says well I don't know how to
+
+1498
+00:54:59,240 --> 00:55:03,319
+say no so me being an optimist and a
+
+1499
+00:55:01,480 --> 00:55:06,200
+logical person not a no as a yes so I
+
+1500
+00:55:03,319 --> 00:55:08,000
+said great and I hugged her and she said
+
+1501
+00:55:06,200 --> 00:55:09,680
+you know uh you know I'll let this guy
+
+1502
+00:55:08,000 --> 00:55:13,799
+down later but we've been married 48
+
+1503
+00:55:09,680 --> 00:55:15,920
+years now so so I think that's okay um
+
+1504
+00:55:13,799 --> 00:55:18,559
+and then yeah I think uh we swing for
+
+1505
+00:55:15,920 --> 00:55:20,720
+the fences right that's that thing uh
+
+1506
+00:55:18,559 --> 00:55:21,920
+now another thing this is a saying that
+
+1507
+00:55:20,720 --> 00:55:23,359
+a colleague told me that's actually a
+
+1508
+00:55:21,920 --> 00:55:27,240
+couple hundred years old friends come
+
+1509
+00:55:23,359 --> 00:55:30,039
+and go but enemies accumulate uh so this
+
+1510
+00:55:27,240 --> 00:55:32,839
+kind of ironically the physical courage
+
+1511
+00:55:30,039 --> 00:55:34,280
+that comes with wrestling has to me been
+
+1512
+00:55:32,839 --> 00:55:36,960
+intellectual courage so when I was
+
+1513
+00:55:34,280 --> 00:55:38,799
+president of ACM the person in charge of
+
+1514
+00:55:36,960 --> 00:55:41,240
+darer was cutting back on academic
+
+1515
+00:55:38,799 --> 00:55:42,960
+funding so I decided to take him on with
+
+1516
+00:55:41,240 --> 00:55:43,880
+my friend at lazasa in Washington and we
+
+1517
+00:55:42,960 --> 00:55:45,760
+tried to get people from other
+
+1518
+00:55:43,880 --> 00:55:47,520
+universities to join us but they were
+
+1519
+00:55:45,760 --> 00:55:49,839
+afraid this guy would be vengeful and
+
+1520
+00:55:47,520 --> 00:55:52,200
+cut him off I think with good reason but
+
+1521
+00:55:49,839 --> 00:55:54,319
+so it was just us taking him on with
+
+1522
+00:55:52,200 --> 00:55:56,640
+editorials and Science magazine stuff so
+
+1523
+00:55:54,319 --> 00:55:58,200
+this guy did was not a fan of us now but
+
+1524
+00:55:56,640 --> 00:56:00,280
+we hadn't quite realized this is
+
+1525
+00:55:58,200 --> 00:56:02,640
+unintentional but the other saying is
+
+1526
+00:56:00,280 --> 00:56:04,400
+the enemy of my enemy is my friend so we
+
+1527
+00:56:02,640 --> 00:56:07,839
+made a lot of
+
+1528
+00:56:04,400 --> 00:56:10,440
+friends but keep that in mind uh winning
+
+1529
+00:56:07,839 --> 00:56:14,280
+is a team versus IND individual I in My
+
+1530
+00:56:10,440 --> 00:56:17,000
+DNA I believe a team of you know average
+
+1531
+00:56:14,280 --> 00:56:19,520
+people can work together and beat
+
+1532
+00:56:17,000 --> 00:56:21,640
+Superstars uh and then uh I've already
+
+1533
+00:56:19,520 --> 00:56:23,799
+quoted Fred Brooks about that line uh
+
+1534
+00:56:21,640 --> 00:56:25,920
+seek out honest feedback and learn from
+
+1535
+00:56:23,799 --> 00:56:27,920
+it it's easy to avoid feedback but
+
+1536
+00:56:25,920 --> 00:56:30,760
+that's you get
+
+1537
+00:56:27,920 --> 00:56:34,079
+better uh the one warning sign I can
+
+1538
+00:56:30,760 --> 00:56:36,119
+pass on from my 40 years the always
+
+1539
+00:56:34,079 --> 00:56:37,559
+dangerous is when somebody thinks they
+
+1540
+00:56:36,119 --> 00:56:40,119
+the smartest person in the room there's
+
+1541
+00:56:37,559 --> 00:56:41,480
+a person in my field who thinks he's the
+
+1542
+00:56:40,119 --> 00:56:43,359
+smartest person in the room and
+
+1543
+00:56:41,480 --> 00:56:45,319
+everybody hates that guy there was a
+
+1544
+00:56:43,359 --> 00:56:48,039
+president of a university who thought it
+
+1545
+00:56:45,319 --> 00:56:51,280
+smartest that person was fired for doing
+
+1546
+00:56:48,039 --> 00:56:53,359
+a lousy job uh the people who founded
+
+1547
+00:56:51,280 --> 00:56:55,760
+Enron uh thought they were the smartest
+
+1548
+00:56:53,359 --> 00:56:58,680
+people in the room they went to prison
+
+1549
+00:56:55,760 --> 00:57:00,559
+and and I I even have a relative who
+
+1550
+00:56:58,680 --> 00:57:02,599
+thought he was the smartest person in
+
+1551
+00:57:00,559 --> 00:57:04,640
+the room and he's a convicted felon so
+
+1552
+00:57:02,599 --> 00:57:06,200
+the one so why would that be why would
+
+1553
+00:57:04,640 --> 00:57:07,359
+this person they're probably smart if
+
+1554
+00:57:06,200 --> 00:57:09,839
+they think they're the smartest why
+
+1555
+00:57:07,359 --> 00:57:11,319
+would it be such a bad sign I think it's
+
+1556
+00:57:09,839 --> 00:57:12,520
+that they don't want feedback from
+
+1557
+00:57:11,319 --> 00:57:14,319
+anybody if you're the smartest person in
+
+1558
+00:57:12,520 --> 00:57:16,880
+the room you don't need to talk to
+
+1559
+00:57:14,319 --> 00:57:18,799
+anybody about your ideas so I think but
+
+1560
+00:57:16,880 --> 00:57:22,000
+anyways run away if you find somebody
+
+1561
+00:57:18,799 --> 00:57:24,960
+like that uh this uh thing happened to
+
+1562
+00:57:22,000 --> 00:57:27,640
+me it was like God spoke in my ear one
+
+1563
+00:57:24,960 --> 00:57:29,520
+morning and it I remember waking up you
+
+1564
+00:57:27,640 --> 00:57:31,039
+know and it was it's not how many
+
+1565
+00:57:29,520 --> 00:57:33,240
+projects you start it's how many you
+
+1566
+00:57:31,039 --> 00:57:35,079
+finish it was like in my head like
+
+1567
+00:57:33,240 --> 00:57:37,359
+somebody was telling me what to do so
+
+1568
+00:57:35,079 --> 00:57:39,559
+that's ever since that that's what I've
+
+1569
+00:57:37,359 --> 00:57:41,280
+done so what I do is one big project at
+
+1570
+00:57:39,559 --> 00:57:42,839
+a time I do other things but there's one
+
+1571
+00:57:41,280 --> 00:57:44,920
+big thing at a time so when Hennessy and
+
+1572
+00:57:42,839 --> 00:57:46,760
+I were doing our textbook that was the
+
+1573
+00:57:44,920 --> 00:57:49,640
+big thing that I did that year when I
+
+1574
+00:57:46,760 --> 00:57:50,960
+was president of ACM I took a sabatical
+
+1575
+00:57:49,640 --> 00:57:52,640
+so that was the one big thing I did
+
+1576
+00:57:50,960 --> 00:57:55,520
+there that year and so it turns out if
+
+1577
+00:57:52,640 --> 00:57:58,119
+you do one big thing a year over 30
+
+1578
+00:57:55,520 --> 00:57:59,559
+years you can get a lot things done but
+
+1579
+00:57:58,119 --> 00:58:01,440
+a lot of academics particularly will
+
+1580
+00:57:59,559 --> 00:58:04,880
+work on a thousand things at once and
+
+1581
+00:58:01,440 --> 00:58:08,480
+not finish very many of them and then
+
+1582
+00:58:04,880 --> 00:58:10,240
+uh and then have fun you know to be
+
+1583
+00:58:08,480 --> 00:58:13,200
+successful you do have to work hard you
+
+1584
+00:58:10,240 --> 00:58:15,359
+know our long lost uh colleague Jim Gray
+
+1585
+00:58:13,200 --> 00:58:16,760
+even in his 60s he do one all nighter a
+
+1586
+00:58:15,359 --> 00:58:19,440
+month so you have to work hard to be
+
+1587
+00:58:16,760 --> 00:58:20,880
+successful but you have to have fun uh
+
+1588
+00:58:19,440 --> 00:58:22,440
+you know as far as we know you only get
+
+1589
+00:58:20,880 --> 00:58:24,119
+one chance of this and if you get to the
+
+1590
+00:58:22,440 --> 00:58:25,640
+end without having any fun you've wasted
+
+1591
+00:58:24,119 --> 00:58:27,200
+a lot of opportunities I can put up a
+
+1592
+00:58:25,640 --> 00:58:29,680
+lot of stuff as as long as I play soccer
+
+1593
+00:58:27,200 --> 00:58:32,440
+every Sunday I I can have a good time so
+
+1594
+00:58:29,680 --> 00:58:38,829
+that's my advice thanks very much
+
+1595
+00:58:32,440 --> 00:58:38,829
+[Applause]
+

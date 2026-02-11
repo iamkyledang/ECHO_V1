@@ -1,0 +1,1928 @@
+1
+00:00:00,000 --> 00:00:02,680
+Ladies and gentlemen please welcome Mr.
+
+2
+00:00:02,840 --> 00:00:03,400
+Tim Minchin.
+
+3
+00:00:18,280 --> 00:00:19,660
+In darker days,
+
+4
+00:00:20,120 --> 00:00:23,420
+I did a corporate gig at a conference for
+
+5
+00:00:23,420 --> 00:00:25,740
+this big company who made and sold
+
+6
+00:00:25,740 --> 00:00:26,720
+accounting software.
+
+7
+00:00:27,900 --> 00:00:29,680
+In a bid, I presumed to inspire their
+
+8
+00:00:29,680 --> 00:00:31,640
+salespeople to greater heights. They'd
+
+9
+00:00:31,640 --> 00:00:33,860
+forked out 12 grand for an inspirational
+
+10
+00:00:33,860 --> 00:00:36,260
+speaker who was this extreme sports guy
+
+11
+00:00:36,260 --> 00:00:37,920
+who had a couple of his limbs frozen
+
+12
+00:00:37,920 --> 00:00:40,400
+off when he got stuck on a ledge on some
+
+13
+00:00:40,400 --> 00:00:41,100
+mountain.
+
+14
+00:00:42,320 --> 00:00:43,340
+It was weird.
+
+15
+00:00:44,500 --> 00:00:46,600
+Software salespeople, I think, need to
+
+16
+00:00:46,600 --> 00:00:47,900
+hear from someone who has had a long,
+
+17
+00:00:48,080 --> 00:00:49,900
+successful and happy career in software
+
+18
+00:00:49,900 --> 00:00:53,200
+sales, not from an overly optimistic ex
+
+19
+00:00:53,200 --> 00:00:53,960
+-mountaineer.
+
+20
+00:00:54,780 --> 00:00:56,500
+Some poor guy who had arrived in the
+
+21
+00:00:56,500 --> 00:00:58,560
+morning hoping to learn more about sales
+
+22
+00:00:58,560 --> 00:01:00,220
+techniques ended up going home worried
+
+23
+00:01:00,220 --> 00:01:02,060
+about the blood flow to his extremities.
+
+24
+00:01:02,480 --> 00:01:05,040
+It's not inspirational, it's confusing.
+
+25
+00:01:06,520 --> 00:01:08,340
+And if the mountain was meant to be a
+
+26
+00:01:08,340 --> 00:01:10,200
+symbol of life's challenges and the loss
+
+27
+00:01:10,200 --> 00:01:12,060
+of limbs and metaphor for sacrifice,
+
+28
+00:01:12,660 --> 00:01:14,300
+the software guy is not going to get it,
+
+29
+00:01:14,560 --> 00:01:16,180
+is he? Because he didn't do an art
+
+30
+00:01:16,180 --> 00:01:16,900
+degree, did he?
+
+31
+00:01:18,000 --> 00:01:20,420
+He should have. Arts degrees are awesome,
+
+32
+00:01:20,520 --> 00:01:22,180
+and they help you find meaning where there
+
+33
+00:01:22,180 --> 00:01:22,720
+is none.
+
+34
+00:01:24,340 --> 00:01:25,540
+And let me assure you,
+
+35
+00:01:26,200 --> 00:01:27,000
+there is none.
+
+36
+00:01:28,320 --> 00:01:30,420
+Don't go looking for it. Searching for
+
+37
+00:01:30,420 --> 00:01:32,300
+meaning is like searching for a rhyme
+
+38
+00:01:32,300 --> 00:01:33,620
+scheme in a cookbook.
+
+39
+00:01:34,440 --> 00:01:36,280
+You won't find it, and it'll bugger up
+
+40
+00:01:36,280 --> 00:01:36,900
+your souffle.
+
+41
+00:01:40,640 --> 00:01:42,620
+If you didn't like that metaphor, you
+
+42
+00:01:42,620 --> 00:01:43,700
+won't like the rest of it.
+
+43
+00:01:45,520 --> 00:01:47,160
+Point being, I'm not an inspirational
+
+44
+00:01:47,160 --> 00:01:49,280
+speaker. I've never lost a limb on a
+
+45
+00:01:49,280 --> 00:01:51,160
+mountainside metaphorically or otherwise,
+
+46
+00:01:51,360 --> 00:01:52,680
+and I'm certainly not here to give career
+
+47
+00:01:52,680 --> 00:01:53,380
+advice because,
+
+48
+00:01:54,100 --> 00:01:55,460
+well, I've never really had what most
+
+49
+00:01:55,460 --> 00:01:56,780
+would consider a job.
+
+50
+00:01:57,660 --> 00:02:00,040
+However, I have had large groups of people
+
+51
+00:02:00,040 --> 00:02:01,600
+listening to what I say for quite a few
+
+52
+00:02:01,600 --> 00:02:03,280
+years now, and it's given me an inflated
+
+53
+00:02:03,280 --> 00:02:04,880
+sense of self-importance.
+
+54
+00:02:05,510 --> 00:02:08,460
+So I will now, at the ripe old age of 37
+
+55
+00:02:08,460 --> 00:02:09,080
+.9,
+
+56
+00:02:09,540 --> 00:02:11,740
+bestow upon you nine life lessons.
+
+57
+00:02:12,660 --> 00:02:14,400
+To echo, of course, the nine lessons of
+
+58
+00:02:14,400 --> 00:02:15,640
+carols of the traditional Christmas
+
+59
+00:02:15,640 --> 00:02:16,120
+service,
+
+60
+00:02:16,540 --> 00:02:18,160
+which is also pretty obscure.
+
+61
+00:02:19,400 --> 00:02:20,740
+You might find some of this stuff
+
+62
+00:02:20,740 --> 00:02:22,340
+inspiring. You will definitely find some
+
+63
+00:02:22,340 --> 00:02:23,840
+of it boring, and you will definitely
+
+64
+00:02:23,840 --> 00:02:25,360
+forget all of it within a week.
+
+65
+00:02:26,400 --> 00:02:27,780
+And be warned, there will be lots of hokey
+
+66
+00:02:27,780 --> 00:02:30,380
+similes and obscure aphorisms which start
+
+67
+00:02:30,380 --> 00:02:32,480
+well but end up making no sense.
+
+68
+00:02:33,080 --> 00:02:35,620
+So listen up, or you'll get lost, like a
+
+69
+00:02:35,620 --> 00:02:37,660
+blind man clapping in a pharmacy trying to
+
+70
+00:02:37,660 --> 00:02:39,380
+echo locate the contact lens fluid.
+
+71
+00:02:44,360 --> 00:02:46,700
+It's looking for my old poetry teacher.
+
+72
+00:02:48,320 --> 00:02:49,220
+Here we go.
+
+73
+00:02:49,700 --> 00:02:49,940
+Ready?
+
+74
+00:02:51,920 --> 00:02:52,900
+You don't have to have a dream.
+
+75
+00:02:53,700 --> 00:02:55,620
+Americans on talent shows always talk
+
+76
+00:02:55,620 --> 00:02:57,020
+about their dreams. Fine, if you have
+
+77
+00:02:57,020 --> 00:02:58,700
+something you've always wanted to do,
+
+78
+00:02:58,940 --> 00:03:00,940
+dreamed of, like in your heart, go for it.
+
+79
+00:03:01,160 --> 00:03:02,520
+After all, it's something to do with your
+
+80
+00:03:02,520 --> 00:03:03,840
+time, chasing a dream.
+
+81
+00:03:04,340 --> 00:03:05,320
+And if it's a big enough one,
+
+82
+00:03:05,760 --> 00:03:07,140
+it'll take you most of your life to
+
+83
+00:03:07,140 --> 00:03:09,580
+achieve, so by the time you get to it, and
+
+84
+00:03:09,580 --> 00:03:11,580
+are staring into the abyss of the
+
+85
+00:03:11,580 --> 00:03:12,940
+meaninglessness of your achievement,
+
+86
+00:03:13,320 --> 00:03:14,980
+you'll be almost dead, so it won't matter.
+
+87
+00:03:16,760 --> 00:03:18,480
+I never really had one of these dreams,
+
+88
+00:03:18,600 --> 00:03:21,160
+and so I advocate passionate dedication to
+
+89
+00:03:21,160 --> 00:03:22,960
+the pursuit of short -term goals.
+
+90
+00:03:23,960 --> 00:03:26,200
+Be micro -ambitious. Put your head down
+
+91
+00:03:26,200 --> 00:03:28,060
+and work with pride on whatever is in
+
+92
+00:03:28,060 --> 00:03:29,940
+front of you. You never know where you
+
+93
+00:03:29,940 --> 00:03:32,100
+might end up. Just be aware the next
+
+94
+00:03:32,100 --> 00:03:34,220
+worthy pursuit will probably appear in
+
+95
+00:03:34,220 --> 00:03:36,160
+your periphery, which is why you should be
+
+96
+00:03:36,160 --> 00:03:38,540
+careful of long -term dreams. If you focus
+
+97
+00:03:38,540 --> 00:03:40,640
+too far in front of you, you won't see the
+
+98
+00:03:40,640 --> 00:03:42,600
+shiny thing out the corner of your eye.
+
+99
+00:03:43,200 --> 00:03:43,640
+Right?
+
+100
+00:03:44,120 --> 00:03:44,240
+Good.
+
+101
+00:03:45,000 --> 00:03:45,820
+Advice, metaphor.
+
+102
+00:03:46,720 --> 00:03:47,760
+Look at me go. Two,
+
+103
+00:03:48,480 --> 00:03:51,320
+don't seek happiness. Happiness is like an
+
+104
+00:03:51,320 --> 00:03:51,960
+orgasm.
+
+105
+00:03:52,560 --> 00:03:54,240
+If you think about it too much, it goes
+
+106
+00:03:54,240 --> 00:03:54,680
+away.
+
+107
+00:03:55,760 --> 00:03:56,200
+LAUGHTER
+
+108
+00:04:02,420 --> 00:04:04,260
+Keep busy and aim to make someone else
+
+109
+00:04:04,260 --> 00:04:06,060
+happy, and you might find you get some as
+
+110
+00:04:06,060 --> 00:04:07,780
+a side effect. We didn't evolve to be
+
+111
+00:04:07,780 --> 00:04:08,900
+constantly content.
+
+112
+00:04:09,460 --> 00:04:11,440
+Contented Homo erectus got eaten before
+
+113
+00:04:11,440 --> 00:04:12,480
+passing on their genes.
+
+114
+00:04:13,600 --> 00:04:14,040
+Three,
+
+115
+00:04:14,860 --> 00:04:16,480
+remember it's all luck.
+
+116
+00:04:17,020 --> 00:04:18,760
+You are lucky to be here. You are
+
+117
+00:04:18,760 --> 00:04:22,140
+incalculably lucky to be born, and
+
+118
+00:04:22,140 --> 00:04:23,780
+incredibly lucky to be brought up by a
+
+119
+00:04:23,780 --> 00:04:25,420
+nice family that helped you get educated
+
+120
+00:04:25,420 --> 00:04:26,740
+and encouraged you to go to uni.
+
+121
+00:04:27,580 --> 00:04:29,340
+Or if you're born into a horrible family,
+
+122
+00:04:29,460 --> 00:04:30,820
+that's unlucky and you have my sympathy,
+
+123
+00:04:30,980 --> 00:04:31,820
+but you're still lucky.
+
+124
+00:04:33,570 --> 00:04:34,850
+happened to be made of the sort of DNA
+
+125
+00:04:34,850 --> 00:04:36,810
+that went on to make the sort of brain
+
+126
+00:04:36,810 --> 00:04:38,530
+which, when placed in a horrible childhood
+
+127
+00:04:38,530 --> 00:04:40,010
+environment, would make decisions that
+
+128
+00:04:40,010 --> 00:04:41,730
+meant you ended up eventually graduating
+
+129
+00:04:41,730 --> 00:04:42,070
+uni.
+
+130
+00:04:43,110 --> 00:04:45,370
+Well done, you, for dragging yourself up
+
+131
+00:04:45,370 --> 00:04:47,430
+by your shoelaces, but you were lucky. You
+
+132
+00:04:47,430 --> 00:04:49,090
+didn't create the bit of you that dragged
+
+133
+00:04:49,090 --> 00:04:51,150
+you up, they're not even your shoelaces.
+
+134
+00:04:53,210 --> 00:04:54,850
+Now, suppose I worked hard to achieve
+
+135
+00:04:54,850 --> 00:04:56,370
+whatever dubious achievements I've
+
+136
+00:04:56,370 --> 00:04:58,010
+achieved, but I didn't make the bit of me
+
+137
+00:04:58,010 --> 00:04:58,890
+that works hard,
+
+138
+00:04:59,710 --> 00:05:00,730
+and more than,
+
+139
+00:05:01,410 --> 00:05:03,110
+any more than I made the bit of me that
+
+140
+00:05:03,110 --> 00:05:04,770
+ate too many burgers instead of attending
+
+141
+00:05:04,770 --> 00:05:06,370
+lectures when I was here at UWA.
+
+142
+00:05:07,250 --> 00:05:09,570
+Understanding that you can't truly take
+
+143
+00:05:09,570 --> 00:05:12,210
+credit for your successes, nor truly blame
+
+144
+00:05:12,210 --> 00:05:14,190
+others for their failures, will humble you
+
+145
+00:05:14,190 --> 00:05:15,490
+and make you more compassionate.
+
+146
+00:05:16,370 --> 00:05:18,110
+Empathy is intuitive, but it's also
+
+147
+00:05:18,110 --> 00:05:19,610
+something you can work on intellectually.
+
+148
+00:05:20,930 --> 00:05:21,470
+Four,
+
+149
+00:05:22,530 --> 00:05:22,930
+exercise.
+
+150
+00:05:24,030 --> 00:05:26,150
+I'm sorry you pasty -pale, smoking
+
+151
+00:05:26,150 --> 00:05:28,610
+philosophy grads, arching your eyebrows
+
+152
+00:05:28,610 --> 00:05:30,770
+into a Cartesian curve as you watch the
+
+153
+00:05:30,770 --> 00:05:32,850
+human movement mob winding their way
+
+154
+00:05:32,850 --> 00:05:34,770
+through them, the miniature traffic cones
+
+155
+00:05:34,770 --> 00:05:35,470
+of their existence.
+
+156
+00:05:35,950 --> 00:05:37,590
+You are wrong and they are right.
+
+157
+00:05:38,430 --> 00:05:39,890
+Well, you're half right. You think
+
+158
+00:05:39,890 --> 00:05:41,490
+therefore you are, but also you jog,
+
+159
+00:05:41,650 --> 00:05:43,030
+therefore you sleep, therefore you're not
+
+160
+00:05:43,030 --> 00:05:45,670
+overwhelmed by existential angst. You
+
+161
+00:05:45,670 --> 00:05:47,650
+can't be can't, and you don't want to be.
+
+162
+00:05:48,210 --> 00:05:50,510
+Play a sport, do yoga, pump high and run,
+
+163
+00:05:50,550 --> 00:05:52,030
+whatever, but take care of your body.
+
+164
+00:05:52,450 --> 00:05:54,330
+You're going to need it. Most of you mob
+
+165
+00:05:54,330 --> 00:05:56,370
+are going to live to nearly 100, and even
+
+166
+00:05:56,370 --> 00:05:58,170
+the poorest of you will achieve a level of
+
+167
+00:05:58,170 --> 00:05:59,730
+wealth that most humans throughout history
+
+168
+00:05:59,730 --> 00:06:00,750
+could not have dreamed of.
+
+169
+00:06:01,490 --> 00:06:03,790
+And this long, luxurious life ahead of you
+
+170
+00:06:03,790 --> 00:06:05,890
+is going to make you depressed.
+
+171
+00:06:08,470 --> 00:06:10,290
+But don't despair, there is an inverse
+
+172
+00:06:10,290 --> 00:06:11,730
+correlation between depression and
+
+173
+00:06:11,730 --> 00:06:12,110
+exercise.
+
+174
+00:06:12,550 --> 00:06:14,470
+Do it, run, my beautiful intellectuals,
+
+175
+00:06:14,490 --> 00:06:14,710
+run.
+
+176
+00:06:17,830 --> 00:06:19,230
+on your opinions.
+
+177
+00:06:20,010 --> 00:06:22,010
+A famous Bon Motto asserts that opinions
+
+178
+00:06:22,010 --> 00:06:24,970
+are like assholes and that everyone has
+
+179
+00:06:24,970 --> 00:06:25,250
+one.
+
+180
+00:06:26,010 --> 00:06:28,070
+There is great wisdom in this, but I would
+
+181
+00:06:28,070 --> 00:06:29,710
+add that opinions differ significantly
+
+182
+00:06:29,710 --> 00:06:31,350
+from assholes and that yours should be
+
+183
+00:06:31,350 --> 00:06:33,170
+constantly and thoroughly examined.
+
+184
+00:06:39,890 --> 00:06:42,010
+I used to do exams in here.
+
+185
+00:06:45,290 --> 00:06:46,190
+It's revenge.
+
+186
+00:06:47,790 --> 00:06:49,990
+We must think critically and not just
+
+187
+00:06:49,990 --> 00:06:52,450
+about the ideas of others. Be hard on your
+
+188
+00:06:52,450 --> 00:06:54,290
+beliefs, take them out onto the verandah
+
+189
+00:06:54,290 --> 00:06:55,570
+and hit them with a cricket bat.
+
+190
+00:06:56,250 --> 00:06:58,330
+Be intellectually rigorous, identify your
+
+191
+00:06:58,330 --> 00:07:00,870
+biases, your prejudices, your privileges.
+
+192
+00:07:02,010 --> 00:07:04,170
+Most of society's arguments are kept alive
+
+193
+00:07:04,170 --> 00:07:06,250
+by a failure to acknowledge nuance.
+
+194
+00:07:06,950 --> 00:07:09,130
+We tend to generate false dichotomies and
+
+195
+00:07:09,130 --> 00:07:11,090
+then try to argue one point using two
+
+196
+00:07:11,090 --> 00:07:13,490
+entirely different sets of assumptions,
+
+197
+00:07:14,330 --> 00:07:15,950
+like two tennis players trying to win a
+
+198
+00:07:15,950 --> 00:07:17,610
+match by hitting beautifully executed
+
+199
+00:07:17,610 --> 00:07:19,850
+shots from either end of separate tennis
+
+200
+00:07:19,850 --> 00:07:20,270
+courts.
+
+201
+00:07:21,550 --> 00:07:23,410
+By the way, while I have science and arts
+
+202
+00:07:23,410 --> 00:07:25,030
+graduates in front of me, please don't
+
+203
+00:07:25,030 --> 00:07:26,690
+make the mistake of thinking the arts and
+
+204
+00:07:26,690 --> 00:07:28,610
+sciences are at odds with one another.
+
+205
+00:07:29,090 --> 00:07:31,310
+That is a recent, stupid and damaging
+
+206
+00:07:31,310 --> 00:07:31,770
+idea.
+
+207
+00:07:32,330 --> 00:07:34,250
+You don't have to be unscientific to make
+
+208
+00:07:34,250 --> 00:07:36,510
+beautiful art to write beautiful things.
+
+209
+00:07:36,970 --> 00:07:37,710
+If you need proof,
+
+210
+00:07:38,390 --> 00:07:40,950
+Twain, Douglas Adams, Vonnegut, McEwan,
+
+211
+00:07:41,250 --> 00:07:43,670
+Sagan, Shakespeare, Dickens for a start.
+
+212
+00:07:44,670 --> 00:07:46,450
+You don't need to be superstitious to be a
+
+213
+00:07:46,450 --> 00:07:48,610
+poet. You don't need to hate GM technology
+
+214
+00:07:48,610 --> 00:07:50,230
+to care about the beauty of the planet.
+
+215
+00:07:50,590 --> 00:07:52,330
+You don't have to claim a soul to promote
+
+216
+00:07:52,330 --> 00:07:52,910
+compassion.
+
+217
+00:07:53,650 --> 00:07:55,670
+Science is not a body of knowledge nor a
+
+218
+00:07:55,670 --> 00:07:57,650
+belief system. It is just a term which
+
+219
+00:07:57,650 --> 00:07:59,390
+describes humankind's incremental
+
+220
+00:07:59,390 --> 00:08:01,470
+acquisition of understanding through
+
+221
+00:08:01,470 --> 00:08:01,970
+observation.
+
+222
+00:08:02,650 --> 00:08:03,610
+Science is awesome.
+
+223
+00:08:04,530 --> 00:08:05,930
+The arts and sciences need to work
+
+224
+00:08:05,930 --> 00:08:07,510
+together to improve how knowledge is
+
+225
+00:08:07,510 --> 00:08:08,010
+communicated.
+
+226
+00:08:09,030 --> 00:08:10,690
+The idea that many Australians, including
+
+227
+00:08:10,690 --> 00:08:12,710
+our new PM and my distant cousin, Nick
+
+228
+00:08:12,710 --> 00:08:13,110
+Min chin,
+
+229
+00:08:13,630 --> 00:08:15,610
+believe that the science of anthropogenic
+
+230
+00:08:15,610 --> 00:08:18,050
+global warming is controversial is a
+
+231
+00:08:18,050 --> 00:08:19,890
+powerful indicator of the extent of our
+
+232
+00:08:19,890 --> 00:08:20,950
+failure to communicate.
+
+233
+00:08:21,830 --> 00:08:23,730
+The fact that 30 % of the people in this
+
+234
+00:08:23,730 --> 00:08:25,450
+room just bristled is further evidence
+
+235
+00:08:25,450 --> 00:08:25,850
+still.
+
+236
+00:08:27,250 --> 00:08:29,050
+The fact that bristling is more to do
+
+237
+00:08:29,050 --> 00:08:31,250
+with politics than science is even more
+
+238
+00:08:31,250 --> 00:08:31,950
+despairing.
+
+239
+00:08:33,250 --> 00:08:33,690
+Six.
+
+240
+00:08:34,830 --> 00:08:36,130
+Be a teacher, please,
+
+241
+00:08:36,590 --> 00:08:38,210
+please, please be a teacher.
+
+242
+00:08:38,810 --> 00:08:40,110
+Teachers are the most admirable and
+
+243
+00:08:40,110 --> 00:08:41,610
+important people in the world. You don't
+
+244
+00:08:41,610 --> 00:08:43,370
+have to do it forever, but if you're in
+
+245
+00:08:43,370 --> 00:08:45,370
+doubt about what to do, be an amazing
+
+246
+00:08:45,370 --> 00:08:46,070
+teacher.
+
+247
+00:08:46,570 --> 00:08:49,070
+Just fear 20s. Be a teacher. Be a primary
+
+248
+00:08:49,070 --> 00:08:50,990
+school teacher, especially if you're a
+
+249
+00:08:50,990 --> 00:08:52,650
+bloke. We need male primary school
+
+250
+00:08:52,650 --> 00:08:53,130
+teachers.
+
+251
+00:08:53,790 --> 00:08:55,050
+Even if you're not a teacher,
+
+252
+00:08:55,810 --> 00:08:56,430
+be a teacher.
+
+253
+00:08:57,390 --> 00:08:59,490
+Share your ideas. Don't take for granted
+
+254
+00:08:59,490 --> 00:09:01,650
+your education. Rejoice in what you learn
+
+255
+00:09:01,650 --> 00:09:03,170
+and spray it.
+
+256
+00:09:04,970 --> 00:09:05,410
+Seven.
+
+257
+00:09:06,170 --> 00:09:07,770
+Define yourself by what you love.
+
+258
+00:09:08,750 --> 00:09:10,250
+I found myself doing this thing a bit
+
+259
+00:09:10,250 --> 00:09:12,310
+recently where if someone asked me what
+
+260
+00:09:12,310 --> 00:09:14,070
+sort of music I like, I say, well, I don't
+
+261
+00:09:14,070 --> 00:09:15,330
+listen to the radio because pop song
+
+262
+00:09:15,330 --> 00:09:17,230
+lyrics annoy me. Or if someone asked me
+
+263
+00:09:17,230 --> 00:09:19,050
+what food I like, I say, I think truffle
+
+264
+00:09:19,050 --> 00:09:20,990
+oil is overused and slightly obnoxious.
+
+265
+00:09:21,490 --> 00:09:23,750
+And I see it all the time online. People
+
+266
+00:09:23,750 --> 00:09:25,870
+whose idea of being part of a subculture
+
+267
+00:09:25,870 --> 00:09:28,470
+is to hate Coldplay or football or
+
+268
+00:09:28,470 --> 00:09:29,850
+feminists or the liberal party.
+
+269
+00:09:30,550 --> 00:09:32,530
+We have a tendency to define ourselves in
+
+270
+00:09:32,530 --> 00:09:35,170
+opposition to stuff. As a comedian, I make
+
+271
+00:09:35,170 --> 00:09:36,090
+my living out of it.
+
+272
+00:09:36,590 --> 00:09:38,830
+But try to also express your passion for
+
+273
+00:09:38,830 --> 00:09:39,610
+things you love.
+
+274
+00:09:40,170 --> 00:09:41,710
+Be demonstrative and generous in your
+
+275
+00:09:41,710 --> 00:09:43,010
+praise of those you admire.
+
+276
+00:09:43,670 --> 00:09:45,150
+Send thank you cards and give standing
+
+277
+00:09:45,150 --> 00:09:47,990
+ovations. Be pro stuff, not just anti
+
+278
+00:09:47,990 --> 00:09:48,370
+stuff.
+
+279
+00:09:49,950 --> 00:09:50,330
+Eight.
+
+280
+00:09:51,090 --> 00:09:52,610
+Respect people with less power than you.
+
+281
+00:09:53,050 --> 00:09:55,090
+I have in the past made important
+
+282
+00:09:55,090 --> 00:09:57,150
+decisions about people I work with, agents
+
+283
+00:09:57,150 --> 00:09:59,830
+and producers, big decisions based largely
+
+284
+00:09:59,830 --> 00:10:01,630
+on how they treat the weight stuff in the
+
+285
+00:10:01,630 --> 00:10:03,090
+restaurants we're having the meeting in.
+
+286
+00:10:03,810 --> 00:10:05,310
+I don't care if you're the most powerful
+
+287
+00:10:05,310 --> 00:10:07,570
+cat in the room. I will judge you on how
+
+288
+00:10:07,570 --> 00:10:08,670
+you treat the least powerful.
+
+289
+00:10:09,490 --> 00:10:10,070
+So there.
+
+290
+00:10:12,050 --> 00:10:12,490
+Nine.
+
+291
+00:10:12,910 --> 00:10:14,010
+Finally, don't rush.
+
+292
+00:10:15,110 --> 00:10:16,630
+You don't need to already know what you're
+
+293
+00:10:16,630 --> 00:10:17,950
+going to do with the rest of your life.
+
+294
+00:10:18,370 --> 00:10:19,990
+I'm not saying sit around smoking cones
+
+295
+00:10:19,990 --> 00:10:22,250
+all day, but also don't panic.
+
+296
+00:10:23,370 --> 00:10:25,170
+Most people I know who were sure of their
+
+297
+00:10:25,170 --> 00:10:27,090
+career path at 20 are having midlife
+
+298
+00:10:27,090 --> 00:10:27,970
+crises now.
+
+299
+00:10:29,990 --> 00:10:31,950
+I said at the beginning of this ramble,
+
+300
+00:10:31,970 --> 00:10:33,150
+which is already three and a half minutes
+
+301
+00:10:33,150 --> 00:10:34,550
+long, that life is meaningless.
+
+302
+00:10:35,110 --> 00:10:37,190
+It was not a flippant assertion. I think
+
+303
+00:10:37,190 --> 00:10:39,950
+it's absurd the idea of seeking meaning in
+
+304
+00:10:39,950 --> 00:10:41,810
+the set of circumstances that happens to
+
+305
+00:10:41,810 --> 00:10:44,750
+exist after 13 .8 billion years worth of
+
+306
+00:10:44,750 --> 00:10:45,590
+unguided events.
+
+307
+00:10:46,270 --> 00:10:48,110
+Leave it to humans to think the universe
+
+308
+00:10:48,110 --> 00:10:49,350
+has a purpose for them.
+
+309
+00:10:50,150 --> 00:10:52,510
+However, I'm no nihilist. I'm not even a
+
+310
+00:10:52,510 --> 00:10:54,750
+cynic. I am actually rather romantic.
+
+311
+00:10:55,850 --> 00:10:57,430
+And here's my idea of romance.
+
+312
+00:10:58,530 --> 00:10:59,790
+You will soon be dead.
+
+313
+00:11:02,050 --> 00:11:04,470
+Life will sometimes seem long and tough
+
+314
+00:11:04,470 --> 00:11:05,950
+and God, it's tiring.
+
+315
+00:11:06,510 --> 00:11:08,350
+And you will sometimes be happy and
+
+316
+00:11:08,350 --> 00:11:11,030
+sometimes sad. And then you'll be old and
+
+317
+00:11:11,030 --> 00:11:11,730
+then you'll be dead.
+
+318
+00:11:12,590 --> 00:11:15,170
+There is only one sensible thing to do
+
+319
+00:11:15,170 --> 00:11:17,190
+with this empty existence. And that is
+
+320
+00:11:17,190 --> 00:11:18,230
+fill it.
+
+321
+00:11:19,170 --> 00:11:20,030
+Not fill it.
+
+322
+00:11:20,530 --> 00:11:21,070
+Fill it.
+
+323
+00:11:22,070 --> 00:11:24,530
+And in my opinion, until I change it,
+
+324
+00:11:25,370 --> 00:11:27,470
+life is best filled by learning as much as
+
+325
+00:11:27,470 --> 00:11:29,470
+you can about as much as you can, taking
+
+326
+00:11:29,470 --> 00:11:31,010
+pride in whatever you're doing, having
+
+327
+00:11:31,010 --> 00:11:32,450
+compassion, sharing ideas,
+
+328
+00:11:33,050 --> 00:11:33,530
+running,
+
+329
+00:11:34,610 --> 00:11:35,570
+being enthusiastic.
+
+330
+00:11:36,490 --> 00:11:38,170
+And then there's love and travel and wine
+
+331
+00:11:38,170 --> 00:11:40,430
+and sex and art and kids and giving and
+
+332
+00:11:40,430 --> 00:11:41,170
+mountain climbing.
+
+333
+00:11:41,750 --> 00:11:43,110
+But you know all that stuff already.
+
+334
+00:11:43,810 --> 00:11:46,150
+It's an incredibly exciting thing,
+
+335
+00:11:46,790 --> 00:11:47,410
+this one
+
+336
+00:11:48,030 --> 00:11:49,530
+meaningless life of yours.
+
+337
+00:11:50,170 --> 00:11:52,210
+Good luck and thank you for indulging me.
+
+338
+00:11:57,070 --> 00:12:00,430
+Chancellor, Tim Minchin is an Australian
+
+339
+00:12:00,430 --> 00:12:01,470
+musician,
+
+340
+00:12:01,910 --> 00:12:02,390
+composer,
+
+341
+00:12:02,970 --> 00:12:03,430
+songwriter,
+
+342
+00:12:04,050 --> 00:12:04,330
+actor,
+
+343
+00:12:04,730 --> 00:12:05,030
+comedian,
+
+344
+00:12:05,730 --> 00:12:06,170
+and writer.
+
+345
+00:12:07,870 --> 00:12:10,890
+This understated description from Tim's
+
+346
+00:12:10,890 --> 00:12:14,750
+self -pend profile sits in modest contrast
+
+347
+00:12:14,750 --> 00:12:17,510
+to the comments of Tim Arthur, editor of
+
+348
+00:12:17,510 --> 00:12:18,470
+Time Out, who wrote,
+
+349
+00:12:19,310 --> 00:12:20,790
+Tim Minchin is a genius,
+
+350
+00:12:21,390 --> 00:12:22,750
+pure and simple.
+
+351
+00:12:23,350 --> 00:12:25,610
+He is to musical comedy what Charles
+
+352
+00:12:25,610 --> 00:12:30,610
+Darwin was to evolution and what Einstein
+
+353
+00:12:30,610 --> 00:12:32,890
+was to physics and mustaches.
+
+354
+00:12:33,670 --> 00:12:35,950
+You'd be hard pushed to find a more
+
+355
+00:12:35,950 --> 00:12:38,330
+sublimely talented comedian,
+
+356
+00:12:39,270 --> 00:12:39,770
+handsome,
+
+357
+00:12:40,270 --> 00:12:40,890
+hysterical,
+
+358
+00:12:41,330 --> 00:12:43,250
+and divinely musically gifted.
+
+359
+00:12:44,790 --> 00:12:47,990
+Originally from Perth in WA, Tim, his wife
+
+360
+00:12:47,990 --> 00:12:50,290
+Sarah, and their two children now live in
+
+361
+00:12:50,290 --> 00:12:50,550
+London.
+
+362
+00:12:51,330 --> 00:12:53,490
+He's part of a large and close-knit family
+
+363
+00:12:53,490 --> 00:12:55,950
+and has always enjoyed their full support.
+
+364
+00:12:56,310 --> 00:12:58,910
+Tim is an alumnus of Christchurch Grammar
+
+365
+00:12:58,910 --> 00:13:00,950
+School and the University of Western
+
+366
+00:13:00,950 --> 00:13:01,470
+Australia.
+
+367
+00:13:02,070 --> 00:13:05,350
+He graduated from UWA in 1996 with a
+
+368
+00:13:05,350 --> 00:13:07,030
+Bachelor of Arts in English and Theatre.
+
+369
+00:13:07,030 --> 00:13:08,730
+In 1997,
+
+370
+00:13:09,290 --> 00:13:10,810
+he was accepted into the West Australian
+
+371
+00:13:10,810 --> 00:13:12,310
+Academy of Performing Arts,
+
+372
+00:13:12,750 --> 00:13:15,150
+graduating with an advanced diploma of
+
+373
+00:13:15,150 --> 00:13:17,470
+contemporary music in 1998.
+
+374
+00:13:19,230 --> 00:13:22,570
+Tim tells us that his career as a composer
+
+375
+00:13:22,570 --> 00:13:25,350
+had its origins at Midnight Youth Theatre
+
+376
+00:13:25,350 --> 00:13:27,670
+Company, where he wrote scores for several
+
+377
+00:13:27,670 --> 00:13:29,110
+shows in his late teens.
+
+378
+00:13:29,890 --> 00:13:32,330
+He also worked with WA Youth Theatre
+
+379
+00:13:32,330 --> 00:13:35,330
+Company and wrote music and acted with the
+
+380
+00:13:35,330 --> 00:13:36,670
+University Dramatic Society.
+
+381
+00:13:37,930 --> 00:13:40,430
+He has been performing his unique brand of
+
+382
+00:13:40,430 --> 00:13:42,570
+musical comedy in front of ever-growing
+
+383
+00:13:42,570 --> 00:13:45,090
+audiences since starting out in South
+
+384
+00:13:45,090 --> 00:13:47,850
+Melbourne's Butterfly Club in 2005.
+
+385
+00:13:48,490 --> 00:13:50,550
+He won the Directors Award at the
+
+386
+00:13:50,550 --> 00:13:52,310
+Melbourne International Comedy Festival
+
+387
+00:13:52,310 --> 00:13:54,950
+for his breakout show, Dark Side,
+
+388
+00:13:55,550 --> 00:13:57,470
+and followed this later the same year with
+
+389
+00:13:57,470 --> 00:14:00,350
+one of the most successful debut acts ever
+
+390
+00:14:00,350 --> 00:14:02,210
+at the Edinburgh Fringe, winning the
+
+391
+00:14:02,210 --> 00:14:04,290
+Perrier Award for Best Newcomer.
+
+392
+00:14:05,110 --> 00:14:06,870
+Several awards have followed over the
+
+393
+00:14:06,870 --> 00:14:08,870
+years, most recently the Best Supporting
+
+394
+00:14:08,870 --> 00:14:12,350
+Actor in the 2013 Watson Stage Awards for
+
+395
+00:14:12,350 --> 00:14:14,550
+his role in Jesus Christ Superstar.
+
+396
+00:14:15,890 --> 00:14:17,430
+Rock and Roll Nerd,
+
+397
+00:14:17,890 --> 00:14:20,170
+a documentary about Tim's life as he rose
+
+398
+00:14:20,170 --> 00:14:22,870
+from obscurity to celebrity between 2005
+
+399
+00:14:22,870 --> 00:14:23,710
+and 2006,
+
+400
+00:14:24,150 --> 00:14:25,670
+premiered at the Melbourne International
+
+401
+00:14:25,670 --> 00:14:28,890
+Film Festival in July 2008 and was
+
+402
+00:14:28,890 --> 00:14:31,030
+released on DVD in 2009.
+
+403
+00:14:31,570 --> 00:14:33,110
+It was shown at the Australian Film
+
+404
+00:14:33,110 --> 00:14:35,450
+Festival at the Barbican London in the
+
+405
+00:14:35,450 --> 00:14:36,070
+same year.
+
+406
+00:14:37,070 --> 00:14:38,490
+In 2010,
+
+407
+00:14:38,990 --> 00:14:41,090
+Tim and Dennis Kelly were commissioned by
+
+408
+00:14:41,090 --> 00:14:43,630
+the Royal Shakespeare Company to write
+
+409
+00:14:43,630 --> 00:14:45,190
+Matilda the Musical,
+
+410
+00:14:45,810 --> 00:14:48,210
+based on Roald Dahl's famous children's
+
+411
+00:14:48,210 --> 00:14:48,510
+story.
+
+412
+00:14:49,090 --> 00:14:51,790
+The show continues to run in London and
+
+413
+00:14:51,790 --> 00:14:55,310
+New York and has won critical acclaim and
+
+414
+00:14:55,310 --> 00:14:58,050
+a record seven Olivier Awards.
+
+415
+00:14:58,850 --> 00:15:01,690
+Tim has recently starred as drug -addled
+
+416
+00:15:01,690 --> 00:15:04,910
+nudist Atticus Fetch in season six of
+
+417
+00:15:04,910 --> 00:15:06,070
+Californification,
+
+418
+00:15:06,650 --> 00:15:10,550
+as a furious Judas in the arena tour of
+
+419
+00:15:10,550 --> 00:15:12,590
+Lloyd Webber's Jesus Christ Superstar,
+
+420
+00:15:13,230 --> 00:15:15,810
+and as a befuddled Rosencrantz in the
+
+421
+00:15:15,810 --> 00:15:17,790
+Sydney Theatre Company's production of Tom
+
+422
+00:15:17,790 --> 00:15:20,190
+Stoppard's, Rosencrantz and Guildenstern
+
+423
+00:15:20,190 --> 00:15:20,630
+Are Dead.
+
+424
+00:15:21,610 --> 00:15:24,110
+He's currently writing a new stage musical
+
+425
+00:15:24,110 --> 00:15:26,530
+and will soon start work on a musical
+
+426
+00:15:26,530 --> 00:15:28,690
+feature film for DreamWorks Animation.
+
+427
+00:15:29,850 --> 00:15:31,710
+Arguably, Tim is the best -known
+
+428
+00:15:31,710 --> 00:15:34,090
+Australian live comedian in the world,
+
+429
+00:15:34,590 --> 00:15:36,610
+having performed as a soloist at the Royal
+
+430
+00:15:36,610 --> 00:15:39,090
+Albert Hall and at New York Town Hall.
+
+431
+00:15:39,730 --> 00:15:41,470
+In Australia, he's performed sell -out
+
+432
+00:15:41,470 --> 00:15:43,210
+shows at the Sydney Opera House, the
+
+433
+00:15:43,210 --> 00:15:45,110
+Brisbane Powerhouse and His Majesty's
+
+434
+00:15:45,110 --> 00:15:47,230
+Theatre Perth, and has performed at the
+
+435
+00:15:47,230 --> 00:15:49,010
+Adelaide Fringe, the Adelaide Cabaret
+
+436
+00:15:49,010 --> 00:15:50,310
+Festival, the Melbourne International
+
+437
+00:15:50,310 --> 00:15:52,590
+Comedy Festival and the Big Laugh Festival
+
+438
+00:15:52,590 --> 00:15:53,510
+in Sydney.
+
+439
+00:15:54,410 --> 00:15:56,890
+Tim has released four live comedy albums,
+
+440
+00:15:57,050 --> 00:15:59,190
+five DVDs, and his television and radio
+
+441
+00:15:59,190 --> 00:16:01,990
+credits in the UK and Australia and the
+
+442
+00:16:01,990 --> 00:16:03,170
+United States are numerous.
+
+443
+00:16:04,150 --> 00:16:06,390
+His celebrated nine -minute beat poem,
+
+444
+00:16:06,850 --> 00:16:07,150
+Storm,
+
+445
+00:16:07,810 --> 00:16:09,790
+has been animated and premiered in London
+
+446
+00:16:09,790 --> 00:16:13,010
+in October 2010. Made available to all on
+
+447
+00:16:13,010 --> 00:16:14,590
+YouTube, the following year it has
+
+448
+00:16:14,590 --> 00:16:16,990
+recorded in excess of two million hits.
+
+449
+00:16:17,850 --> 00:16:20,670
+In 2010, Tim narrated Sean Tan's Oscar
+
+450
+00:16:20,670 --> 00:16:22,170
+-winning film, The Lost Thing,
+
+451
+00:16:22,610 --> 00:16:24,290
+an animated 15 -minute short,
+
+452
+00:16:24,690 --> 00:16:26,590
+based on the children's book of the same
+
+453
+00:16:26,590 --> 00:16:26,890
+name.
+
+454
+00:16:28,070 --> 00:16:31,370
+Tim is an outspoken advocate of critical
+
+455
+00:16:31,370 --> 00:16:31,850
+thinking,
+
+456
+00:16:32,450 --> 00:16:33,630
+can't read music,
+
+457
+00:16:34,230 --> 00:16:35,550
+as we heard, likes running,
+
+458
+00:16:36,290 --> 00:16:38,490
+and cries if he watches movies on
+
+459
+00:16:38,490 --> 00:16:39,230
+Airplanes.
+
+460
+00:16:40,070 --> 00:16:43,610
+He's patron of WA Youth Theatre Company,
+
+461
+00:16:43,830 --> 00:16:45,610
+the Prince's Foundation for Children and
+
+462
+00:16:45,610 --> 00:16:46,010
+the Arts,
+
+463
+00:16:46,530 --> 00:16:48,490
+and Roald Dahl's Marvelous Children's
+
+464
+00:16:48,490 --> 00:16:48,870
+Charity.
+
+465
+00:16:49,890 --> 00:16:52,270
+A record of Tim Minchin's achievements
+
+466
+00:16:52,270 --> 00:16:55,070
+would not be complete without this tribute
+
+467
+00:16:55,070 --> 00:16:56,230
+from the Melbourne Age.
+
+468
+00:16:57,610 --> 00:16:59,850
+Simultaneously, an excellent stand -up
+
+469
+00:16:59,850 --> 00:17:00,310
+comedian,
+
+470
+00:17:01,110 --> 00:17:02,830
+a purveyor of physical comedy,
+
+471
+00:17:03,270 --> 00:17:04,430
+an accomplished musician,
+
+472
+00:17:05,070 --> 00:17:08,050
+and a lyricist of diabolical ingenuity.
+
+473
+00:17:09,230 --> 00:17:10,270
+Witty, smart,
+
+474
+00:17:11,130 --> 00:17:12,810
+and unabashedly offensive.
+
+475
+00:17:13,370 --> 00:17:13,890
+Chancellor,
+
+476
+00:17:14,430 --> 00:17:16,370
+it is my privilege to present to you for
+
+477
+00:17:16,370 --> 00:17:18,330
+conferral of the honorary degree of Doctor
+
+478
+00:17:18,330 --> 00:17:18,910
+of Letters,
+
+479
+00:17:19,310 --> 00:17:20,110
+Mr Tim Minchin.
+
+480
+00:17:56,250 --> 00:17:58,890
+On behalf of this university, I confer the
+
+481
+00:17:58,890 --> 00:18:01,430
+honorary degree of Doctor of Letters upon
+
+482
+00:18:01,430 --> 00:18:03,450
+Timothy David Min chin.
+

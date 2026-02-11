@@ -1,0 +1,1620 @@
+1
+00:00:19,340 --> 00:00:21,620
+About a year ago, I asked my YouTube
+
+2
+00:00:21,620 --> 00:00:23,900
+followers to play a simple computer
+
+3
+00:00:23,900 --> 00:00:25,500
+programming puzzle that I made with a
+
+4
+00:00:25,500 --> 00:00:28,060
+buddy. The object of the puzzle was to get
+
+5
+00:00:28,060 --> 00:00:30,560
+your car across the maze by arranging
+
+6
+00:00:30,560 --> 00:00:33,100
+these code blocks that represent typical
+
+7
+00:00:33,100 --> 00:00:35,100
+computer programming operations such as
+
+8
+00:00:35,100 --> 00:00:36,700
+IFL statements and while loops.
+
+9
+00:00:37,700 --> 00:00:39,540
+Once you thought you had a good code, you
+
+10
+00:00:39,540 --> 00:00:41,520
+would hit run, and your car would move
+
+11
+00:00:41,520 --> 00:00:43,160
+based on the commands you had in the
+
+12
+00:00:43,160 --> 00:00:43,540
+program.
+
+13
+00:00:44,580 --> 00:00:46,540
+I asked my YouTube followers to play it
+
+14
+00:00:46,540 --> 00:00:48,680
+because I said I wanted to prove that
+
+15
+00:00:48,680 --> 00:00:50,900
+anyone from any background could learn to
+
+16
+00:00:50,900 --> 00:00:51,200
+code.
+
+17
+00:00:52,020 --> 00:00:54,460
+50, 000 of them took the challenge and
+
+18
+00:00:54,460 --> 00:00:55,260
+attempted the puzzle.
+
+19
+00:00:56,400 --> 00:00:59,100
+The truth was that I didn't actually care
+
+20
+00:00:59,100 --> 00:01:00,880
+about proving that anyone could learn to
+
+21
+00:01:00,880 --> 00:01:01,200
+code.
+
+22
+00:01:01,760 --> 00:01:03,480
+What they didn't know is that we actually
+
+23
+00:01:03,480 --> 00:01:06,180
+randomly served up two slightly different
+
+24
+00:01:06,180 --> 00:01:07,400
+versions of the puzzle.
+
+25
+00:01:08,180 --> 00:01:10,000
+In one version, if you hit run and you
+
+26
+00:01:10,000 --> 00:01:12,440
+weren't successful, you didn't lose any of
+
+27
+00:01:12,440 --> 00:01:13,800
+you're starting 200 points.
+
+28
+00:01:14,200 --> 00:01:15,300
+We showed you this message.
+
+29
+00:01:15,900 --> 00:01:18,260
+However, in the other version, if you hit
+
+30
+00:01:18,260 --> 00:01:20,080
+run and again, you weren't successful,
+
+31
+00:01:20,660 --> 00:01:22,600
+we showed this slightly different message
+
+32
+00:01:22,600 --> 00:01:25,220
+stating that you lost five points from
+
+33
+00:01:25,220 --> 00:01:26,480
+you're starting 200 points.
+
+34
+00:01:26,920 --> 00:01:28,000
+That was the only difference.
+
+35
+00:01:28,860 --> 00:01:30,860
+In one version, if you failed, we simply
+
+36
+00:01:30,860 --> 00:01:31,800
+took away five.
+
+37
+00:01:32,300 --> 00:01:34,320
+No value in the real world. No one will
+
+38
+00:01:34,320 --> 00:01:36,540
+ever see these completely meaningless fake
+
+39
+00:01:36,540 --> 00:01:37,360
+internet points.
+
+40
+00:01:38,580 --> 00:01:41,080
+That minor difference is crucial to keep
+
+41
+00:01:41,080 --> 00:01:43,540
+in mind for the results I'm about to show
+
+42
+00:01:43,540 --> 00:01:45,680
+you from the 50, 000 data points we
+
+43
+00:01:45,680 --> 00:01:46,080
+collected.
+
+44
+00:01:47,040 --> 00:01:48,860
+For those who were penalized for failed
+
+45
+00:01:48,860 --> 00:01:49,300
+attempts,
+
+46
+00:01:49,840 --> 00:01:52,400
+their success rate was around 52%.
+
+47
+00:01:53,060 --> 00:01:55,040
+For those who were not penalized, their
+
+48
+00:01:55,040 --> 00:01:57,740
+success rate was 68%.
+
+49
+00:01:58,840 --> 00:02:01,400
+That statistically significant delta of 16
+
+50
+00:02:01,400 --> 00:02:04,340
+% was astounding and almost seemed
+
+51
+00:02:04,340 --> 00:02:06,180
+too hard to believe until we looked at
+
+52
+00:02:06,180 --> 00:02:07,600
+another piece of data that we collected,
+
+53
+00:02:08,560 --> 00:02:10,420
+which was attempts to solve before finding
+
+54
+00:02:10,420 --> 00:02:10,840
+success.
+
+55
+00:02:11,260 --> 00:02:13,280
+It's shown in orange right here. So those
+
+56
+00:02:13,280 --> 00:02:15,040
+who didn't see failing in a negative light
+
+57
+00:02:15,040 --> 00:02:17,340
+nearly had two and a half times more
+
+58
+00:02:17,340 --> 00:02:18,600
+attempts to solve the puzzle.
+
+59
+00:02:19,300 --> 00:02:21,080
+As a result, naturally, they saw more
+
+60
+00:02:21,080 --> 00:02:22,720
+success and therefore learned more.
+
+61
+00:02:23,440 --> 00:02:24,800
+So if you think about that and sort of
+
+62
+00:02:24,800 --> 00:02:26,060
+unpack these results,
+
+63
+00:02:26,660 --> 00:02:28,420
+the trick to learning more and having more
+
+64
+00:02:28,420 --> 00:02:30,880
+success is finding the right way to frame
+
+65
+00:02:30,880 --> 00:02:31,660
+the learning process.
+
+66
+00:02:32,560 --> 00:02:33,840
+And this observation seemed really
+
+67
+00:02:33,840 --> 00:02:34,600
+profound to me.
+
+68
+00:02:35,220 --> 00:02:36,840
+It made me wonder what if you just framed
+
+69
+00:02:36,840 --> 00:02:38,920
+the learning process in such a way that
+
+70
+00:02:38,920 --> 00:02:40,860
+you didn't concern yourself with failure?
+
+71
+00:02:41,300 --> 00:02:43,360
+How much more successful could you be? How
+
+72
+00:02:43,360 --> 00:02:44,400
+much more could you learn?
+
+73
+00:02:45,300 --> 00:02:46,620
+And the next thought was that if this is a
+
+74
+00:02:46,620 --> 00:02:48,180
+real effect, clearly there must be some
+
+75
+00:02:48,180 --> 00:02:50,600
+evidence for this in real life. It made me
+
+76
+00:02:50,600 --> 00:02:51,340
+think of toddlers.
+
+77
+00:02:52,320 --> 00:02:53,980
+It's like, oh boy, I helped make that.
+
+78
+00:02:56,380 --> 00:02:59,160
+They are constantly trying new things and
+
+79
+00:02:59,160 --> 00:03:00,940
+they certainly aren't concerned with
+
+80
+00:03:00,940 --> 00:03:02,920
+failure. When my son learned to walk, he
+
+81
+00:03:02,920 --> 00:03:04,620
+didn't think about how dumb he might look
+
+82
+00:03:04,620 --> 00:03:05,600
+if he fell down.
+
+83
+00:03:06,060 --> 00:03:07,720
+And as his parents, we didn't punish him
+
+84
+00:03:07,720 --> 00:03:09,080
+if he wasn't successful either.
+
+85
+00:03:09,600 --> 00:03:12,000
+The focus was always on the end goal and
+
+86
+00:03:12,000 --> 00:03:14,620
+we celebrated the successes with him.
+
+87
+00:03:15,260 --> 00:03:17,680
+As a result of constantly failing and
+
+88
+00:03:17,680 --> 00:03:19,800
+trying and discovering new things during
+
+89
+00:03:19,800 --> 00:03:22,440
+that phase of our life, we discover so
+
+90
+00:03:22,440 --> 00:03:23,940
+many more new capabilities within
+
+91
+00:03:23,940 --> 00:03:26,480
+ourselves and it's not even close to any
+
+92
+00:03:26,480 --> 00:03:27,460
+other time in our life.
+
+93
+00:03:28,840 --> 00:03:30,800
+But maybe using a toddler is sort of
+
+94
+00:03:30,800 --> 00:03:32,260
+cheating because their brains are
+
+95
+00:03:32,260 --> 00:03:33,040
+different from ours.
+
+96
+00:03:34,300 --> 00:03:37,100
+To make the case that perhaps they aren't
+
+97
+00:03:37,100 --> 00:03:38,580
+that different from us, I'd like to tell
+
+98
+00:03:38,580 --> 00:03:41,300
+you about a plumber I first met when I was
+
+99
+00:03:41,300 --> 00:03:42,860
+eight years old. He was Italian.
+
+100
+00:03:47,940 --> 00:03:50,060
+When Super Mario Brothers came out, my
+
+101
+00:03:50,060 --> 00:03:51,860
+friends and I became obsessed.
+
+102
+00:03:52,340 --> 00:03:54,200
+Like we wanted to get to the castle and
+
+103
+00:03:54,200 --> 00:03:56,060
+rescue the beautiful Princess Peach from
+
+104
+00:03:56,060 --> 00:03:58,020
+the evil Bowser. We get to school and ask
+
+105
+00:03:58,020 --> 00:03:59,580
+each other, like, dude, what level did you
+
+106
+00:03:59,580 --> 00:04:00,900
+make it to? Did you pass the game?
+
+107
+00:04:01,320 --> 00:04:03,600
+We never asked each other about details on
+
+108
+00:04:03,600 --> 00:04:05,120
+all the different ways we might have died.
+
+109
+00:04:05,900 --> 00:04:07,720
+When it comes to games like this, no one
+
+110
+00:04:07,720 --> 00:04:09,060
+ever picks up the controller for the first
+
+111
+00:04:09,060 --> 00:04:11,100
+time and then after jumping into a pit
+
+112
+00:04:11,100 --> 00:04:12,960
+thinks I'm so ashamed that was such a
+
+113
+00:04:12,960 --> 00:04:15,220
+failure and they never want to try again,
+
+114
+00:04:15,280 --> 00:04:17,080
+right? What really happens is they think,
+
+115
+00:04:17,160 --> 00:04:18,420
+oh, I've got to remember, there's a pit
+
+116
+00:04:18,420 --> 00:04:20,360
+right there. So I think next time I'm
+
+117
+00:04:20,360 --> 00:04:21,200
+going to come out with a little more
+
+118
+00:04:21,200 --> 00:04:22,480
+speed, I'm going to jump a little bit
+
+119
+00:04:22,480 --> 00:04:22,740
+later.
+
+120
+00:04:23,300 --> 00:04:25,440
+The focus and obsession is about beating
+
+121
+00:04:25,440 --> 00:04:28,100
+the game, not how dumb you might look if
+
+122
+00:04:28,100 --> 00:04:30,240
+you get hit by a sliding green shell. And
+
+123
+00:04:30,240 --> 00:04:32,720
+as a direct result of that attitude of
+
+124
+00:04:32,720 --> 00:04:34,920
+learning from but not being focused on the
+
+125
+00:04:34,920 --> 00:04:35,280
+failures,
+
+126
+00:04:35,720 --> 00:04:38,420
+we got perfect and we learned a ton in
+
+127
+00:04:38,420 --> 00:04:40,280
+a very short amount of time. We were the
+
+128
+00:04:40,280 --> 00:04:41,360
+right side of this graph.
+
+129
+00:04:42,200 --> 00:04:44,040
+This is what I call the Super Mario
+
+130
+00:04:44,040 --> 00:04:44,420
+Effect,
+
+131
+00:04:44,840 --> 00:04:47,460
+focusing on the princess and not the pits
+
+132
+00:04:48,040 --> 00:04:50,220
+to stick with the task and to learn more.
+
+133
+00:04:50,920 --> 00:04:53,060
+This caused me to reflect and realize that
+
+134
+00:04:53,060 --> 00:04:54,840
+there were lots of other examples from my
+
+135
+00:04:54,840 --> 00:04:56,300
+own personal experience where this
+
+136
+00:04:56,300 --> 00:04:57,820
+attitude of life gamification,
+
+137
+00:04:58,260 --> 00:05:00,420
+this Super Mario Effect led to more
+
+138
+00:05:00,420 --> 00:05:02,480
+success and therefore more learning.
+
+139
+00:05:03,600 --> 00:05:05,160
+So I have a science YouTube channel where
+
+140
+00:05:05,160 --> 00:05:07,400
+I will sometimes use my engineering skills
+
+141
+00:05:07,400 --> 00:05:10,660
+to build things such as the world's
+
+142
+00:05:10,660 --> 00:05:14,960
+largest super soaker or the Guinness World
+
+143
+00:05:14,960 --> 00:05:16,300
+Record world's largest Nerf gun.
+
+144
+00:05:23,440 --> 00:05:26,420
+Or maybe this snow ball machine gun.
+
+145
+00:05:27,500 --> 00:05:29,980
+Yes! This is fashion from a leaf blower.
+
+146
+00:05:32,180 --> 00:05:33,300
+That's my niece.
+
+147
+00:05:35,490 --> 00:05:37,070
+Those are my nephews,
+
+148
+00:05:37,550 --> 00:05:40,130
+I think I figured it out, but when it
+
+149
+00:05:40,130 --> 00:05:41,630
+comes to me, their uncle, they seem to
+
+150
+00:05:41,630 --> 00:05:42,730
+have some trust issues.
+
+151
+00:05:48,270 --> 00:05:50,590
+So these builds usually take me about two
+
+152
+00:05:50,590 --> 00:05:52,830
+to three months, but there was one that
+
+153
+00:05:52,830 --> 00:05:54,050
+took me three years.
+
+154
+00:05:54,850 --> 00:05:56,590
+Basically I wanted to make a dart board
+
+155
+00:05:56,590 --> 00:05:58,450
+where you could get a bullseye every time.
+
+156
+00:05:58,890 --> 00:06:00,490
+The idea was that if you throw a dart, we
+
+157
+00:06:00,490 --> 00:06:01,970
+could like track it through the air, and
+
+158
+00:06:01,970 --> 00:06:03,430
+then we'd move the board to sort of like
+
+159
+00:06:03,430 --> 00:06:04,610
+catch a bullseye.
+
+160
+00:06:06,110 --> 00:06:07,910
+And so once we did the math, we realized
+
+161
+00:06:07,910 --> 00:06:10,070
+that if we wanted to track the dart for a
+
+162
+00:06:10,070 --> 00:06:11,850
+typical like game of darts, typical
+
+163
+00:06:11,850 --> 00:06:12,410
+velocity,
+
+164
+00:06:13,150 --> 00:06:16,050
+we would basically have to both track the
+
+165
+00:06:16,050 --> 00:06:17,790
+dart and to move the board the same amount
+
+166
+00:06:17,790 --> 00:06:19,430
+of time, it takes for a human to blink
+
+167
+00:06:19,430 --> 00:06:19,850
+once.
+
+168
+00:06:20,490 --> 00:06:21,250
+No big deal, right?
+
+169
+00:06:21,910 --> 00:06:23,210
+So I'm not going to bore you with all the
+
+170
+00:06:23,210 --> 00:06:25,010
+details and the failures and the setbacks
+
+171
+00:06:25,010 --> 00:06:27,070
+from a lot of metaphorical sliding green
+
+172
+00:06:27,070 --> 00:06:29,930
+shales and those pesky hammerhead bros,
+
+173
+00:06:30,270 --> 00:06:32,550
+but eventually we figured out it would
+
+174
+00:06:32,550 --> 00:06:34,350
+take something that looks like this, which
+
+175
+00:06:34,350 --> 00:06:35,730
+is six stepper motors and motion
+
+176
+00:06:35,730 --> 00:06:36,290
+controllers,
+
+177
+00:06:36,790 --> 00:06:38,410
+a Icon motion capture system with six
+
+178
+00:06:38,410 --> 00:06:38,870
+cameras,
+
+179
+00:06:39,290 --> 00:06:41,550
+and just a ton of tweaking and rewriting
+
+180
+00:06:41,550 --> 00:06:44,210
+the code. But finally, eventually we
+
+181
+00:06:44,210 --> 00:06:44,870
+arrived here.
+
+182
+00:06:58,070 --> 00:07:00,530
+what's interesting is when I look back on
+
+183
+00:07:00,530 --> 00:07:02,390
+that process like I can honestly say my
+
+184
+00:07:02,390 --> 00:07:04,390
+attitude towards that was the same
+
+185
+00:07:04,390 --> 00:07:07,470
+attitude I had toward like rescuing the
+
+186
+00:07:07,470 --> 00:07:09,970
+princess from Bowser like of course each
+
+187
+00:07:09,970 --> 00:07:12,810
+failure and setback sucked it's stung but
+
+188
+00:07:12,810 --> 00:07:14,270
+it was no different from like falling in
+
+189
+00:07:14,270 --> 00:07:16,950
+that pit on level 81 they're like ah you
+
+190
+00:07:16,950 --> 00:07:18,390
+got to go back to the level and try again
+
+191
+00:07:18,390 --> 00:07:20,070
+like it was always like okay that sucked
+
+192
+00:07:20,070 --> 00:07:22,450
+but what did we learn from that like what
+
+193
+00:07:22,450 --> 00:07:25,420
+can we do next for let's hit it again and
+
+194
+00:07:25,420 --> 00:07:27,400
+this concept of life gamification is more
+
+195
+00:07:27,400 --> 00:07:29,360
+than just like have a positive attitude
+
+196
+00:07:29,360 --> 00:07:32,060
+right or never give up because those sort
+
+197
+00:07:32,060 --> 00:07:33,940
+of imply you're having to endure against
+
+198
+00:07:33,940 --> 00:07:36,700
+your true desire to quit I feel like when
+
+199
+00:07:36,700 --> 00:07:37,840
+you frame a challenge or a learning
+
+200
+00:07:37,840 --> 00:07:39,960
+process in the way I'm describing you
+
+201
+00:07:39,960 --> 00:07:42,640
+actually want to do it is feels natural to
+
+202
+00:07:42,640 --> 00:07:44,760
+ignore the failures and try again in the
+
+203
+00:07:44,760 --> 00:07:48,320
+same way a toddler will want to get up and
+
+204
+00:07:48,320 --> 00:07:50,340
+try and walk again or in the same way you
+
+205
+00:07:50,340 --> 00:07:52,200
+want to keep playing Super Mario Brothers
+
+206
+00:07:52,200 --> 00:07:54,840
+or in the same way the group on the right
+
+207
+00:07:54,840 --> 00:07:57,600
+had a desire to stick with that puzzle two
+
+208
+00:07:57,600 --> 00:07:59,580
+and a half time longer they weren't
+
+209
+00:07:59,580 --> 00:08:01,820
+getting paid to do that nobody was forcing
+
+210
+00:08:01,820 --> 00:08:04,340
+them or watching them it was just them on
+
+211
+00:08:04,340 --> 00:08:06,820
+their computer alone in their house their
+
+212
+00:08:06,820 --> 00:08:08,940
+outlook made it so they wanted to keep
+
+213
+00:08:08,940 --> 00:08:11,260
+trying and learning and the icing on the
+
+214
+00:08:11,260 --> 00:08:12,900
+cake for the dartboard was I took it on
+
+215
+00:08:12,900 --> 00:08:14,640
+Jimmy Kimmel and challenged him to a game
+
+216
+00:08:14,640 --> 00:08:16,660
+of darts, and I'll just set this clip up by
+
+217
+00:08:16,660 --> 00:08:18,780
+saying two things the first is we also had
+
+218
+00:08:18,780 --> 00:08:20,420
+a mode on the board where if your buddy
+
+219
+00:08:20,420 --> 00:08:22,120
+had it and through a dart the board would
+
+220
+00:08:22,120 --> 00:08:26,300
+move the other way and the second is that
+
+221
+00:08:26,300 --> 00:08:28,580
+we couldn't get this thing working during
+
+222
+00:08:28,580 --> 00:08:31,960
+rehearsal and it was just barely kind of
+
+223
+00:08:31,960 --> 00:08:33,860
+creeping along I get up to stand in the
+
+224
+00:08:33,860 --> 00:08:35,360
+elevator which is the door that moves up
+
+225
+00:08:35,360 --> 00:08:37,320
+before you go down out on stage I look to
+
+226
+00:08:37,320 --> 00:08:39,740
+the right all six cameras had failed so my
+
+227
+00:08:39,740 --> 00:08:41,740
+buddy John is feverishly like restarting
+
+228
+00:08:41,740 --> 00:08:43,580
+all the cameras as I'm going out on the
+
+229
+00:08:43,580 --> 00:08:45,660
+stage knowing this and there's like four
+
+230
+00:08:45,660 --> 00:08:47,940
+things and bits and I work up to the
+
+231
+00:08:47,940 --> 00:08:50,580
+dartboard as the sort of grand finale so
+
+232
+00:08:50,580 --> 00:08:52,520
+just keep that in mind as this clip starts
+
+233
+00:08:52,520 --> 00:08:54,720
+like that's where my headspace is three
+
+234
+00:08:54,720 --> 00:08:57,080
+freaking years and it comes down to this
+
+235
+00:08:57,080 --> 00:08:59,440
+moment what you're going to do is you're
+
+236
+00:08:59,440 --> 00:09:01,600
+going to give this start to your buddy okay
+
+237
+00:09:01,600 --> 00:09:04,340
+challenge him just to like to hit the board
+
+238
+00:09:04,340 --> 00:09:06,200
+just try to hit the board yeah okay all
+
+239
+00:09:06,200 --> 00:09:07,280
+right
+
+240
+00:09:17,600 --> 00:09:20,800
+all right and so then I step up
+
+241
+00:09:20,800 --> 00:09:23,140
+automatically that's right and you built
+
+242
+00:09:23,140 --> 00:09:26,520
+this that's right yeah I step up here we
+
+243
+00:09:26,520 --> 00:09:26,760
+go
+
+244
+00:09:32,660 --> 00:09:34,180
+Fake it till you make it.
+
+245
+00:09:35,060 --> 00:09:36,940
+I will say, in all of our testing,
+
+246
+00:09:37,200 --> 00:09:38,940
+literally, we never had a dead center
+
+247
+00:09:38,940 --> 00:09:40,900
+bullseye as much as that one right there.
+
+248
+00:09:41,040 --> 00:09:42,680
+And so, like, after that, I haven't even
+
+249
+00:09:42,680 --> 00:09:44,380
+touched the board since. I'm like, I'm so
+
+250
+00:09:44,380 --> 00:09:44,960
+done with it.
+
+251
+00:09:48,080 --> 00:09:50,440
+And I really believe that if you reframe,
+
+252
+00:09:50,440 --> 00:09:52,720
+like, the challenges, it can make all the
+
+253
+00:09:52,720 --> 00:09:53,900
+difference. I have a simple thought
+
+254
+00:09:53,900 --> 00:09:56,540
+experiment to sort of showcase this. Let's
+
+255
+00:09:56,540 --> 00:09:57,760
+say I gave you a test and it had
+
+256
+00:09:57,760 --> 00:09:59,360
+instructions on it that you would carry
+
+257
+00:09:59,360 --> 00:10:01,980
+out. And to do that, it had sort of
+
+258
+00:10:01,980 --> 00:10:02,820
+buttons like this.
+
+259
+00:10:03,400 --> 00:10:04,460
+And the instructions would say something
+
+260
+00:10:04,460 --> 00:10:06,260
+like, push button three for five seconds,
+
+261
+00:10:06,580 --> 00:10:08,140
+and then push button six for one seconds,
+
+262
+00:10:08,440 --> 00:10:10,080
+then push buttons three and five for six
+
+263
+00:10:10,080 --> 00:10:10,800
+seconds, and so on.
+
+264
+00:10:11,340 --> 00:10:12,300
+And unless you carried out the
+
+265
+00:10:12,300 --> 00:10:14,340
+instructions on page one exactly, you
+
+266
+00:10:14,340 --> 00:10:16,020
+couldn't see the other 32 pages of the
+
+267
+00:10:16,020 --> 00:10:16,260
+test.
+
+268
+00:10:16,860 --> 00:10:19,040
+How much would I have to pay you to take
+
+269
+00:10:19,040 --> 00:10:19,980
+that test for an hour?
+
+270
+00:10:20,800 --> 00:10:23,100
+Now, suppose I changed the word test here
+
+271
+00:10:23,100 --> 00:10:24,160
+to game
+
+272
+00:10:24,800 --> 00:10:26,120
+and I rotated this.
+
+273
+00:10:26,560 --> 00:10:27,760
+And for the input device,
+
+274
+00:10:28,260 --> 00:10:30,060
+I shrunk the buttons and moved them here,
+
+275
+00:10:30,320 --> 00:10:31,680
+and I gave it a cool paint job.
+
+276
+00:10:32,260 --> 00:10:33,960
+And maybe different button styles.
+
+277
+00:10:34,820 --> 00:10:36,600
+And then instead of using words, I
+
+278
+00:10:36,600 --> 00:10:38,120
+represented the tasks you needed to
+
+279
+00:10:38,120 --> 00:10:40,060
+accomplish visually like this.
+
+280
+00:10:41,100 --> 00:10:43,440
+Note the output is the exact same.
+
+281
+00:10:43,860 --> 00:10:45,380
+You have to push these buttons in a very
+
+282
+00:10:45,380 --> 00:10:47,240
+specific manner to move on to the next
+
+283
+00:10:47,240 --> 00:10:48,880
+page or level as it were.
+
+284
+00:10:49,660 --> 00:10:50,980
+Now picture it's 1986.
+
+285
+00:10:51,600 --> 00:10:54,080
+How much would you pay me to take this
+
+286
+00:10:54,080 --> 00:10:57,000
+test just for an hour? If you have a very
+
+287
+00:10:57,000 --> 00:10:57,700
+bad imagination,
+
+288
+00:10:58,180 --> 00:10:59,680
+here's a hint to the right answer. I know
+
+289
+00:10:59,680 --> 00:11:00,300
+I was there.
+
+290
+00:11:01,480 --> 00:11:01,980
+Nintendo!
+
+291
+00:11:04,920 --> 00:11:05,860
+Thank you.
+
+292
+00:11:07,880 --> 00:11:08,880
+Thank you.
+
+293
+00:11:10,360 --> 00:11:12,780
+Oh, don't come at me, don't play with it.
+
+294
+00:11:15,100 --> 00:11:17,000
+That has to be the greatest YouTube clip
+
+295
+00:11:17,000 --> 00:11:17,740
+of all time.
+
+296
+00:11:19,380 --> 00:11:21,860
+So as a science YouTuber, sometimes I feel
+
+297
+00:11:21,860 --> 00:11:24,060
+people have framed the act of learning
+
+298
+00:11:24,060 --> 00:11:26,320
+science negatively. It's been
+
+299
+00:11:26,320 --> 00:11:28,840
+taught poorly, so it feels scary to them.
+
+300
+00:11:29,360 --> 00:11:30,780
+It feels something more like this.
+
+301
+00:11:31,580 --> 00:11:33,160
+And my approach is to take the same
+
+302
+00:11:33,160 --> 00:11:34,740
+physics lessons you might have hated,
+
+303
+00:11:35,140 --> 00:11:37,440
+and to try and sort of trick you into
+
+304
+00:11:37,440 --> 00:11:40,380
+learning something through something cool.
+
+305
+00:11:40,700 --> 00:11:43,140
+Basically to go from this to this.
+
+306
+00:11:44,680 --> 00:11:46,620
+So for example, in this video I made a hot
+
+307
+00:11:46,620 --> 00:11:48,060
+tub with liquefied sand.
+
+308
+00:11:49,560 --> 00:11:51,840
+And this is another one of my nephews with
+
+309
+00:11:51,840 --> 00:11:53,460
+unexplained trust issues.
+
+310
+00:11:55,840 --> 00:11:57,720
+I explained in the video that it's a
+
+311
+00:11:57,720 --> 00:11:59,580
+fluidized bed. And then we talk about the
+
+312
+00:11:59,580 --> 00:12:01,460
+principle of buoyancy and how it makes the
+
+313
+00:12:01,460 --> 00:12:02,600
+whole thing work. And I use several
+
+314
+00:12:02,600 --> 00:12:03,080
+examples,
+
+315
+00:12:03,600 --> 00:12:05,800
+like the blow-dryer with a ping pong ball
+
+316
+00:12:05,800 --> 00:12:06,240
+like this.
+
+317
+00:12:06,760 --> 00:12:09,140
+I like to think my approach to science is
+
+318
+00:12:09,140 --> 00:12:11,040
+similar to velociraptor hunting patterns.
+
+319
+00:12:11,500 --> 00:12:14,140
+So I get people to come in with something
+
+320
+00:12:14,140 --> 00:12:16,160
+cool and amazing, like the sand hot tub.
+
+321
+00:12:16,400 --> 00:12:18,240
+And then when they least expect it,
+
+322
+00:12:21,640 --> 00:12:22,620
+clever girl.
+
+323
+00:12:24,520 --> 00:12:26,500
+Admittedly the analogy breaks down a
+
+324
+00:12:26,500 --> 00:12:27,700
+a little bit right there at the end.
+
+325
+00:12:29,100 --> 00:12:31,780
+But by reframing the learning process and
+
+326
+00:12:31,780 --> 00:12:33,520
+focusing on the cool end goal,
+
+327
+00:12:34,020 --> 00:12:36,160
+the fear of failure is often taken off the
+
+328
+00:12:36,160 --> 00:12:37,900
+table and learning just comes more
+
+329
+00:12:37,900 --> 00:12:38,320
+naturally.
+
+330
+00:12:39,220 --> 00:12:40,520
+I'll close with this thought.
+
+331
+00:12:41,320 --> 00:12:43,120
+Someone came up with this cartoon and I
+
+332
+00:12:43,120 --> 00:12:43,900
+totally love it.
+
+333
+00:12:44,560 --> 00:12:46,760
+This is so true, but often in life we tell
+
+334
+00:12:46,760 --> 00:12:47,420
+ourselves
+
+335
+00:12:47,840 --> 00:12:49,480
+that the top version is what we want.
+
+336
+00:12:49,580 --> 00:12:50,400
+That's what we expect.
+
+337
+00:12:50,980 --> 00:12:52,720
+But then something happens. Maybe it's a
+
+338
+00:12:52,720 --> 00:12:54,740
+really bad grade on a test or a meeting
+
+339
+00:12:54,740 --> 00:12:56,480
+with a client that goes for a Luring.
+
+340
+00:12:56,800 --> 00:12:57,840
+Maybe it's a bad breakup.
+
+341
+00:12:58,360 --> 00:13:00,540
+Maybe we miss a wide open shot. Some kind
+
+342
+00:13:00,540 --> 00:13:01,840
+of green shell hits you.
+
+343
+00:13:02,600 --> 00:13:04,480
+And so at that first setback or sign of
+
+344
+00:13:04,480 --> 00:13:06,320
+failure, doubt creeps in. We tell
+
+345
+00:13:06,320 --> 00:13:07,640
+ourselves we're not good enough or we're
+
+346
+00:13:07,640 --> 00:13:08,320
+not smart enough.
+
+347
+00:13:09,040 --> 00:13:11,760
+And yet if the bottom rectangle here is a
+
+348
+00:13:11,760 --> 00:13:13,760
+game where now your bike's crashed and you
+
+349
+00:13:13,760 --> 00:13:15,460
+have to get your bike across to the flag,
+
+350
+00:13:16,480 --> 00:13:18,300
+it's not, oh, I hit these rocks, I'm just
+
+351
+00:13:18,300 --> 00:13:19,940
+going to leave my bike here. I'm not good
+
+352
+00:13:19,940 --> 00:13:22,020
+enough and you quit and walk away. You see
+
+353
+00:13:22,020 --> 00:13:23,040
+that flag to the right and you're like,
+
+354
+00:13:23,060 --> 00:13:25,060
+nah, like what did I just learn? You're
+
+355
+00:13:25,060 --> 00:13:26,620
+like, okay, next time I think I'm gonna
+
+356
+00:13:26,620 --> 00:13:28,160
+come out with more speed and I'm gonna
+
+357
+00:13:28,160 --> 00:13:30,140
+lift the front of my bike up. You wanna
+
+358
+00:13:30,140 --> 00:13:31,800
+try it again. You're immediately excited
+
+359
+00:13:31,800 --> 00:13:32,660
+to go for it again.
+
+360
+00:13:33,260 --> 00:13:34,920
+We sort of tell ourselves we want our
+
+361
+00:13:34,920 --> 00:13:36,720
+life's challenges to look like the top
+
+362
+00:13:36,720 --> 00:13:37,940
+one, but that's boring.
+
+363
+00:13:38,580 --> 00:13:40,400
+If that were a real video game or a book
+
+364
+00:13:40,400 --> 00:13:42,540
+or a movie, that went out to the market.
+
+365
+00:13:42,660 --> 00:13:43,660
+It would be a total failure.
+
+366
+00:13:44,340 --> 00:13:46,100
+Nobody would buy it. Where's the risk and
+
+367
+00:13:46,100 --> 00:13:46,540
+the reward?
+
+368
+00:13:47,140 --> 00:13:48,860
+Where's the challenge? There's no feeling
+
+369
+00:13:48,860 --> 00:13:49,520
+of satisfaction.
+
+370
+00:13:50,140 --> 00:13:52,480
+The bottom picture is real life and that's
+
+371
+00:13:52,480 --> 00:13:53,240
+not a bug.
+
+372
+00:13:53,760 --> 00:13:54,480
+That's a feature.
+
+373
+00:13:55,540 --> 00:13:57,240
+Think about anything that means anything
+
+374
+00:13:57,240 --> 00:13:59,680
+to you in life, whether it's a degree, a
+
+375
+00:13:59,680 --> 00:14:01,780
+relationship with a friend or someone in
+
+376
+00:14:01,780 --> 00:14:03,260
+your family, maybe professional
+
+377
+00:14:03,260 --> 00:14:03,900
+accomplishment.
+
+378
+00:14:04,420 --> 00:14:06,800
+I can guarantee you it came from something
+
+379
+00:14:06,800 --> 00:14:08,620
+that looks like the bottom and not the
+
+380
+00:14:08,620 --> 00:14:11,620
+top. Failing and failing and failing and
+
+381
+00:14:11,620 --> 00:14:14,580
+eventually succeeding to the point that it
+
+382
+00:14:14,580 --> 00:14:16,800
+now holds value. Just like the most
+
+383
+00:14:16,800 --> 00:14:18,860
+meaningful high-fives of my adolescence
+
+384
+00:14:18,860 --> 00:14:21,360
+were those when I said, dude, I finally
+
+385
+00:14:21,360 --> 00:14:22,980
+beat Bowser last night.
+
+386
+00:14:24,900 --> 00:14:26,840
+I feel like a lot of the successes in my
+
+387
+00:14:26,840 --> 00:14:28,660
+life have come down to the Super Mario
+
+388
+00:14:28,660 --> 00:14:30,720
+effect. And while framing challenges like
+
+389
+00:14:30,720 --> 00:14:32,940
+this has worked for me, of course results
+
+390
+00:14:32,940 --> 00:14:34,900
+may vary. Everyone is going to be
+
+391
+00:14:34,900 --> 00:14:37,000
+different and I don't know exactly what it
+
+392
+00:14:37,000 --> 00:14:39,020
+looks like for you to take this principle
+
+393
+00:14:39,020 --> 00:14:41,520
+and map it into your life. But if we got
+
+394
+00:14:41,520 --> 00:14:44,160
+these very real results from a very
+
+395
+00:14:44,160 --> 00:14:46,120
+different cross -section of unique
+
+396
+00:14:46,120 --> 00:14:46,600
+people,
+
+397
+00:14:47,020 --> 00:14:48,140
+clearly I'm not alone.
+
+398
+00:14:48,540 --> 00:14:50,440
+There's some universal principle at play
+
+399
+00:14:50,440 --> 00:14:50,740
+here.
+
+400
+00:14:51,280 --> 00:14:53,360
+By shifting your focus to the princess and
+
+401
+00:14:53,360 --> 00:14:55,040
+treating your life's challenges like video
+
+402
+00:14:55,040 --> 00:14:57,420
+games, you can trick your brain and
+
+403
+00:14:57,420 --> 00:14:59,480
+actually learn more and see more success.
+
+404
+00:15:00,140 --> 00:15:00,500
+Thank you. Thank you.
+
+405
+00:15:06,800 --> 00:15:08,780
+Thank you.
+

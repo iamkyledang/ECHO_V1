@@ -1,0 +1,2252 @@
+1
+00:00:00,000 --> 00:00:01,080
+In 1901,
+
+2
+00:00:01,500 --> 00:00:03,640
+this ancient Greek artifact was discovered
+
+3
+00:00:03,640 --> 00:00:05,320
+in a shipwreck off the island of
+
+4
+00:00:05,320 --> 00:00:06,100
+Antikythera.
+
+5
+00:00:06,660 --> 00:00:09,180
+3D x-ray scans have revealed it contains
+
+6
+00:00:09,180 --> 00:00:11,780
+37 interlocking bronze gears,
+
+7
+00:00:12,260 --> 00:00:14,060
+allowing it to model the motions of the
+
+8
+00:00:14,060 --> 00:00:15,180
+sun and moon,
+
+9
+00:00:15,580 --> 00:00:18,080
+and predict eclipses decades in advance.
+
+10
+00:00:18,860 --> 00:00:21,500
+Constructed around 100 or 200 BC,
+
+11
+00:00:22,180 --> 00:00:24,300
+the Antikythera mechanism represents a
+
+12
+00:00:24,300 --> 00:00:27,140
+sophisticated early computer, the likes of
+
+13
+00:00:27,140 --> 00:00:28,880
+which would not be seen again for at least
+
+14
+00:00:28,880 --> 00:00:30,180
+a thousand years.
+
+15
+00:00:31,160 --> 00:00:32,900
+Now, of course, this computer didn't work
+
+16
+00:00:32,900 --> 00:00:34,500
+like modern digital computers.
+
+17
+00:00:34,960 --> 00:00:36,600
+It works by analogy.
+
+18
+00:00:37,400 --> 00:00:39,360
+The gears were constructed in such a way
+
+19
+00:00:39,360 --> 00:00:41,780
+that the motions of certain dials are
+
+20
+00:00:41,780 --> 00:00:44,160
+analogous to the motion of the sun and
+
+21
+00:00:44,160 --> 00:00:44,460
+moon.
+
+22
+00:00:45,120 --> 00:00:47,420
+It is an analog computer.
+
+23
+00:00:49,400 --> 00:00:51,820
+Here is a simple analog computer for
+
+24
+00:00:51,820 --> 00:00:53,040
+adding two numbers together.
+
+25
+00:00:53,580 --> 00:00:55,560
+If you turn the black wheel some amount,
+
+26
+00:00:56,100 --> 00:00:58,220
+and then turn this white wheel a different
+
+27
+00:00:58,220 --> 00:00:58,540
+amount,
+
+28
+00:00:59,060 --> 00:01:01,500
+the gray wheel shows the sum of the two
+
+29
+00:01:01,500 --> 00:01:02,160
+rotations.
+
+30
+00:01:03,520 --> 00:01:04,060
+In contrast,
+
+31
+00:01:04,500 --> 00:01:06,820
+this is a digital mechanical computer
+
+32
+00:01:06,820 --> 00:01:09,440
+where you can add two single bit numbers.
+
+33
+00:01:10,240 --> 00:01:12,320
+So 0 plus 0 equals 0,
+
+34
+00:01:13,040 --> 00:01:15,100
+0 plus 1 equals 1,
+
+35
+00:01:15,520 --> 00:01:18,040
+and 1 plus 1 equals 2.
+
+36
+00:01:18,840 --> 00:01:21,060
+These two devices illustrate the
+
+37
+00:01:21,060 --> 00:01:23,260
+differences between analog and digital
+
+38
+00:01:23,260 --> 00:01:23,820
+computers.
+
+39
+00:01:24,440 --> 00:01:26,920
+Analog computers have a continuous range
+
+40
+00:01:26,920 --> 00:01:28,400
+of inputs and outputs,
+
+41
+00:01:28,960 --> 00:01:31,160
+whereas digital only works with discrete
+
+42
+00:01:31,160 --> 00:01:31,860
+values.
+
+43
+00:01:32,640 --> 00:01:34,520
+With analog computers, the quantities of
+
+44
+00:01:34,520 --> 00:01:36,160
+interest are actually represented by
+
+45
+00:01:36,160 --> 00:01:38,420
+something physical, like the amount a
+
+46
+00:01:38,420 --> 00:01:39,540
+wheel has turned,
+
+47
+00:01:40,020 --> 00:01:42,380
+whereas digital computers work on symbols
+
+48
+00:01:42,380 --> 00:01:46,140
+like 0s and 1s. If the answer is say 2,
+
+49
+00:01:46,580 --> 00:01:48,660
+there is nothing in the computer that is
+
+50
+00:01:48,660 --> 00:01:50,500
+twice as much as a 1.
+
+51
+00:01:51,040 --> 00:01:52,980
+In analog computers, there is.
+
+52
+00:01:53,820 --> 00:01:56,400
+For thousands of years, people used analog
+
+53
+00:01:56,400 --> 00:01:58,880
+devices like the anti -Kitara mechanism or
+
+54
+00:01:58,880 --> 00:02:02,080
+slide rules alongside digital devices like
+
+55
+00:02:02,080 --> 00:02:05,280
+abacuses, and up until the 1960s, the most
+
+56
+00:02:05,280 --> 00:02:07,560
+powerful computers on the planet were
+
+57
+00:02:07,560 --> 00:02:08,620
+actually analog.
+
+58
+00:02:09,300 --> 00:02:11,560
+Digital computers exploded onto the scene
+
+59
+00:02:11,560 --> 00:02:13,240
+with the advent of solid state
+
+60
+00:02:13,240 --> 00:02:16,300
+transistors, and now almost everything is
+
+61
+00:02:16,300 --> 00:02:18,400
+digital. Most people have never even heard
+
+62
+00:02:18,400 --> 00:02:19,840
+of analog computers.
+
+63
+00:02:20,480 --> 00:02:21,340
+But today,
+
+64
+00:02:21,980 --> 00:02:23,120
+that may all be changing.
+
+65
+00:02:23,780 --> 00:02:25,700
+Moore's law, the idea that you can double
+
+66
+00:02:25,700 --> 00:02:27,460
+the number of transistors on a chip every
+
+67
+00:02:27,460 --> 00:02:28,080
+two years,
+
+68
+00:02:28,560 --> 00:02:30,200
+it's reaching its limit because
+
+69
+00:02:30,200 --> 00:02:32,480
+transistors are nearly the same size as
+
+70
+00:02:32,480 --> 00:02:32,820
+atoms.
+
+71
+00:02:33,560 --> 00:02:34,180
+Simultaneously,
+
+72
+00:02:34,600 --> 00:02:36,340
+advancements in machine learning are
+
+73
+00:02:36,340 --> 00:02:38,420
+straining the capabilities of digital
+
+74
+00:02:38,420 --> 00:02:38,960
+computers.
+
+75
+00:02:39,700 --> 00:02:42,000
+The solution to these challenges may well
+
+76
+00:02:42,000 --> 00:02:45,680
+be a new generation of analog computers.
+
+77
+00:02:47,900 --> 00:02:50,480
+One of the most important problems humans
+
+78
+00:02:50,480 --> 00:02:53,120
+have faced for millennia is predicting the
+
+79
+00:02:53,120 --> 00:02:53,600
+tides.
+
+80
+00:02:54,480 --> 00:02:57,400
+Napoleon and his men nearly died crossing
+
+81
+00:02:57,400 --> 00:03:00,080
+the Red Sea due to a miscalculation of the
+
+82
+00:03:00,080 --> 00:03:00,820
+rising tide,
+
+83
+00:03:01,460 --> 00:03:04,100
+and sailors routinely needed to know the
+
+84
+00:03:04,100 --> 00:03:05,900
+tides to bring their ships into port
+
+85
+00:03:05,900 --> 00:03:06,960
+without running a ground.
+
+86
+00:03:07,860 --> 00:03:10,320
+Most coastal locations on earth experience
+
+87
+00:03:10,320 --> 00:03:13,020
+too high and too low tides per day,
+
+88
+00:03:13,480 --> 00:03:16,180
+but their exact timing varies as does
+
+89
+00:03:16,180 --> 00:03:16,840
+their magnitude,
+
+90
+00:03:17,580 --> 00:03:19,640
+and this is partly caused by local factors
+
+91
+00:03:19,640 --> 00:03:21,940
+like the depth of the seabed and the shape
+
+92
+00:03:21,940 --> 00:03:22,800
+of the shoreline.
+
+93
+00:03:23,900 --> 00:03:26,820
+In the late 1700s, to describe the tidal
+
+94
+00:03:26,820 --> 00:03:27,660
+flow of the oceans,
+
+95
+00:03:28,260 --> 00:03:30,220
+Pierre Kimono Labs derived a set of
+
+96
+00:03:30,220 --> 00:03:31,940
+complicated differential equations.
+
+97
+00:03:32,700 --> 00:03:35,580
+They had no analytical solution, so at the
+
+98
+00:03:35,580 --> 00:03:37,200
+time they were basically useless.
+
+99
+00:03:38,020 --> 00:03:39,820
+But in the process of deriving his
+
+100
+00:03:39,820 --> 00:03:42,220
+equations, Laplace made a key finding.
+
+101
+00:03:43,100 --> 00:03:45,420
+Tides are driven at only a few specifics
+
+102
+00:03:45,420 --> 00:03:46,960
+astronomical frequencies,
+
+103
+00:03:47,560 --> 00:03:48,720
+including the moon,
+
+104
+00:03:49,420 --> 00:03:50,040
+the sun,
+
+105
+00:03:50,600 --> 00:03:52,940
+and the eccentricity of the lunar orbit.
+
+106
+00:03:53,880 --> 00:03:56,060
+Each one of these factors contributes a
+
+107
+00:03:56,060 --> 00:03:58,580
+sine wave of a particular amplitude and
+
+108
+00:03:58,580 --> 00:04:01,000
+phase to the total tide curve.
+
+109
+00:04:01,760 --> 00:04:03,060
+If someone could figure out how to
+
+110
+00:04:03,060 --> 00:04:04,680
+correctly combine this frequency
+
+111
+00:04:04,680 --> 00:04:05,240
+components,
+
+112
+00:04:05,680 --> 00:04:08,020
+well the tides could finally be predicted.
+
+113
+00:04:09,440 --> 00:04:13,060
+It took nearly a century, but in the 1860s
+
+114
+00:04:13,060 --> 00:04:15,340
+William Thompson, later Lord Kelvin,
+
+115
+00:04:15,840 --> 00:04:16,800
+took up the challenge.
+
+116
+00:04:17,380 --> 00:04:19,360
+Having completed several voyages to lay
+
+117
+00:04:19,360 --> 00:04:21,480
+the first transatlantic telegraph cable,
+
+118
+00:04:21,960 --> 00:04:23,920
+he developed a fascination with the sea,
+
+119
+00:04:24,400 --> 00:04:26,200
+and subsequently he threw his full
+
+120
+00:04:26,200 --> 00:04:28,560
+scientific effort into measuring and
+
+121
+00:04:28,560 --> 00:04:29,740
+predicting the tides.
+
+122
+00:04:30,680 --> 00:04:33,160
+Tide gauges at the time used a buoy to
+
+123
+00:04:33,160 --> 00:04:35,300
+record the height of the sea onto a paper
+
+124
+00:04:35,300 --> 00:04:35,760
+roll.
+
+125
+00:04:36,340 --> 00:04:38,840
+Kelvin set out to determine how sine waves
+
+126
+00:04:38,840 --> 00:04:40,820
+with the frequencies identified by Laplace
+
+127
+00:04:40,820 --> 00:04:43,680
+could add together to produce the observed
+
+128
+00:04:43,680 --> 00:04:44,560
+tidal curve.
+
+129
+00:04:45,420 --> 00:04:47,620
+The key was to apply the work of French
+
+130
+00:04:47,620 --> 00:04:49,140
+mathematician Joseph Fourier,
+
+131
+00:04:49,680 --> 00:04:51,320
+who had shown how to decompose any
+
+132
+00:04:51,320 --> 00:04:53,660
+function into a sum of sine waves.
+
+133
+00:04:54,380 --> 00:04:56,440
+Most English scientists were skeptical of
+
+134
+00:04:56,440 --> 00:04:59,080
+the work, but Thompson was enthralled by
+
+135
+00:04:59,080 --> 00:05:01,520
+it. His first paper, published at 17,
+
+136
+00:05:02,120 --> 00:05:03,680
+was a defense of Fourier.
+
+137
+00:05:04,520 --> 00:05:06,420
+While it was straightforward to apply
+
+138
+00:05:06,420 --> 00:05:08,200
+Fourier's analysis to tidal curves,
+
+139
+00:05:08,760 --> 00:05:10,980
+the computation required was enormous.
+
+140
+00:05:11,920 --> 00:05:14,760
+First, divide the tide curve up into short
+
+141
+00:05:14,760 --> 00:05:15,560
+time intervals,
+
+142
+00:05:16,080 --> 00:05:18,380
+and for each interval, multiply the tide
+
+143
+00:05:18,380 --> 00:05:21,000
+level by a sine wave with the frequency of
+
+144
+00:05:21,000 --> 00:05:21,400
+interest.
+
+145
+00:05:22,000 --> 00:05:24,360
+Add up the area of all these rectangles
+
+146
+00:05:24,360 --> 00:05:25,920
+and divide by the total time,
+
+147
+00:05:26,340 --> 00:05:28,400
+and this gives you a single coefficient,
+
+148
+00:05:29,080 --> 00:05:31,280
+the amplitude of the sine wave with this
+
+149
+00:05:31,280 --> 00:05:31,800
+frequency.
+
+150
+00:05:32,460 --> 00:05:34,540
+Then you have to repeat the process for a
+
+151
+00:05:34,540 --> 00:05:36,760
+cosine function with the same frequency.
+
+152
+00:05:37,860 --> 00:05:39,820
+Kelvin found that to make accurate
+
+153
+00:05:39,820 --> 00:05:40,240
+predictions,
+
+154
+00:05:40,840 --> 00:05:42,960
+he actually needed 10 different frequency
+
+155
+00:05:42,960 --> 00:05:43,440
+components,
+
+156
+00:05:44,000 --> 00:05:46,440
+so that is a lot of multiplication and
+
+157
+00:05:46,440 --> 00:05:48,820
+addition to characterize the tides at just
+
+158
+00:05:48,820 --> 00:05:49,820
+one location.
+
+159
+00:05:50,540 --> 00:05:51,960
+For each additional location,
+
+160
+00:05:52,400 --> 00:05:54,760
+you have to perform this analysis all over
+
+161
+00:05:54,760 --> 00:05:55,240
+again.
+
+162
+00:05:56,160 --> 00:05:58,160
+And this is only half the problem.
+
+163
+00:05:58,800 --> 00:06:01,040
+Once you have the amplitudes and phases of
+
+164
+00:06:01,040 --> 00:06:01,700
+the sine functions,
+
+165
+00:06:02,160 --> 00:06:04,100
+you have to add them up to predict future
+
+166
+00:06:04,100 --> 00:06:04,560
+tides.
+
+167
+00:06:05,600 --> 00:06:08,360
+Lord Kelvin spent years analyzing and
+
+168
+00:06:08,360 --> 00:06:09,960
+predicting tides by hand.
+
+169
+00:06:10,480 --> 00:06:12,340
+Then he had a stroke of inspiration.
+
+170
+00:06:13,080 --> 00:06:14,860
+Could you design a machine to carry out
+
+171
+00:06:14,860 --> 00:06:16,240
+these calculations automatically?
+
+172
+00:06:16,900 --> 00:06:19,460
+In Kelvin's words to substitute brass for
+
+173
+00:06:19,460 --> 00:06:19,900
+brains,
+
+174
+00:06:20,580 --> 00:06:22,880
+the resulting analog computers were in use
+
+175
+00:06:22,880 --> 00:06:24,280
+for nearly a century.
+
+176
+00:06:24,860 --> 00:06:26,640
+They even played a critical role in the
+
+177
+00:06:26,640 --> 00:06:28,320
+outcome of World War II.
+
+178
+00:06:29,580 --> 00:06:31,480
+Kelvin started with the problem of
+
+179
+00:06:31,480 --> 00:06:31,900
+prediction,
+
+180
+00:06:32,460 --> 00:06:34,480
+adding the sine waves together, given you
+
+181
+00:06:34,480 --> 00:06:36,060
+know their amplitudes and phases.
+
+182
+00:06:36,980 --> 00:06:39,440
+He knew he could create sinusoidal motion
+
+183
+00:06:39,440 --> 00:06:41,400
+with a device called a Scotch yoke.
+
+184
+00:06:41,920 --> 00:06:44,180
+It extracts one dimension from uniform
+
+185
+00:06:44,180 --> 00:06:45,180
+circular motion.
+
+186
+00:06:45,920 --> 00:06:48,080
+But to make a tide prediction, he needed a
+
+187
+00:06:48,080 --> 00:06:50,260
+way to combine 10 sine waves together.
+
+188
+00:06:50,820 --> 00:06:53,020
+He needed a mechanical analog for
+
+189
+00:06:53,020 --> 00:06:53,560
+addition.
+
+190
+00:06:54,540 --> 00:06:56,700
+Stuck on this problem in 1872,
+
+191
+00:06:57,200 --> 00:06:58,920
+Kelvin boarded a train for a meeting with
+
+192
+00:06:58,920 --> 00:07:00,620
+the main sponsor of his title research,
+
+193
+00:07:00,940 --> 00:07:01,940
+the British Association.
+
+194
+00:07:02,780 --> 00:07:05,000
+On the train, Kelvin bumped into a friend,
+
+195
+00:07:05,300 --> 00:07:06,640
+inventor Beauchamp Tower,
+
+196
+00:07:07,140 --> 00:07:08,820
+to whom he explained his dilemma.
+
+197
+00:07:09,600 --> 00:07:12,000
+Tower suggested he use Wheatstone's plan
+
+198
+00:07:12,000 --> 00:07:13,720
+of a chain passing round a number of
+
+199
+00:07:13,720 --> 00:07:14,260
+pulleys.
+
+200
+00:07:14,780 --> 00:07:16,700
+And this was exactly the addition
+
+201
+00:07:16,700 --> 00:07:18,420
+mechanism Kelvin was looking for.
+
+202
+00:07:19,000 --> 00:07:21,560
+By attaching a pulley to each Scotch yoke
+
+203
+00:07:21,560 --> 00:07:23,520
+and running a weighted cord around them,
+
+204
+00:07:23,920 --> 00:07:25,920
+he could mechanically add all of their
+
+205
+00:07:25,920 --> 00:07:27,260
+contributions at once.
+
+206
+00:07:28,020 --> 00:07:29,880
+He scribbled down the entire plan for this
+
+207
+00:07:29,880 --> 00:07:31,680
+predictor machine by the end of the train
+
+208
+00:07:31,680 --> 00:07:32,000
+ride.
+
+209
+00:07:32,640 --> 00:07:34,380
+He pitched it to the British Association
+
+210
+00:07:34,380 --> 00:07:37,060
+and secured funding to build it all before
+
+211
+00:07:37,060 --> 00:07:38,100
+he returned home.
+
+212
+00:07:39,580 --> 00:07:42,020
+If you knew the relative contributions of
+
+213
+00:07:42,020 --> 00:07:43,220
+different frequency components,
+
+214
+00:07:43,800 --> 00:07:46,340
+Kelvin now had a machine to automate the
+
+215
+00:07:46,340 --> 00:07:48,880
+tedious task of predicting future tides.
+
+216
+00:07:49,560 --> 00:07:51,760
+This was a great leap forward.
+
+217
+00:07:52,600 --> 00:07:55,080
+Four hours of cranking the handle yielded
+
+218
+00:07:55,080 --> 00:07:57,040
+a full year of tidal predictions.
+
+219
+00:07:57,800 --> 00:08:00,120
+But for many years, the harder half of the
+
+220
+00:08:00,120 --> 00:08:01,920
+problem was still done by hand,
+
+221
+00:08:02,340 --> 00:08:04,640
+breaking apart an existing tide curve into
+
+222
+00:08:04,640 --> 00:08:05,900
+its component frequencies.
+
+223
+00:08:06,600 --> 00:08:08,760
+To automate this step, Kelvin needed a
+
+224
+00:08:08,760 --> 00:08:11,000
+machine capable of multiplying the tide
+
+225
+00:08:11,000 --> 00:08:13,820
+curve times a sine wave and then taking
+
+226
+00:08:13,820 --> 00:08:14,500
+its integral.
+
+227
+00:08:15,340 --> 00:08:17,640
+What would such a device even look like?
+
+228
+00:08:18,600 --> 00:08:20,620
+With his older brother James Thompson,
+
+229
+00:08:20,900 --> 00:08:22,240
+Kelvin came up with a mechanical
+
+230
+00:08:22,240 --> 00:08:23,080
+integrator.
+
+231
+00:08:23,660 --> 00:08:26,240
+It consists of a ball on a rotating disc.
+
+232
+00:08:27,000 --> 00:08:29,100
+Due to the rotation of the disc, the
+
+233
+00:08:29,100 --> 00:08:30,640
+further the ball is from the center,
+
+234
+00:08:31,080 --> 00:08:32,180
+the faster it spins.
+
+235
+00:08:33,060 --> 00:08:35,000
+If the ball is at the very center of the
+
+236
+00:08:35,000 --> 00:08:36,740
+disc, it doesn't turn at all.
+
+237
+00:08:37,300 --> 00:08:39,500
+And if it's on the left side, it turns in
+
+238
+00:08:39,500 --> 00:08:40,540
+the opposite direction.
+
+239
+00:08:41,660 --> 00:08:43,400
+Now the motion of the ball is converted
+
+240
+00:08:43,400 --> 00:08:46,720
+into an output via a roller, which moves a
+
+241
+00:08:46,720 --> 00:08:49,220
+pen up or down on the output graph paper.
+
+242
+00:08:50,320 --> 00:08:53,100
+So the way it works is you trace the
+
+243
+00:08:53,100 --> 00:08:54,500
+function you want to integrate with a
+
+244
+00:08:54,500 --> 00:08:55,000
+stylus.
+
+245
+00:08:55,640 --> 00:08:57,480
+And the stylus controls the position of
+
+246
+00:08:57,480 --> 00:08:59,880
+the ball on the disc, and hence its speed
+
+247
+00:08:59,880 --> 00:09:00,560
+of rotation.
+
+248
+00:09:01,360 --> 00:09:03,640
+This is transferred through the roller to
+
+249
+00:09:03,640 --> 00:09:06,060
+the output, which plots the integral of
+
+250
+00:09:06,060 --> 00:09:07,000
+the original function.
+
+251
+00:09:08,520 --> 00:09:10,900
+Now to decompose a tide curve, we don't
+
+252
+00:09:10,900 --> 00:09:12,220
+just want to integrate the function,
+
+253
+00:09:12,640 --> 00:09:14,780
+we first want to multiply it by a sine
+
+254
+00:09:14,780 --> 00:09:16,420
+wave of a particular frequency.
+
+255
+00:09:17,180 --> 00:09:19,480
+And the way to do this is to make the disc
+
+256
+00:09:19,480 --> 00:09:22,200
+rotate back and forth at that specific
+
+257
+00:09:22,200 --> 00:09:22,740
+frequency.
+
+258
+00:09:23,800 --> 00:09:26,220
+Now the rotation of the ball depends on not
+
+259
+00:09:26,220 --> 00:09:28,740
+only on where it is on the disc, but also
+
+260
+00:09:28,740 --> 00:09:30,740
+on how the disc is turning at that
+
+261
+00:09:30,740 --> 00:09:31,120
+instant.
+
+262
+00:09:31,680 --> 00:09:34,020
+You trace the tide curve with the stylus,
+
+263
+00:09:34,240 --> 00:09:36,500
+which moves the ball back and forth on the
+
+264
+00:09:36,500 --> 00:09:39,180
+oscillating disc, and the roller sums up
+
+265
+00:09:39,180 --> 00:09:41,600
+the integral of the tide curve times the
+
+266
+00:09:41,600 --> 00:09:42,160
+sine wave.
+
+267
+00:09:42,780 --> 00:09:45,240
+Simply divide by the total time to get the
+
+268
+00:09:45,240 --> 00:09:45,700
+coefficient.
+
+269
+00:09:46,740 --> 00:09:48,800
+Several of these ball and disc integrators
+
+270
+00:09:48,800 --> 00:09:50,120
+can be connected in parallel,
+
+271
+00:09:50,580 --> 00:09:53,040
+with each disc oscillating at a different
+
+272
+00:09:53,040 --> 00:09:53,580
+frequency,
+
+273
+00:09:54,080 --> 00:09:56,280
+to calculate the coefficients for multiple
+
+274
+00:09:56,280 --> 00:09:58,700
+frequency components at the same time.
+
+275
+00:10:00,380 --> 00:10:03,320
+Kelvin's analog computers revolutionized
+
+276
+00:10:03,320 --> 00:10:04,940
+our ability to predict tides.
+
+277
+00:10:05,520 --> 00:10:07,460
+Tidal curves from anywhere in the world
+
+278
+00:10:07,460 --> 00:10:09,640
+could be turned into a set of sinusoidal
+
+279
+00:10:09,640 --> 00:10:11,840
+coefficients using the ball and disc
+
+280
+00:10:11,840 --> 00:10:13,040
+harmonic analyzer,
+
+281
+00:10:13,440 --> 00:10:15,580
+and the resulting sinusoids could be added
+
+282
+00:10:15,580 --> 00:10:18,260
+together to predict future tides using his
+
+283
+00:10:18,260 --> 00:10:19,940
+Scotch -Yoke pulley machine.
+
+284
+00:10:21,340 --> 00:10:23,880
+Kelvin's harmonic analyzers were the basis
+
+285
+00:10:23,880 --> 00:10:26,260
+for a landmark analog computer called the
+
+286
+00:10:26,260 --> 00:10:28,640
+Differential Analyzer, and his tide
+
+287
+00:10:28,640 --> 00:10:30,820
+predicting machines were used well into
+
+288
+00:10:30,820 --> 00:10:31,920
+the 1960s.
+
+289
+00:10:32,320 --> 00:10:34,280
+In fact, they were later overhauled to
+
+290
+00:10:34,280 --> 00:10:37,320
+include 26 frequency components and used
+
+291
+00:10:37,320 --> 00:10:40,000
+to plan the Allied invasion on D-Day.
+
+292
+00:10:41,000 --> 00:10:43,760
+The Germans expected any invasion to come
+
+293
+00:10:43,760 --> 00:10:45,920
+at high tide to minimize the time Allied
+
+294
+00:10:45,920 --> 00:10:47,840
+soldiers would be exposed on the beaches,
+
+295
+00:10:48,520 --> 00:10:50,620
+so they installed millions of obstacles
+
+296
+00:10:50,620 --> 00:10:52,740
+that would be underwater by mid-tide,
+
+297
+00:10:53,220 --> 00:10:55,320
+many with explosive mines attached.
+
+298
+00:10:56,200 --> 00:10:58,460
+But the Allies spotted the obstacles and
+
+299
+00:10:58,460 --> 00:11:01,020
+changed tack. Instead, they planned to
+
+300
+00:11:01,020 --> 00:11:02,580
+begin the invasion at low tide.
+
+301
+00:11:03,120 --> 00:11:05,120
+This would allow demolition teams to first
+
+302
+00:11:05,120 --> 00:11:07,040
+clear channels through the obstacles.
+
+303
+00:11:07,560 --> 00:11:09,280
+Then the main forces could come through
+
+304
+00:11:09,280 --> 00:11:11,020
+those gaps as the water rose.
+
+305
+00:11:11,560 --> 00:11:13,220
+This would also give landing craft enough
+
+306
+00:11:13,220 --> 00:11:15,420
+time to depart without getting beached.
+
+307
+00:11:15,860 --> 00:11:18,080
+The low water times were different at the
+
+308
+00:11:18,080 --> 00:11:20,860
+five landing beaches by over an hour, so
+
+309
+00:11:20,860 --> 00:11:22,820
+the invasion times were staggered
+
+310
+00:11:22,820 --> 00:11:24,500
+according to the tide predictions.
+
+311
+00:11:26,480 --> 00:11:28,580
+This wasn't the only use of analog
+
+312
+00:11:28,580 --> 00:11:29,920
+computers in World War II.
+
+313
+00:11:30,520 --> 00:11:32,820
+Dive bomber aircraft would plummet out of
+
+314
+00:11:32,820 --> 00:11:34,820
+the sky directly toward their targets at
+
+315
+00:11:34,820 --> 00:11:37,740
+up to an 80-degree angle, and their rapid
+
+316
+00:11:37,740 --> 00:11:40,060
+descents made them very difficult to shoot
+
+317
+00:11:40,060 --> 00:11:40,400
+down.
+
+318
+00:11:40,960 --> 00:11:43,300
+So the US began searching for devices to
+
+319
+00:11:43,300 --> 00:11:45,900
+automatically aim guns at dive bombers.
+
+320
+00:11:46,480 --> 00:11:48,600
+Most of the proposed solutions fell into
+
+321
+00:11:48,600 --> 00:11:49,740
+one of two categories.
+
+322
+00:11:50,520 --> 00:11:52,460
+Some were analog machines like Lord
+
+323
+00:11:52,460 --> 00:11:55,040
+Kelvin's, others were essentially fast
+
+324
+00:11:55,040 --> 00:11:55,780
+calculators.
+
+325
+00:11:56,400 --> 00:11:58,180
+Mechanical calculating machines like the
+
+326
+00:11:58,180 --> 00:12:00,260
+Abacus had been around for millennia, but
+
+327
+00:12:00,260 --> 00:12:02,580
+they were far too slow to respond to dive
+
+328
+00:12:02,580 --> 00:12:04,920
+bombers. These new calculating machines
+
+329
+00:12:04,920 --> 00:12:07,420
+sped things up by using electrical pulses.
+
+330
+00:12:08,200 --> 00:12:09,720
+The committee considered naming these
+
+331
+00:12:09,720 --> 00:12:12,320
+devices after the pulses they used, but
+
+332
+00:12:12,320 --> 00:12:14,400
+member George Kibitz proposed a more
+
+333
+00:12:14,400 --> 00:12:15,440
+general name,
+
+334
+00:12:15,940 --> 00:12:16,200
+digital,
+
+335
+00:12:16,800 --> 00:12:19,080
+because these machines operated on numbers
+
+336
+00:12:19,080 --> 00:12:19,640
+themselves,
+
+337
+00:12:20,060 --> 00:12:20,680
+or digits.
+
+338
+00:12:21,720 --> 00:12:24,300
+And this is the origin of the term digital
+
+339
+00:12:24,300 --> 00:12:24,900
+computer.
+
+340
+00:12:25,740 --> 00:12:28,220
+But digital would have to wait. Of all the
+
+341
+00:12:28,220 --> 00:12:30,220
+proposals, an innovative analog machine
+
+342
+00:12:30,220 --> 00:12:31,900
+from David Parkinson went out.
+
+343
+00:12:33,320 --> 00:12:35,860
+At Bell Labs in New York, Parkinson had
+
+344
+00:12:35,860 --> 00:12:37,460
+been working on a device to chart
+
+345
+00:12:37,460 --> 00:12:40,100
+telephone data called an automatic level
+
+346
+00:12:40,100 --> 00:12:40,640
+recorder.
+
+347
+00:12:41,260 --> 00:12:43,100
+It used a variable resistor called a
+
+348
+00:12:43,100 --> 00:12:45,360
+potentiometer to control the motion of a
+
+349
+00:12:45,360 --> 00:12:45,560
+pen.
+
+350
+00:12:46,360 --> 00:12:48,560
+One night, after hearing reports of the
+
+351
+00:12:48,560 --> 00:12:50,520
+harrowing Allied evacuation of Dunkirk,
+
+352
+00:12:51,060 --> 00:12:53,280
+Parkinson had a dream that he was on the
+
+353
+00:12:53,280 --> 00:12:53,940
+front lines.
+
+354
+00:12:56,820 --> 00:12:59,920
+I found myself in a gun pit with an anti
+
+355
+00:12:59,920 --> 00:13:00,940
+-aircraft gun crew.
+
+356
+00:13:01,680 --> 00:13:03,900
+A gun there was firing occasionally, and
+
+357
+00:13:03,900 --> 00:13:06,340
+the impressive thing was that every shot
+
+358
+00:13:06,340 --> 00:13:07,540
+brought down an airplane.
+
+359
+00:13:08,300 --> 00:13:10,200
+After three or four shots, one of the men
+
+360
+00:13:10,200 --> 00:13:12,220
+in the crew smiled at me and beckoned me
+
+361
+00:13:12,220 --> 00:13:13,320
+to come closer to the gun.
+
+362
+00:13:13,860 --> 00:13:15,640
+When I drew near, he pointed to the
+
+363
+00:13:15,640 --> 00:13:17,420
+exposed end of the left trunnion.
+
+364
+00:13:17,980 --> 00:13:19,840
+Mounted there was the control
+
+365
+00:13:19,840 --> 00:13:22,260
+potentiometer of my level recorder.
+
+366
+00:13:23,100 --> 00:13:25,600
+When he woke up, Parkinson realized the
+
+367
+00:13:25,600 --> 00:13:27,480
+device he was building to control a pen
+
+368
+00:13:27,480 --> 00:13:30,060
+could be scaled up to control an anti
+
+369
+00:13:30,060 --> 00:13:31,000
+-aircraft gun.
+
+370
+00:13:31,680 --> 00:13:33,360
+He shared this idea with his supervisor,
+
+371
+00:13:33,760 --> 00:13:35,380
+and after receiving approval from the
+
+372
+00:13:35,380 --> 00:13:35,800
+military,
+
+373
+00:13:36,200 --> 00:13:38,580
+they set out to make Parkinson's dream a
+
+374
+00:13:38,580 --> 00:13:39,000
+reality.
+
+375
+00:13:39,860 --> 00:13:41,800
+Researchers at Bell Labs had recently
+
+376
+00:13:41,800 --> 00:13:44,100
+invented an analog electrical device
+
+377
+00:13:44,100 --> 00:13:46,480
+called an operational amplifier or op
+
+378
+00:13:46,480 --> 00:13:46,640
+-amp.
+
+379
+00:13:47,080 --> 00:13:49,060
+It could perform mathematical operations
+
+380
+00:13:49,060 --> 00:13:50,900
+with voltages like addition and
+
+381
+00:13:50,900 --> 00:13:51,180
+multiplication.
+
+382
+00:13:52,160 --> 00:13:54,360
+They used these op -amps to create an
+
+383
+00:13:54,360 --> 00:13:56,100
+analog computer that could solve the
+
+384
+00:13:56,100 --> 00:13:57,920
+ballistics equations for anti-aircraft
+
+385
+00:13:57,920 --> 00:13:58,320
+guns.
+
+386
+00:13:59,060 --> 00:14:01,200
+Using radar and optical sights to obtain
+
+387
+00:14:01,200 --> 00:14:03,360
+the speed, altitude, and direction of
+
+388
+00:14:03,360 --> 00:14:03,980
+enemy planes,
+
+389
+00:14:04,460 --> 00:14:07,080
+the M9 gun director, as the computer was
+
+390
+00:14:07,080 --> 00:14:07,400
+called,
+
+391
+00:14:07,840 --> 00:14:09,620
+could rapidly calculate the correct
+
+392
+00:14:09,620 --> 00:14:11,240
+trajectory and fuse setting.
+
+393
+00:14:11,960 --> 00:14:14,120
+Potentiometers were used to ascertain the
+
+394
+00:14:14,120 --> 00:14:15,520
+direction the gun was pointing.
+
+395
+00:14:16,220 --> 00:14:18,800
+This was not the first electric analog
+
+396
+00:14:18,800 --> 00:14:21,200
+computer, but it was an important one.
+
+397
+00:14:21,780 --> 00:14:24,540
+In World War I, it took an average of 17
+
+398
+00:14:24,540 --> 00:14:26,700
+, 000 rounds to take down a single
+
+399
+00:14:26,700 --> 00:14:27,180
+airplane.
+
+400
+00:14:27,780 --> 00:14:30,660
+In 1943, after the invention of the M9, it
+
+401
+00:14:30,660 --> 00:14:32,160
+took an average of only 90.
+
+402
+00:14:33,220 --> 00:14:36,060
+During the war, the US invested big in
+
+403
+00:14:36,060 --> 00:14:36,880
+analog computers.
+
+404
+00:14:37,480 --> 00:14:39,080
+If you break down their total military
+
+405
+00:14:39,080 --> 00:14:41,660
+budget, the third-largest single expense
+
+406
+00:14:41,660 --> 00:14:43,860
+was the development and production of an
+
+407
+00:14:43,860 --> 00:14:46,080
+incredibly complex mechanical analog
+
+408
+00:14:46,080 --> 00:14:48,420
+computer called the Borden bomb site.
+
+409
+00:14:49,180 --> 00:14:49,640
+Unfortunately,
+
+410
+00:14:50,160 --> 00:14:51,720
+they didn't get their money's worth.
+
+411
+00:14:53,120 --> 00:14:55,480
+Designed by the eccentric Dutch engineer
+
+412
+00:14:55,480 --> 00:14:58,060
+Carlo Nordio, the Borden bomb site was built
+
+413
+00:14:58,060 --> 00:15:00,480
+to enable high precision airborne bombing.
+
+414
+00:15:00,960 --> 00:15:03,580
+It implemented 64 different simultaneous
+
+415
+00:15:03,580 --> 00:15:04,360
+algorithms,
+
+416
+00:15:04,780 --> 00:15:06,680
+including one that compensated for the
+
+417
+00:15:06,680 --> 00:15:08,780
+rotation of the earth as the bomb fell.
+
+418
+00:15:09,840 --> 00:15:12,300
+The Borden was one of the most closely
+
+419
+00:15:12,300 --> 00:15:13,780
+guarded secrets of the war.
+
+420
+00:15:14,420 --> 00:15:16,200
+To prevent the technology from falling
+
+421
+00:15:16,200 --> 00:15:17,120
+into enemy hands,
+
+422
+00:15:17,560 --> 00:15:20,220
+American bombardiers carried handguns
+
+423
+00:15:20,220 --> 00:15:22,780
+specifically to destroy it in the event of
+
+424
+00:15:22,780 --> 00:15:23,180
+a crash.
+
+425
+00:15:24,120 --> 00:15:26,240
+But despite its hype and funding,
+
+426
+00:15:26,680 --> 00:15:28,540
+the Borden didn't work as advertised.
+
+427
+00:15:29,040 --> 00:15:31,220
+With over 2, 000 fine parts,
+
+428
+00:15:31,660 --> 00:15:33,780
+it required extreme precision to
+
+429
+00:15:33,780 --> 00:15:34,180
+manufacture.
+
+430
+00:15:34,920 --> 00:15:37,520
+The problem with analog computers is that
+
+431
+00:15:37,520 --> 00:15:39,440
+the physical device is a model for the
+
+432
+00:15:39,440 --> 00:15:42,080
+real world, so any inaccuracy in the
+
+433
+00:15:42,080 --> 00:15:44,920
+components translates into inaccuracy of
+
+434
+00:15:44,920 --> 00:15:45,620
+the computation.
+
+435
+00:15:46,060 --> 00:15:48,460
+And since there will always be some slop
+
+436
+00:15:48,460 --> 00:15:49,980
+in the connections between parts,
+
+437
+00:15:50,560 --> 00:15:52,240
+if you run the same calculation twice,
+
+438
+00:15:52,720 --> 00:15:54,880
+you won't get the exact same answer.
+
+439
+00:15:55,580 --> 00:15:57,940
+In the American campaign against Japan,
+
+440
+00:15:58,340 --> 00:16:00,300
+bomber crews using the bomb site were
+
+441
+00:16:00,300 --> 00:16:02,720
+unable to destroy critical Japanese war
+
+442
+00:16:02,720 --> 00:16:03,260
+infrastructure.
+
+443
+00:16:04,020 --> 00:16:04,560
+And ultimately,
+
+444
+00:16:05,020 --> 00:16:07,180
+the US abandoned its precision bombing
+
+445
+00:16:07,180 --> 00:16:09,540
+approach and instead blanketed whole
+
+446
+00:16:09,540 --> 00:16:11,540
+Japanese cities in napalm.
+
+447
+00:16:13,280 --> 00:16:15,800
+As the war progressed, digital computers
+
+448
+00:16:15,800 --> 00:16:16,700
+gained traction.
+
+449
+00:16:17,420 --> 00:16:19,560
+The digital and electronic colossus
+
+450
+00:16:19,560 --> 00:16:22,020
+machines of Bletchley Park in the UK were
+
+451
+00:16:22,020 --> 00:16:23,840
+critical to breaking German codes.
+
+452
+00:16:24,540 --> 00:16:26,080
+In the United States, the military
+
+453
+00:16:26,080 --> 00:16:28,240
+invested in an enormously complex and
+
+454
+00:16:28,240 --> 00:16:30,680
+expensive digital machine known as ENIAC.
+
+455
+00:16:31,220 --> 00:16:33,020
+It was designed to speed up the
+
+456
+00:16:33,020 --> 00:16:35,160
+calculation of land artillery firing
+
+457
+00:16:35,160 --> 00:16:35,640
+tables.
+
+458
+00:16:36,260 --> 00:16:37,860
+At the time, these were computed using
+
+459
+00:16:37,860 --> 00:16:40,360
+differential analyzers, the analog
+
+460
+00:16:40,360 --> 00:16:42,700
+mechanical computers based on Kelvin's
+
+461
+00:16:42,700 --> 00:16:43,700
+harmonic analyzer.
+
+462
+00:16:44,460 --> 00:16:46,440
+Although not finished until after the war,
+
+463
+00:16:47,040 --> 00:16:49,300
+ENIAC demonstrated the power of digital
+
+464
+00:16:49,300 --> 00:16:49,880
+computers.
+
+465
+00:16:50,520 --> 00:16:52,340
+It's considered by many to be the first
+
+466
+00:16:52,340 --> 00:16:53,640
+modern computer.
+
+467
+00:16:54,660 --> 00:16:56,580
+What really opened the door to this
+
+468
+00:16:56,580 --> 00:16:58,560
+digital revolution was the discovery made
+
+469
+00:16:58,560 --> 00:17:01,200
+by Claude Shannon in his 1936 master's
+
+470
+00:17:01,200 --> 00:17:01,480
+thesis.
+
+471
+00:17:02,140 --> 00:17:04,600
+He showed that any numerical operation can
+
+472
+00:17:04,600 --> 00:17:06,400
+be carried out using the basic building
+
+473
+00:17:06,400 --> 00:17:07,780
+blocks of Boolean algebra.
+
+474
+00:17:08,520 --> 00:17:11,520
+Two values, true or false, also notated as
+
+475
+00:17:11,520 --> 00:17:12,320
+one or zero,
+
+476
+00:17:12,800 --> 00:17:14,100
+and three operations,
+
+477
+00:17:14,540 --> 00:17:16,040
+and or and not.
+
+478
+00:17:16,700 --> 00:17:19,080
+This makes digital computers the ideal
+
+479
+00:17:19,080 --> 00:17:20,680
+versatile computing machines.
+
+480
+00:17:21,380 --> 00:17:23,760
+In contrast, each analog computer is an
+
+481
+00:17:23,760 --> 00:17:26,340
+analog for only one type of problem.
+
+482
+00:17:27,100 --> 00:17:28,660
+Furthermore, since digital computers
+
+483
+00:17:28,660 --> 00:17:30,020
+operate on ones and zeros,
+
+484
+00:17:30,480 --> 00:17:32,200
+they are more resilient in the face of
+
+485
+00:17:32,200 --> 00:17:32,480
+noise.
+
+486
+00:17:33,160 --> 00:17:35,300
+It would take a large error to mistake a
+
+487
+00:17:35,300 --> 00:17:37,160
+one for a zero or vice versa,
+
+488
+00:17:37,640 --> 00:17:39,720
+whereas even small errors in analog
+
+489
+00:17:39,720 --> 00:17:42,380
+computers can grow and ultimately swamp
+
+490
+00:17:42,380 --> 00:17:43,060
+the signal.
+
+491
+00:17:43,980 --> 00:17:46,960
+So these days, everything is digital. Our
+
+492
+00:17:46,960 --> 00:17:48,040
+phones, computers,
+
+493
+00:17:48,480 --> 00:17:50,940
+and internet data centers, even TV and
+
+494
+00:17:50,940 --> 00:17:53,100
+radio is now being broadcast as digital.
+
+495
+00:17:53,700 --> 00:17:55,120
+And the advantages are obvious.
+
+496
+00:17:55,640 --> 00:17:57,760
+Since digital devices operate on symbols,
+
+497
+00:17:58,100 --> 00:17:59,280
+usually zeros and ones,
+
+498
+00:17:59,700 --> 00:18:01,380
+they provide exact answers.
+
+499
+00:18:01,880 --> 00:18:04,160
+And repeat the calculation and you get the
+
+500
+00:18:04,160 --> 00:18:04,820
+same result.
+
+501
+00:18:05,380 --> 00:18:07,100
+They are robust to noise.
+
+502
+00:18:07,680 --> 00:18:09,860
+Plus, since only a few components are
+
+503
+00:18:09,860 --> 00:18:11,300
+required to perform virtually any
+
+504
+00:18:11,300 --> 00:18:11,900
+computation,
+
+505
+00:18:12,400 --> 00:18:14,580
+those components have been miniaturized
+
+506
+00:18:14,580 --> 00:18:15,380
+and optimized,
+
+507
+00:18:15,960 --> 00:18:18,000
+making digital computers the ideal
+
+508
+00:18:18,000 --> 00:18:19,700
+universal computing machines.
+
+509
+00:18:20,580 --> 00:18:23,000
+So you would think analog computers would
+
+510
+00:18:23,000 --> 00:18:25,580
+be long gone, a relic of the distant past,
+
+511
+00:18:26,040 --> 00:18:29,000
+but analog may now be making a comeback.
+
+512
+00:18:29,700 --> 00:18:32,240
+There are startups actively working on
+
+513
+00:18:32,240 --> 00:18:33,320
+analog computers.
+
+514
+00:18:34,120 --> 00:18:36,140
+Why is this happening? What could be the
+
+515
+00:18:36,140 --> 00:18:37,360
+benefit of analog?
+
+516
+00:18:38,040 --> 00:18:40,560
+I wanted to put all of this into one
+
+517
+00:18:40,560 --> 00:18:40,920
+video,
+
+518
+00:18:41,500 --> 00:18:44,040
+but the story is too good to bury 20
+
+519
+00:18:44,040 --> 00:18:46,820
+minutes in. So that is coming up in part
+
+520
+00:18:46,820 --> 00:18:48,740
+two. Be sure you're subscribed to the
+
+521
+00:18:48,740 --> 00:18:50,660
+channel to be notified when that comes
+
+522
+00:18:50,660 --> 00:18:50,940
+out.
+
+523
+00:18:55,500 --> 00:18:57,960
+I'll give you a hint about the sequel in
+
+524
+00:18:57,960 --> 00:18:59,440
+this section of the video, which is
+
+525
+00:18:59,440 --> 00:19:00,580
+sponsored by Brilliant.
+
+526
+00:19:01,200 --> 00:19:03,180
+Brilliant is a website and app that uses
+
+527
+00:19:03,180 --> 00:19:05,440
+interactivity to help you learn STEM
+
+528
+00:19:05,440 --> 00:19:08,300
+concepts. For the sequel to this video, it
+
+529
+00:19:08,300 --> 00:19:10,440
+would be a good idea to brush up on
+
+530
+00:19:10,440 --> 00:19:12,580
+artificial intelligence, which you can do
+
+531
+00:19:12,580 --> 00:19:14,440
+with Brilliant's courses on neural
+
+532
+00:19:14,440 --> 00:19:14,880
+networks.
+
+533
+00:19:15,440 --> 00:19:17,520
+Here you can analyze how a neural network
+
+534
+00:19:17,520 --> 00:19:18,960
+decodes your handwriting.
+
+535
+00:19:19,700 --> 00:19:21,380
+I also recommend their calculus courses,
+
+536
+00:19:21,420 --> 00:19:22,880
+which are highly interactive.
+
+537
+00:19:23,640 --> 00:19:25,420
+What's great about Brilliant is how it
+
+538
+00:19:25,420 --> 00:19:27,240
+gets you to step through topics, answering
+
+539
+00:19:27,240 --> 00:19:28,260
+questions as you go,
+
+540
+00:19:28,700 --> 00:19:30,340
+and that way you can't trick yourself into
+
+541
+00:19:30,340 --> 00:19:31,680
+thinking you already understand
+
+542
+00:19:31,680 --> 00:19:33,180
+everything, because you're constantly
+
+543
+00:19:33,180 --> 00:19:34,840
+putting your knowledge to the test.
+
+544
+00:19:35,400 --> 00:19:36,920
+Personally, I find their courses
+
+545
+00:19:36,920 --> 00:19:39,400
+challenging, which they should be in order
+
+546
+00:19:39,400 --> 00:19:40,500
+for you to learn anything.
+
+547
+00:19:41,140 --> 00:19:42,720
+But if you ever get stuck, there's always
+
+548
+00:19:42,720 --> 00:19:45,820
+a helpful hint close at hand, and more in
+
+549
+00:19:45,820 --> 00:19:47,580
+-depth explanations are available if you
+
+550
+00:19:47,580 --> 00:19:48,020
+want them.
+
+551
+00:19:48,680 --> 00:19:50,520
+As the holiday season is upon us, an
+
+552
+00:19:50,520 --> 00:19:52,180
+annual subscription to Brilliant makes an
+
+553
+00:19:52,180 --> 00:19:54,600
+awesome gift for any curious learners in
+
+554
+00:19:54,600 --> 00:19:55,020
+your life.
+
+555
+00:19:55,500 --> 00:19:57,100
+And whether it's for you or someone else,
+
+556
+00:19:57,420 --> 00:19:59,620
+Brilliant is offering 20 % off an annual
+
+557
+00:19:59,620 --> 00:20:01,700
+subscription to the first 200 people to
+
+558
+00:20:01,700 --> 00:20:03,880
+sign up. Just go to Brilliant .org slash
+
+559
+00:20:03,880 --> 00:20:06,520
+Verulamium. I'll put that link down in the
+
+560
+00:20:06,520 --> 00:20:06,860
+description.
+
+561
+00:20:07,520 --> 00:20:08,700
+So I want to thank Brilliant for
+
+562
+00:20:08,700 --> 00:20:10,260
+supporting Verulamium, and I want to thank
+
+563
+00:20:10,260 --> 00:20:11,320
+you for watching.
+
