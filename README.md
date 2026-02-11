@@ -6,7 +6,7 @@ ECHO_V1 is an offline subtitle generator that combines Voice Activity Detection 
 
 ---
 
-s
+
 ---
 
 ## Highlights
